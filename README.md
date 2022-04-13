@@ -11,15 +11,16 @@
 
 ## Bagaimana cara menggunakan sistem ini?
 
-```
-- 1. Download source scrip pemprograman / codingan Aplikasi PPBD SMA 2022 ini.
-      git clone https://github.com/bagussatoto/PPDB-SMA-2022.git 
-- 2. Buat folder baru dengan nama PPDB SMA 2022.
-- 3. Buat database baru **PHP MyAdmin** dengan nama **/ppdbsma**, di eksport **/ppdbsma.sql**.
-- 4. Ubah file ConnectionManager.php yang berada di dalam folder connection. 
-- 5. Lakukan perubahan parameter pada ConnectionManager.php dengan mengisikan username Anda. 
-- 6. Sesuaikan nama database dengan nama database di PHPMyAdmin Anda.
-```
+-  Download source scrip pemprograman / codingan Aplikasi PPBD SMA 2022 ini.
+    ```
+    git clone https://github.com/bagussatoto/PPDB-SMA-2022.git 
+    ```
+    
+-  Buat folder baru dengan nama PPDB SMA 2022.
+-  Buat database baru **PHP MyAdmin** dengan nama **/ppdbsma**, di eksport **/ppdbsma.sql**.
+-  Ubah file ConnectionManager.php yang berada di dalam folder connection. 
+-  Lakukan perubahan parameter pada ConnectionManager.php dengan mengisikan username Anda. 
+-  Sesuaikan nama database dengan nama database di PHPMyAdmin Anda.
 
 ##  DEMO APLIKASI
 
