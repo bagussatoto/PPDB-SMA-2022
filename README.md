@@ -13,9 +13,7 @@
 
 ```
 - 1. Download source scrip pemprograman / codingan Aplikasi PPBD SMA 2022 ini.
-    ```
-    git clone https://github.com/bagussatoto/PPDB-SMA-2022.git 
-    ```
+      git clone https://github.com/bagussatoto/PPDB-SMA-2022.git 
 - 2. Buat folder baru dengan nama PPDB SMA 2022.
 - 3. Buat database baru **PHP MyAdmin** dengan nama **/ppdbsma**, di eksport **/ppdbsma.sql**.
 - 4. Ubah file ConnectionManager.php yang berada di dalam folder connection. 
