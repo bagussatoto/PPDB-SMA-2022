@@ -1,0 +1,91 @@
+<tr class="runner-b-vmenu runner-vmenu tree">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		<div class="manage">
+			<a href="#"><img alt="*" src="images/plus.gif">
+				##message EXPAND_ALL##
+			</a>
+		</div>
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+
+##foreach MenuChildren(0) as @m0##
+##set @menu=@m0##
+{BEGIN item##@m0.id##_menulink}
+<tr id="item##@m0.id##" view="topitem" class="runner-b-vmenu runner-vmenu tree ##@m0.type##{BEGIN item##@menu.id##_current} current{END item##@menu.id##_current}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		##include templates\menuitem_inline.htm##
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+##foreach MenuChildren(@m0.id) as @m1##
+##set @menu=@m1##
+{BEGIN item##@m1.id##_menulink}
+<tr id="item##@m1.id##" topparent="item##@m1.parent##" parent="item##@m1.parent##" class="runner-b-vmenu runner-vmenu tree subitem level1 ##@m1.type##{BEGIN item##@menu.id##_current} current{END item##@menu.id##_current}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		##include templates\menuitem_inline.htm##
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+##foreach MenuChildren(@m1.id) as @m2##
+##set @menu=@m2##
+{BEGIN item##@m2.id##_menulink}
+<tr id="item##@m2.id##" topparent="item##@m1.parent##" parent="item##@m2.parent##" class="runner-b-vmenu runner-vmenu tree subitem level2 ##@m2.type##{BEGIN item##@menu.id##_current} current{END item##@menu.id##_current}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		##include templates\menuitem_inline.htm##
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+##foreach MenuChildren(@m2.id) as @m3##
+##set @menu=@m3##
+{BEGIN item##@m3.id##_menulink}
+<tr id="item##@m3.id##" topparent="item##@m1.parent##" parent="item##@m3.parent##" class="runner-b-vmenu runner-vmenu tree subitem level3 ##@m3.type##{BEGIN item##@menu.id##_current} current{END item##@menu.id##_current}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		##include templates\menuitem_inline.htm##
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+##foreach MenuChildren(@m3.id) as @m4##
+##set @menu=@m4##
+{BEGIN item##@m4.id##_menulink}
+<tr id="item##@m4.id##" topparent="item##@m1.parent##" parent="item##@m4.parent##" class="runner-b-vmenu runner-vmenu tree subitem level4 ##@m4.type##{BEGIN item##@menu.id##_current} current{END item##@menu.id##_current}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		##include templates\menuitem_inline.htm##
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+##foreach MenuChildren(@m4.id) as @m5##
+##set @menu=@m5##
+{BEGIN item##@m5.id##_menulink}
+<tr id="item##@m5.id##" topparent="item##@m1.parent##" parent="item##@m5.parent##" class="runner-b-vmenu runner-vmenu tree subitem level5 ##@m5.type##{BEGIN item##@menu.id##_current} current{END item##@menu.id##_current}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		##include templates\menuitem_inline.htm##
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+{END item##@m5.id##_menulink}
+##endfor##
+{END item##@m4.id##_menulink}
+##endfor##
+{END item##@m3.id##_menulink}
+##endfor##
+{END item##@m2.id##_menulink}
+##endfor##
+{END item##@m1.id##_menulink}
+##endfor##
+{END item##@m0.id##_menulink}
+##if @last##
+	##if @BUILDER.bDynamicPermissions##
+	{BEGIN adminarea_link}
+	##include templates\menuitem_adminarea.htm##
+	{END adminarea_link}
+	##endif##
+##endif##
+##endfor##

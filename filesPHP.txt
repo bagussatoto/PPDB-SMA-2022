@@ -1,0 +1,24 @@
+include\phpfunctions.php include\phpfunctions.php
+
+##if (@BUILDER.bCreateLoginPage && @BUILDER.m_nLoginMethod==SECURITY_TABLE && @BUILDER.bFacebookLogin)##
+plugins\facebook\facebook.php plugins\facebook\facebook.php
+plugins\facebook\base_facebook.php plugins\facebook\base_facebook.php
+plugins\facebook\fb_ca_chain_bundle.crt plugins\facebook\fb_ca_chain_bundle.crt
+##endif##
+
+plugins\google-api-php-client plugins\google-api-php-client
+
+
+include\ciphereraes.##@ext## include\ciphereraes.##@ext##
+
+include\export_functions_excel.php include\export_functions_excel.php
+
+plugins\PHPExcel plugins\PHPExcel
+plugins\PHPExcel.php plugins\PHPExcel.php
+
+libs\excelreader.src libs\excelreader.php
+libs\gif.php libs\gif.php
+libs\oleread.inc libs\oleread.inc
+libs\phpmailer libs\phpmailer
+
+include\xml.php include\xml.php

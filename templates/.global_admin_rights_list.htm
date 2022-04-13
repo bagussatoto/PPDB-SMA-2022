@@ -1,0 +1,643 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+	<body class="{$stylename} function-admin_rights_list" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<div class="r-topbar-page">
+			<div data-menu-width="full" 
+				 
+				class="r-topheader" 
+				data-resize-name="topbar"
+				data-body-align="left"
+			>
+								{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="topbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span data-cellId="supertop_c1" data-pageid="{$pageid}" class="r-align-left navbar-header" data-itemid="logo" {$item_logo}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo" {$item_logo} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</span>
+		 
+				<span data-cellId="supertop_c1" data-pageid="{$pageid}" class="r-align-left navbar-collapse" data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{$menu main horizontal}			</span>
+							 
+							 
+				<span class="navbar-form r-align-right r-ori-vert navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-user"></span>
+						{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Log out		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN exitadminarea_link}
+	<li data-itemtype="exit_adminarea_link" data-itemid="exit_adminarea_link" {$item_exit_adminarea_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$exitaalink_attrs}  title="" >
+				
+		Exit Admin Area		
+		</a>
+	</li>
+{END exitadminarea_link}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+					{$locking}
+			</div>	
+			<div data-body-align="left"  data-body-width="standard" class="r-body" data-resize-top="topbar" >
+				<div class="r-top">
+								{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="topbar" {$form_top} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class="			col-md-12
+	
+">
+		 
+		{BEGIN breadcrumb}
+<ol class="breadcrumb" data-itemtype="breadcrumb" data-itemid="breadcrumb" {$item_breadcrumb} data-pageid="{$pageid}">
+<li ><a href="{$crumb_home_link}"><span class="glyphicon glyphicon-home"></span></a>{$crumb_dropdown}</li>
+{BEGIN crumb}
+  <li class="{$crumb_item_class}">
+{BEGIN crumb_title_link}
+	<a {$crumb_attrs}>{$crumb_title}</a>
+{END crumb_title_link}
+{BEGIN crumb_title_span}
+	<span {$crumb_attrs}>{$crumb_title}</span>
+{END crumb_title_span}	
+	{$crumb_dropdown}
+  </li>
+{END crumb}
+</ol>
+{END breadcrumb}	 
+		{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Login			</a>
+</span>
+{END guestloginbutton}
+		</div>					</div>
+	</div>		
+{END top_block}
+					</div>
+				<div class="r-content">
+										<div class="r-data-block" data-body-width="standard" >
+						
+										{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="topbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class="			col-md-6
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		<span data-itemtype="rights_save" data-itemid="rights_save" {$item_rights_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Simpan			</a>
+</span>
+	 
+		<span data-itemtype="rights_reset" data-itemid="rights_reset" {$item_rights_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Tata ulang			</a>
+</span>
+			{END firstAboveGridCell}	
+	</div>			 
+				<div 
+	data-cellId="above-grid_c2" data-pageid="{$pageid}"	{$cell_above-grid_c2}
+	class="			col-md-6
+	
+">
+		 
+		<span data-itemtype="rights_displaying_tables" data-itemid="rights_displaying_tables" {$item_rights_displaying_tables} data-pageid="{$pageid}">
+Displaying
+	<span id=linkselectFilter class="btn-group">
+		<span class="btn btn-link dropdown-toggle inline-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">all tables</span>
+		<ul class="dropdown-menu">
+			<li data-value="all" ><a href="#">all tables</a></li>
+			<li data-value="modified" ><a href="#">modified tables</a></li>
+		</ul>
+	</span>
+	
+</span>
+	 
+		<span data-itemtype="rights_ordering_tables" data-itemid="rights_ordering_tables" {$item_rights_ordering_tables} data-pageid="{$pageid}">
+Ordering tables
+	<span id=linkselectOrder class="btn-group">
+		<span class="btn btn-link dropdown-toggle inline-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">as in menu</span>
+		<ul class="dropdown-menu">
+			<li data-value="menu" ><a href="#">as in menu</a></li>
+			<li data-value="alpha" ><a href="#">alphabetically</a></li>
+		</ul>
+	</span>
+</span>
+		</div>					</div>
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c3" data-pageid="{$pageid}"	{$cell_above-grid_c3}
+	class=" r-ori-vert			col-md-6
+	
+">
+			</div>			 
+				<div 
+	data-cellId="above-grid_c4" data-pageid="{$pageid}"	{$cell_above-grid_c4}
+	class="			col-md-6
+	
+">
+		 
+		<span data-itemtype="rights_add_group" data-itemid="rights_add_group" {$item_rights_add_group} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$addgroup_attrs} >
+							Add group			</a>
+</span>
+	 
+		<span data-itemtype="rights_del_group" data-itemid="rights_del_group" {$item_rights_del_group} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$delgroup_attrs} >
+							Del group			</a>
+</span>
+	 
+		<span data-itemtype="rights_rename_group" data-itemid="rights_rename_group" {$item_rights_rename_group} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$rengroup_attrs} >
+							Rename			</a>
+</span>
+	 
+		<span data-itemtype="rights_copy_permissions" data-itemid="rights_copy_permissions" {$item_rights_copy_permissions} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-info   
+	" id="copyPermissions" >
+							Copy permissions from ...			</a>
+</span>
+		</div>					</div>
+	</div>		
+{END above-grid_block}
+							
+						<div class="r-grid">
+										<ul data-groups class="nav nav-tabs" >
+{BEGIN groups}
+  <li role="presentation" class="{$group_class}"> <a href="#" {$group_attrs}>{$groupname}</a> </li>
+{END groups}
+</ul>
+{BEGIN grid_block}
+	<table class="r-fluid r-form table table-bordered rightsTable menuordered" cellpadding="0" data-location="grid" id="form_grid_{$pageid}" data-makeup="topbar" {$form_grid} data-pageid="{$pageid}" >
+										<thead>
+											<tr >
+									<td 
+	class=" r-ori-vert			"
+			 
+	data-cellId="grid_headcell_search" data-pageid="{$pageid}"	 
+>
+ 
+<div data-itemtype="rights_search" data-itemid="rights_search" {$item_rights_search} data-pageid="{$pageid}">
+	<input class="form-control" type=search id="tableRightsSearch"  placeholder="search">			
+</div>
+</td>
+									<td 
+	class=" r-ori-vert			"
+			 
+	data-cellId="grid_headcell_a" data-pageid="{$pageid}"	 
+>
+ 
+<span data-itemtype="rights_name_a" data-itemid="rights_name_a" {$item_rights_name_a} data-pageid="{$pageid}" > 
+	Add</span>
+</td>
+									<td 
+	class=" r-ori-vert			"
+			 
+	data-cellId="grid_headcell_e" data-pageid="{$pageid}"	 
+>
+ 
+<span data-itemtype="rights_name_e" data-itemid="rights_name_e" {$item_rights_name_e} data-pageid="{$pageid}" > 
+	Edit</span>
+</td>
+									<td 
+	class=" r-ori-vert			"
+			 
+	data-cellId="grid_headcell_d" data-pageid="{$pageid}"	 
+>
+ 
+<span data-itemtype="rights_name_d" data-itemid="rights_name_d" {$item_rights_name_d} data-pageid="{$pageid}" > 
+	Delete</span>
+</td>
+									<td 
+	class=" r-ori-vert			"
+			 
+	data-cellId="grid_headcell_s" data-pageid="{$pageid}"	 
+>
+ 
+<span data-itemtype="rights_name_s" data-itemid="rights_name_s" {$item_rights_name_s} data-pageid="{$pageid}" > 
+	List/View</span>
+</td>
+									<td 
+	class=" r-ori-vert			"
+			 
+	data-cellId="grid_headcell_p" data-pageid="{$pageid}"	 
+>
+ 
+<span data-itemtype="rights_name_p" data-itemid="rights_name_p" {$item_rights_name_p} data-pageid="{$pageid}" > 
+	Print/Export</span>
+</td>
+									<td 
+	class=" r-ori-vert			"
+			 
+	data-cellId="grid_headcell_i" data-pageid="{$pageid}"	 
+>
+ 
+<span data-itemtype="rights_name_i" data-itemid="rights_name_i" {$item_rights_name_i} data-pageid="{$pageid}" > 
+	Import</span>
+</td>
+									<td 
+	class=" r-ori-vert			"
+			 
+	data-cellId="grid_headcell_m" data-pageid="{$pageid}" data-page=".global_admin_rights_list"	 
+>
+ 
+<span data-itemtype="rights_name_m" data-itemid="rights_name_m" {$item_rights_name_m} data-pageid="{$pageid}" > 
+	Admin mode</span>
+</td>
+							</tr>
+											<tr >
+									<td 
+	class=" r-ori-vert			"
+			 
+	data-cellId="grid_headcell_expand" data-pageid="{$pageid}"	 
+>
+ 
+<span data-itemtype="rights_expand_all" data-itemid="rights_expand_all" {$item_rights_expand_all} data-pageid="{$pageid}" > 
+	<a href="#" id="expandAll">expand all</a>
+</span>
+</td>
+									<td 
+	class=" r-ori-vert			"
+			 
+	data-cellId="grid_headcell_all_a" data-pageid="{$pageid}"	 
+>
+ 
+<span data-itemtype="rights_checkbox_all_a" data-itemid="rights_checkbox_all_a" {$item_rights_checkbox_all_a} data-pageid="{$pageid}">
+		<span class="r-admin-checkbox columnheader" {$A_headcheckbox} ></span>
+	</span>
+</td>
+									<td 
+	class=" r-ori-vert			"
+			 
+	data-cellId="grid_headcell_all_e" data-pageid="{$pageid}"	 
+>
+ 
+<span data-itemtype="rights_checkbox_all_e" data-itemid="rights_checkbox_all_e" {$item_rights_checkbox_all_e} data-pageid="{$pageid}">
+		<span class="r-admin-checkbox columnheader" {$E_headcheckbox} ></span>
+	</span>
+</td>
+									<td 
+	class=" r-ori-vert			"
+			 
+	data-cellId="grid_headcell_all_d" data-pageid="{$pageid}"	 
+>
+ 
+<span data-itemtype="rights_checkbox_all_d" data-itemid="rights_checkbox_all_d" {$item_rights_checkbox_all_d} data-pageid="{$pageid}">
+		<span class="r-admin-checkbox columnheader" {$D_headcheckbox} ></span>
+	</span>
+</td>
+									<td 
+	class=" r-ori-vert			"
+			 
+	data-cellId="grid_headcell_all_s" data-pageid="{$pageid}"	 
+>
+ 
+<span data-itemtype="rights_checkbox_all_s" data-itemid="rights_checkbox_all_s" {$item_rights_checkbox_all_s} data-pageid="{$pageid}">
+		<span class="r-admin-checkbox columnheader" {$S_headcheckbox} ></span>
+	</span>
+</td>
+									<td 
+	class=" r-ori-vert			"
+			 
+	data-cellId="grid_headcell_all_p" data-pageid="{$pageid}"	 
+>
+ 
+<span data-itemtype="rights_checkbox_all_p" data-itemid="rights_checkbox_all_p" {$item_rights_checkbox_all_p} data-pageid="{$pageid}">
+		<span class="r-admin-checkbox columnheader" {$P_headcheckbox} ></span>
+	</span>
+</td>
+									<td 
+	class=" r-ori-vert			"
+			 
+	data-cellId="grid_headcell_all_i" data-pageid="{$pageid}"	 
+>
+ 
+<span data-itemtype="rights_checkbox_all_i" data-itemid="rights_checkbox_all_i" {$item_rights_checkbox_all_i} data-pageid="{$pageid}">
+		<span class="r-admin-checkbox columnheader" {$I_headcheckbox} ></span>
+	</span>
+</td>
+									<td 
+	class=" r-ori-vert			"
+			 
+	data-cellId="grid_headcell_all_m" data-pageid="{$pageid}"	 
+>
+ 
+<span data-itemtype="rights_checkbox_all_m" data-itemid="rights_checkbox_all_m" {$item_rights_checkbox_all_m} data-pageid="{$pageid}">
+		<span class="r-admin-checkbox columnheader" {$M_headcheckbox} ></span>
+	</span>
+</td>
+							</tr>
+															
+					</thead>
+													<tbody>
+			{BEGIN grid_row}
+																									<tr {$table_row_attrs}>
+									<td 
+	class="			"
+			 
+	data-cellId="grid_cell_table" data-pageid="{$pageid}"	 
+>
+ 
+<span data-itemtype="rights_checkbox_table" data-itemid="rights_checkbox_table" {$item_rights_checkbox_table} data-pageid="{$pageid}">
+		<span class="r-admin-checkbox rowheader" {$tablecheckbox_attrs} ></span>
+	</span>
+ 
+<span data-itemtype="rights_table" data-itemid="rights_table" {$item_rights_table} data-pageid="{$pageid}" > 
+{$tablename}
+</span>
+ 
+<span data-itemtype="rights_show_pages" data-itemid="rights_show_pages" {$item_rights_show_pages} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn-link   
+	 " href="javascript:void(0)" {$show_pages_attrs} >		
+				
+					show pages			</a>
+</span>
+ 
+<span data-itemtype="rights_hide_pages" data-itemid="rights_hide_pages" {$item_rights_hide_pages} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn-link   
+	 " href="javascript:void(0)" {$hide_pages_attrs} >		
+				
+					hide pages			</a>
+</span>
+ 
+<span data-itemtype="rights_group_expander" data-itemid="rights_group_expander" {$item_rights_group_expander} data-pageid="{$pageid}" > 
+{BEGIN groupControl}
+	<span data-group-expander class="menu-triangle glyphicon glyphicon-triangle-right"></span>
+{END groupControl}
+</span>
+</td>
+									<td 
+	class=" r-ori-vert			"
+			 
+	data-cellId="grid_cell_a" data-pageid="{$pageid}"	  
+	data-col="A"
+	{$A_cell}
+	 
+>
+ 
+<span data-itemtype="rights_checkbox_a" data-itemid="rights_checkbox_a" {$item_rights_checkbox_a} data-pageid="{$pageid}">
+	{BEGIN A_group} 	<span class="r-admin-checkbox " {$A_checkbox} data-permission="A"></span>
+	{END A_group} </span>
+</td>
+									<td 
+	class=" r-ori-vert			"
+			 
+	data-cellId="grid_cell_e" data-pageid="{$pageid}"	  
+	data-col="E"
+	{$E_cell}
+	 
+>
+ 
+<span data-itemtype="rights_checkbox_e" data-itemid="rights_checkbox_e" {$item_rights_checkbox_e} data-pageid="{$pageid}">
+	{BEGIN E_group} 	<span class="r-admin-checkbox " {$E_checkbox} data-permission="E"></span>
+	{END E_group} </span>
+</td>
+									<td 
+	class=" r-ori-vert			"
+			 
+	data-cellId="grid_cell_d" data-pageid="{$pageid}"	  
+	data-col="D"
+	{$D_cell}
+	 
+>
+ 
+<span data-itemtype="rights_checkbox_d" data-itemid="rights_checkbox_d" {$item_rights_checkbox_d} data-pageid="{$pageid}">
+	{BEGIN D_group} 	<span class="r-admin-checkbox " {$D_checkbox} data-permission="D"></span>
+	{END D_group} </span>
+</td>
+									<td 
+	class=" r-ori-vert			"
+			 
+	data-cellId="grid_cell_s" data-pageid="{$pageid}"	  
+	data-col="S"
+	{$S_cell}
+	 
+>
+ 
+<span data-itemtype="rights_checkbox_s" data-itemid="rights_checkbox_s" {$item_rights_checkbox_s} data-pageid="{$pageid}">
+	{BEGIN S_group} 	<span class="r-admin-checkbox " {$S_checkbox} data-permission="S"></span>
+	{END S_group} </span>
+</td>
+									<td 
+	class=" r-ori-vert			"
+			 
+	data-cellId="grid_cell_p" data-pageid="{$pageid}"	  
+	data-col="P"
+	{$P_cell}
+	 
+>
+ 
+<span data-itemtype="rights_checkbox_p" data-itemid="rights_checkbox_p" {$item_rights_checkbox_p} data-pageid="{$pageid}">
+	{BEGIN P_group} 	<span class="r-admin-checkbox " {$P_checkbox} data-permission="P"></span>
+	{END P_group} </span>
+</td>
+									<td 
+	class=" r-ori-vert			"
+			 
+	data-cellId="grid_cell_i" data-pageid="{$pageid}"	  
+	data-col="I"
+	{$I_cell}
+	 
+>
+ 
+<span data-itemtype="rights_checkbox_i" data-itemid="rights_checkbox_i" {$item_rights_checkbox_i} data-pageid="{$pageid}">
+	{BEGIN I_group} 	<span class="r-admin-checkbox " {$I_checkbox} data-permission="I"></span>
+	{END I_group} </span>
+</td>
+									<td 
+	class=" r-ori-vert			"
+			 
+	data-cellId="grid_cell_m" data-pageid="{$pageid}"	  
+	data-col="M"
+	{$M_cell}
+	 
+>
+ 
+<span data-itemtype="rights_checkbox_m" data-itemid="rights_checkbox_m" {$item_rights_checkbox_m} data-pageid="{$pageid}">
+	{BEGIN M_group} 	<span class="r-admin-checkbox " {$M_checkbox} data-permission="M"></span>
+	{END M_group} </span>
+</td>
+							</tr>
+										
+												{BEGIN page_row}
+																														<tr {$page_row_attrs}>
+									<td 
+	class="			"
+			 
+	data-cellId="grid_cell_page" data-pageid="{$pageid}"	 
+>
+ 
+<span data-itemtype="rights_checkbox_page" data-itemid="rights_checkbox_page" {$item_rights_checkbox_page} data-pageid="{$pageid}">
+	{BEGIN pagebox} 	<span class="r-admin-checkbox " {$pagecheckbox} data-permission="undefined"></span>
+	{END pagebox} </span>
+ 
+<span data-itemtype="rights_page" data-itemid="rights_page" {$item_rights_page} data-pageid="{$pageid}" >
+{$rights_page}
+</span></td>
+									<td 
+	class=" r-ori-vert			"
+			 
+	data-cellId="grid_cell_page_a" data-pageid="{$pageid}"	  
+	data-col="A"
+	{$A_cell}
+	 
+>
+ 
+<span data-itemtype="rights_checkbox_page_a" data-itemid="rights_checkbox_page_a" {$item_rights_checkbox_page_a} data-pageid="{$pageid}">
+	{BEGIN A_pagebox} 	<span class="r-admin-checkbox " {$A_pagecheckbox} data-permission="A"></span>
+	{END A_pagebox} </span>
+</td>
+									<td 
+	class=" r-ori-vert			"
+			 
+	data-cellId="grid_cell_page_e" data-pageid="{$pageid}"	  
+	data-col="E"
+	{$E_cell}
+	 
+>
+ 
+<span data-itemtype="rights_checkbox_page_e" data-itemid="rights_checkbox_page_e" {$item_rights_checkbox_page_e} data-pageid="{$pageid}">
+	{BEGIN E_pagebox} 	<span class="r-admin-checkbox " {$E_pagecheckbox} data-permission="E"></span>
+	{END E_pagebox} </span>
+</td>
+									<td 
+	class=" r-ori-vert			"
+			 
+	data-cellId="grid_cell_page_d" data-pageid="{$pageid}"	  
+	data-col="D"
+	{$D_cell}
+	 
+>
+ 
+<span data-itemtype="rights_checkbox_page_d" data-itemid="rights_checkbox_page_d" {$item_rights_checkbox_page_d} data-pageid="{$pageid}">
+	{BEGIN D_pagebox} 	<span class="r-admin-checkbox " {$D_pagecheckbox} data-permission="D"></span>
+	{END D_pagebox} </span>
+</td>
+									<td 
+	class=" r-ori-vert			"
+			 
+	data-cellId="grid_cell_page_s" data-pageid="{$pageid}"	  
+	data-col="S"
+	{$S_cell}
+	 
+>
+ 
+<span data-itemtype="rights_checkbox_page_s" data-itemid="rights_checkbox_page_s" {$item_rights_checkbox_page_s} data-pageid="{$pageid}">
+	{BEGIN S_pagebox} 	<span class="r-admin-checkbox " {$S_pagecheckbox} data-permission="S"></span>
+	{END S_pagebox} </span>
+</td>
+									<td 
+	class=" r-ori-vert			"
+			 
+	data-cellId="grid_cell_page_p" data-pageid="{$pageid}"	  
+	data-col="P"
+	{$P_cell}
+	 
+>
+ 
+<span data-itemtype="rights_checkbox_page_p" data-itemid="rights_checkbox_page_p" {$item_rights_checkbox_page_p} data-pageid="{$pageid}">
+	{BEGIN P_pagebox} 	<span class="r-admin-checkbox " {$P_pagecheckbox} data-permission="P"></span>
+	{END P_pagebox} </span>
+</td>
+									<td 
+	class=" r-ori-vert			"
+			 
+	data-cellId="grid_cell_page_i" data-pageid="{$pageid}"	  
+	data-col="I"
+	{$I_cell}
+	 
+>
+ 
+<span data-itemtype="rights_checkbox_page_i" data-itemid="rights_checkbox_page_i" {$item_rights_checkbox_page_i} data-pageid="{$pageid}">
+	{BEGIN I_pagebox} 	<span class="r-admin-checkbox " {$I_pagecheckbox} data-permission="I"></span>
+	{END I_pagebox} </span>
+</td>
+									<td 
+	class=" r-ori-vert			"
+			 
+	data-cellId="grid_cell_page_m" data-pageid="{$pageid}"	 
+>
+</td>
+							</tr>
+					
+						{END page_row}
+			{END grid_row}
+			</tbody>
+	</table>
+{END grid_block}
+
+							</div>
+						
+										{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="topbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	</div>		
+{END below-grid_block}
+							
+					</div>
+				</div>
+			</div>
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

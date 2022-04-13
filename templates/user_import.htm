@@ -1,0 +1,172 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-import" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+			<div class="r-panel-page">
+								{BEGIN supertop_block}
+<div class="r-form" data-location="supertop" id="form_supertop_{$pageid}" data-makeup="panel" {$form_supertop} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="supertop_c1" data-pageid="{$pageid}"	{$cell_supertop_c1}
+	class="r-align-center r-ori-vert			col-md-12
+	
+">
+			</div>					</div>
+	</div>		
+{END supertop_block}
+					<div class="bs-pagepanel panel panel-primary">
+					<div class="panel-heading">
+									{BEGIN top_block}
+<div class="panel-title r-panel-top row" data-location="top" id="form_top_{$pageid}" data-makeup="panel" {$form_top} data-pageid="{$pageid}" >		
+	 
+		 
+			<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		<h3 class="panel-title" data-itemtype="import_header" data-itemid="import_header" {$item_import_header} data-pageid="{$pageid}" >{$pagetitlelabel user import}</h3>
+		</div>			</div>		
+{END top_block}
+						</div>
+					<div class="panel-body">
+													<!-- bsimportheader_text data-brick="importheader_text" data-pageid="{$pageid}" {$importheader_text_hiddenattr}-->
+	<div id="importheaderText{$id}" class="form-group">
+		Drag and drop a comma-separated (.csv) or Excel (.xlsx) file or choose an option below.	</div>
+
+	<!-- bsimportfields data-brick="importfields" data-pageid="{$pageid}" {$importfields_hiddenattr}-->
+	<div id="importFields{$id}" class="form-group">
+		<div id="importUploadFallback{$id}" style="display: none;">
+			<table class="fieldGrid">
+				<tr>
+					<td>
+						Select file with data.					</td>
+					<td>
+						<input type="File" id="importFile{$id}" name="importFile{$id}">
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="rnr-import-settings">
+			<button type="button" class="btn btn-default" id="uploadImportFile{$id}">Browse...</button>
+		</div>
+
+		<div id="importDropzone{$id}" class="rnr-dragndrop-area" style="display: none;">
+			<div class="rnr-dragtext"> Drag files here </div>
+		</div>
+
+		<div class="rnr-import-settings">
+			<button type="button" class="btn btn-default" id="switchToTextInsertion{$id}">Copy and paste text</button>
+		</div>
+	</div>
+
+	<!-- bsimport_rawtext_control brickname_attr data-brick="import_rawtext_control" data-pageid="{$pageid}" {$import_rawtext_control_hiddenattr}-->
+	<div id="copyAndPasteText{$id}" class="form-group" style="display:none;">
+		<div>Copy and Paste your text data here:</div>
+		<textarea class="rnr-import-textarea" id="importText{$id}">
+		</textarea>
+	</div>
+
+	<!-- bsimport_preview data-brick="import_preview" data-pageid="{$pageid}" {$import_preview_hiddenattr}-->
+	<div id="importPreview{$id}" class="form-group" style="display:none;">
+		<div id="importSettings{$id}" class="rnr-import-settings form-group">
+			<div class="rnr-is-control checkbox">
+	    		<label>
+	    			<input class="rnr-checkbox" checked="checked" id="columnsInFirstLine{$id}" name="columnsInFirstLine" type="checkbox">Column headers in the first line	    		</label>
+	  		</div>
+
+			<ul id="delimiterSettings{$id}" style="display:none;" class="rnr-is-control list-inline">
+				<li class="radio">
+					<label>
+						<input name="importDelimiter" class="importDelimiters" type="radio" value=",">
+						Comma					</label>
+				</li>
+				<li class="radio">
+					<label>
+						<input name="importDelimiter" class="importDelimiters" type="radio" value="&#9;">
+						Tab					</label>
+				</li>
+				<li class="radio">
+					<label>
+						<input name="importDelimiter" class="importDelimiters" type="radio" value="other">
+						Other					</label>
+					<input id="customDelimiter{$id}" value=";" type="text">
+				</li>
+			</ul>
+
+			<div id="dateFormatSettings{$id}" class="rnr-is-control" style="display:none;">
+				<label>Date format:</label>
+				<input id="importDateFormat{$id}" type="text">
+			</div>
+		</div>
+
+		<div id="importGridHead{$id}" class="rnr-import-head-preview">
+		</div>
+		<div id="importGridBody{$id}" class="rnr-import-body-preview form-group">
+			<table id="importPreviewBodyTable{$id}"></table>
+		</div>
+		<div id="importErrorMessage{$id}" class="alert alert-danger" style="display:none;"></div>
+	</div>
+
+	<!-- bsimport_process data-brick="import_process" data-pageid="{$pageid}" {$import_process_hiddenattr} -->
+	<div id="importProgress{$id}" class="rnr-import-progress form-group" style="display:none;">
+	</div>
+
+	<!-- bsimport_results data-brick="import_results" data-pageid="{$pageid}" {$import_results_hiddenattr}-->
+	<div id="reportText{$id}" class="rnr-import-report form-group" style="display:none;">
+	</div>
+
+	<!-- bsimportbuttons data-brick="importbuttons" data-pageid="{$pageid}" {$importbuttons_hiddenattr}-->
+	<div id="importButtons{$id}">
+		<div class="rnr-buttons-right">
+			<button type="button" class="btn btn-default" id="backToList{$id}">
+				Balik ke daftar			</button>
+			<button type="button" class="btn btn-default" id="newImport{$id}" style="display: none;">
+				New import			</button>
+		</div>
+		<div class="rnr-buttons-left">
+			<button type="button" class="btn btn-primary disabled" id="continueTextImport{$id}" style="display: none;">
+				Continue			</button>
+			<button type="button" class="btn btn-primary" id="importButton{$id}" style="display: none;">
+				Import Data			</button>
+			<button type="button" class="btn btn-default" id="backTo{$id}" style="display: none;">
+				Kembali			</button>
+			<button type="button" class="btn btn-default" id="saveReport{$id}" style="display: none;">
+				Save Report			</button>
+			<button type="button" class="btn btn-default errorReportButtons{$id}" id="saveUnprocessedData{$id}" style="display: none;">
+				Download unprocessed data			</button>
+			<button type="button" class="btn btn-default errorReportButtons{$id}" id="saveErrorReport{$id}" style="display: none;">
+				Download error log			</button>
+		</div>
+	</div>
+											</div>
+				</div>
+								
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

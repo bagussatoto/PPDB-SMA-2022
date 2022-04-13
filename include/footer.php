@@ -1,0 +1,1 @@
+<center><h6>Oleh <a href="https://www.gapuraweb.com" target="_blank" title="Penyedia Web & Aplikasi Database">Gapura Web</a></h6></center>

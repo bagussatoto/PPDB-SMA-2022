@@ -1,0 +1,223 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-login" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+			<div class="r-panel-page">
+								{BEGIN supertop_block}
+<div class="r-form" data-location="supertop" id="form_supertop_{$pageid}" data-makeup="panel" {$form_supertop} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="supertop_c1" data-pageid="{$pageid}"	{$cell_supertop_c1}
+	class="r-align-center r-ori-vert			col-md-12
+	
+">
+			</div>					</div>
+	</div>		
+{END supertop_block}
+					<div class="bs-pagepanel panel panel-primary">
+					<div class="panel-heading">
+									{BEGIN top_block}
+<div class="panel-title r-panel-top row" data-location="top" id="form_top_{$pageid}" data-makeup="panel" {$form_top} data-pageid="{$pageid}" >		
+	 
+		 
+			<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-6
+	
+">
+		 
+		<h3 class="panel-title" data-itemtype="login_header" data-itemid="login_header" {$item_login_header} data-pageid="{$pageid}" >{$pagetitlelabel  login}</h3>
+		</div>		 
+			<div 
+	data-cellId="top_c2" data-pageid="{$pageid}"	{$cell_top_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	
+">
+			</div>			</div>		
+{END top_block}
+						</div>
+					<div class="panel-body">
+										{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="panel" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		{BEGIN message_block}
+<div data-itemtype="login_message" data-itemid="login_message" {$item_login_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+{$message}
+</div>
+{END message_block}			{END firstAboveGridCell}	
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+											{BEGIN grid_block}
+<table  class="r-edit-form r-panel-form" cellpadding="0" cellspacing="0" data-location="grid" id="form_grid_{$pageid}" data-makeup="panel" {$form_grid} data-pageid="{$pageid}" {$grid_hiddenattr} data-form-width="">
+<tbody>
+ 
+	<tr>
+	 
+				<td
+			class="r-align-right r-ori-vert							col-md-4						"
+			
+							data-single
+			
+									data-cellId="grid_c1" data-pageid="{$pageid}"		>
+			<div edit-form-cell class="clearfix">
+								<label data-itemtype="username_label" data-itemid="username_label" {$item_username_label} data-pageid="{$pageid}" data-small class="r-edit-label control-label" for="username">
+	{BEGIN username_label}Username:{END username_label}
+</label>					</div>
+		</td>
+	 
+				<td
+			class=" r-ori-vert							col-md-6						"
+			
+							data-single
+			
+									data-cellId="grid_c2" data-pageid="{$pageid}"		>
+			<div edit-form-cell class="clearfix">
+								<div class="r-edit-field" data-itemtype="username" data-itemid="username" {$item_username} data-pageid="{$pageid}" >
+	<input type="text" class="form-control" name="username" {$username_attrs} id="username">
+</div>					</div>
+		</td>
+				<td class="col-md-2"></td>
+		</tr>
+ 
+	<tr>
+	 
+				<td
+			class="r-align-right r-ori-vert							col-md-4						"
+			
+							data-single
+			
+									data-cellId="grid_c3" data-pageid="{$pageid}"		>
+			<div edit-form-cell class="clearfix">
+								<label data-itemtype="password_label" data-itemid="password_label" {$item_password_label} data-pageid="{$pageid}" data-small class="r-edit-label control-label" for="password">
+	{BEGIN password_label}Password:{END password_label}
+</label>					</div>
+		</td>
+	 
+				<td
+			class=" r-ori-vert							col-md-6						"
+			
+							data-single
+			
+									data-cellId="grid_c4" data-pageid="{$pageid}"		>
+			<div edit-form-cell class="clearfix">
+								<div class="r-edit-field" data-itemtype="password" data-itemid="password" {$item_password} data-pageid="{$pageid}" >
+	<input type="password" class="form-control" name="password" {$password_attrs} id="password">
+</div>					</div>
+		</td>
+				<td class="col-md-2"></td>
+		</tr>
+ 
+	<tr>
+	 
+				<td
+			class=" r-ori-vert							col-md-4						"
+			
+							data-single
+			
+									data-cellId="grid_c9" data-pageid="{$pageid}"		>
+			<div edit-form-cell class="clearfix">
+					</div>
+		</td>
+	 
+				<td
+			class=" r-ori-vert							col-md-6						"
+			
+							data-single
+			
+									data-cellId="grid_c10" data-pageid="{$pageid}"		>
+			<div edit-form-cell class="clearfix">
+								<div class="checkbox r-edit-field" data-itemtype="remember_password" data-itemid="remember_password" {$item_remember_password} data-pageid="{$pageid}" >
+	<label>
+		<input type="checkbox" {$rememberbox_attrs}> {BEGIN remember_password_label}<span>Remember me</span>{END remember_password_label}
+	</label>
+</div>					</div>
+		</td>
+				<td class="col-md-2"></td>
+		</tr>
+</tbody>
+</table>
+{END grid_block}
+											{BEGIN footer_block}
+<div class="r-form" data-location="footer" id="form_footer_{$pageid}" data-makeup="panel" {$form_footer} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="footer_c1" data-pageid="{$pageid}" data-page=".global_login"	{$cell_footer_c1}
+	class=" r-ori-vert			col-md-6
+	
+">
+			</div>			 
+				<div 
+	data-cellId="footer_c2" data-pageid="{$pageid}" data-page=".global_login"	{$cell_footer_c2}
+	class="			col-md-6
+	
+">
+		 
+		{BEGIN signin_button}
+<span data-itemtype="login_button" data-itemid="login_button" {$item_login_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$loginlink_attrs} >
+							Sign in			</a>
+</span>
+{END signin_button}
+	 
+		{BEGIN continue_button}
+<span data-itemtype="continue_login_button" data-itemid="continue_login_button" {$item_continue_login_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$continuebutton_attrs} >
+							Continue			</a>
+</span>
+{END continue_button}
+	 
+		<span data-itemtype="custom_button" data-itemid="custom_button" {$item_custom_button} data-pageid="{$pageid}" data-page=".global_login" data-small data-button-item>
+	<a type="button" title="" class="btn btn-danger   
+	" id="DAFTAR" href="javascript:void(0)" typeid="ib" >
+							DAFTAR PPDB ONLINE SEKARANG			</a>
+</span>
+		</div>					</div>
+	</div>		
+{END footer_block}
+						</div>
+				</div>
+								{BEGIN superbottom_block}
+<div class="r-form" data-location="superbottom" id="form_superbottom_{$pageid}" data-makeup="panel" {$form_superbottom} data-pageid="{$pageid}" >		
+	</div>		
+{END superbottom_block}
+					
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

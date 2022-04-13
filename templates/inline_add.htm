@@ -1,0 +1,19 @@
+<edit_controls>
+	<jscode>{$linkdata}</jscode>
+	##foreach Fields as @f filter @f.bInlineAdd && @f.bListPage order @f.nListPageOrder##
+	<control 
+##if UseRichTextEditor(@f, TYPE_PAGE_ADD)##
+	##if @BUILDER.m_strRTEType==RTE_FCK## 
+	type="FCK"
+	##elseif @BUILDER.m_strRTEType==RTE_INNOVA## 
+	type="Innova"
+	##elseif @BUILDER.m_strRTEType==RTE_BASIC## 
+	type="RTE"
+	##endif##
+##endif## 
+	field="##@f.strName g##">
+	{$##@f.strName g##_editcontrol}
+	</control>
+	##endfor##
+	<message status="{$status}">{$message}</message>
+</edit_controls>

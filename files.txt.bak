@@ -1,0 +1,834 @@
+include\dbcommon.##@ext## include\dbcommon.##@ext##
+include\appsettings.##@ext## include\appsettings.##@ext##
+include\commonfunctions.##@ext## include\commonfunctions.##@ext##
+include\locale.##@ext## include\locale.##@ext##
+include\import_functions_excel.##@ext## include\import_functions_excel.##@ext##
+include\commonevents.##@ext## include\events.##@ext##
+include\common\ajaxsuggest.js include\ajaxsuggest.js
+include\common\jquery.js include\jquery.js
+include\.global_settings.##@ext## include\.global_settings.##@ext##
+
+classes\sql.##@ext## classes\sql.##@ext##
+classes\charts.##@ext## classes\charts.##@ext##
+classes\layout.##@ext## classes\layout.##@ext##
+classes\pdlayout.##@ext## classes\pdlayout.##@ext##
+
+classes\reportlib.##@ext## classes\reportlib.##@ext##
+classes\reportpage.##@ext## classes\reportpage.##@ext##
+classes\reportprintpage.##@ext## classes\reportprintpage.##@ext##
+classes\chartpage.##@ext## classes\chartpage.##@ext##
+classes\chartpage_master.##@ext## classes\chartpage_master.##@ext##
+classes\searchcontrol.##@ext## classes\searchcontrol.##@ext##
+classes\panelsearchcontrol.##@ext## classes\panelsearchcontrol.##@ext##
+classes\advancedsearchcontrol.##@ext## classes\advancedsearchcontrol.##@ext##
+classes\security.##@ext## classes\security.##@ext##
+classes\labels.##@ext## classes\labels.##@ext##
+classes\db.##@ext## classes\db.##@ext##
+classes\runnerpage.##@ext## classes\runnerpage.##@ext##
+classes\projectsettings.##@ext## classes\projectsettings.##@ext##
+classes\button.##@ext## classes\button.##@ext##
+classes\addpage.##@ext## classes\addpage.##@ext##
+classes\editpage.##@ext## classes\editpage.##@ext##
+classes\editselectedpage.##@ext## classes\editselectedpage.##@ext##
+classes\viewpage.##@ext## classes\viewpage.##@ext##
+classes\listpage.##@ext## classes\listpage.##@ext##
+classes\orderclause.##@ext## classes\orderclause.##@ext##
+classes\rightspage.##@ext## classes\rightspage.##@ext##
+classes\searchpage.##@ext## classes\searchpage.##@ext##
+classes\searchpage_dash.##@ext## classes\searchpage_dash.##@ext##
+classes\searchclause.##@ext## classes\searchclause.##@ext##
+classes\searchclause_base.##@ext## classes\searchclause_base.##@ext##
+##if @BUILDER.nLoginMethod==SECURITY_AD##
+classes\rightspage_ad.##@ext## classes\rightspage_ad.##@ext##
+classes\memberspage_ad.##@ext## classes\memberspage_ad.##@ext##
+##endif##
+classes\listpage_simple.##@ext## classes\listpage_simple.##@ext##
+classes\cipherer.##@ext## classes\cipherer.##@ext##
+classes\runnerldap.##@ext## classes\runnerldap.##@ext##
+classes\importpage.##@ext## classes\importpage.##@ext##
+classes\exportpage.##@ext## classes\exportpage.##@ext##
+classes\printpage.##@ext## classes\printpage.##@ext##
+classes\printpage_details.##@ext## classes\printpage_details.##@ext##
+classes\listpage_ajax.##@ext## classes\listpage_ajax.##@ext##
+classes\listpage_master.##@ext## classes\listpage_master.##@ext##
+classes\dashboardpage.##@ext## classes\dashboardpage.##@ext##
+
+classes\menupage.##@ext## classes\menupage.##@ext##
+
+classes\memberspage.##@ext## classes\memberspage.##@ext##
+classes\listpage_embed.##@ext## classes\listpage_embed.##@ext##
+classes\listpage_lookup.##@ext## classes\listpage_lookup.##@ext##
+classes\listpage_dpinline.##@ext## classes\listpage_dpinline.##@ext##
+classes\listpage_dppopup.##@ext## classes\listpage_dppopup.##@ext##
+classes\listpage_dplist.##@ext## classes\listpage_dplist.##@ext##
+classes\listpage_dpdash.##@ext## classes\listpage_dpdash.##@ext##
+classes\listpage_dashboard.##@ext## classes\listpage_dashboard.##@ext##
+classes\map_dashboard.##@ext## classes\map_dashboard.##@ext##
+classes\searchpanel.##@ext## classes\searchpanel.##@ext##
+classes\searchpanelsimple.##@ext## classes\searchpanelsimple.##@ext##
+classes\searchpanellookup.##@ext## classes\searchpanellookup.##@ext##
+classes\filterpanel.##@ext## classes\filterpanel.##@ext##
+classes\paramsLogger.##@ext## classes\paramsLogger.##@ext##
+classes\searchParamsLogger.##@ext## classes\searchParamsLogger.##@ext##
+
+classes\uploadhandler.##@ext## classes\uploadhandler.##@ext##
+
+classes\crosstable_report.##@ext## classes\crosstable_report.##@ext##
+
+classes\controls\Control.##@ext## classes\controls\Control.##@ext##
+classes\controls\EditControlsContainer.##@ext## classes\controls\EditControlsContainer.##@ext##
+classes\controls\CheckboxField.##@ext## classes\controls\CheckboxField.##@ext##
+classes\controls\DatabaseFileField.##@ext## classes\controls\DatabaseFileField.##@ext##
+classes\controls\TextControl.##@ext## classes\controls\TextControl.##@ext##
+classes\controls\DateTimeControl.##@ext## classes\controls\DateTimeControl.##@ext##
+classes\controls\DateField.##@ext## classes\controls\DateField.##@ext##
+classes\controls\FileField.##@ext## classes\controls\FileField.##@ext##
+classes\controls\FileFieldSingle.##@ext## classes\controls\FileFieldSingle.##@ext##
+classes\controls\HiddenField.##@ext## classes\controls\HiddenField.##@ext##
+classes\controls\LookupField.##@ext## classes\controls\LookupField.##@ext##
+classes\controls\LookupTextField.##@ext## classes\controls\LookupTextField.##@ext##
+classes\controls\PasswordField.##@ext## classes\controls\PasswordField.##@ext##
+classes\controls\ReadOnlyField.##@ext## classes\controls\ReadOnlyField.##@ext##
+classes\controls\TextAreaField.##@ext## classes\controls\TextAreaField.##@ext##
+classes\controls\TextField.##@ext## classes\controls\TextField.##@ext##
+classes\controls\TimeField.##@ext## classes\controls\TimeField.##@ext##
+classes\controls\UserControl.##@ext## classes\controls\UserControl.##@ext##
+
+classes\controls\ViewUserControl.##@ext## classes\controls\ViewUserControl.##@ext##
+classes\controls\ViewControl.##@ext## classes\controls\ViewControl.##@ext##
+classes\controls\ViewHTMLField.##@ext## classes\controls\ViewHTMLField.##@ext##
+classes\controls\ViewControlsContainer.##@ext## classes\controls\ViewControlsContainer.##@ext##
+classes\controls\ViewAudioFileField.##@ext## classes\controls\ViewAudioFileField.##@ext##
+classes\controls\ViewCheckboxField.##@ext## classes\controls\ViewCheckboxField.##@ext##
+classes\controls\ViewCurrencyField.##@ext## classes\controls\ViewCurrencyField.##@ext##
+classes\controls\ViewCustomField.##@ext## classes\controls\ViewCustomField.##@ext##
+classes\controls\ViewDatabaseAudioField.##@ext## classes\controls\ViewDatabaseAudioField.##@ext##
+classes\controls\ViewDatabaseFileField.##@ext## classes\controls\ViewDatabaseFileField.##@ext##
+classes\controls\ViewDatabaseImageField.##@ext## classes\controls\ViewDatabaseImageField.##@ext##
+classes\controls\ViewDatabaseVideoField.##@ext## classes\controls\ViewDatabaseVideoField.##@ext##
+classes\controls\ViewDatetimeField.##@ext## classes\controls\ViewDatetimeField.##@ext##
+classes\controls\ViewFileField.##@ext## classes\controls\ViewFileField.##@ext##
+classes\controls\ViewImageDownloadField.##@ext## classes\controls\ViewImageDownloadField.##@ext##
+classes\controls\ViewFileDownloadField.##@ext## classes\controls\ViewFileDownloadField.##@ext##
+classes\controls\ViewEmailHyperlinkField.##@ext## classes\controls\ViewEmailHyperlinkField.##@ext##
+classes\controls\ViewHyperlinkField.##@ext## classes\controls\ViewHyperlinkField.##@ext##
+classes\controls\ViewLongDateField.##@ext## classes\controls\ViewLongDateField.##@ext##
+classes\controls\ViewMapField.##@ext## classes\controls\ViewMapField.##@ext##
+classes\controls\ViewNumberField.##@ext## classes\controls\ViewNumberField.##@ext##
+classes\controls\ViewPercentField.##@ext## classes\controls\ViewPercentField.##@ext##
+classes\controls\ViewPhoneNumberField.##@ext## classes\controls\ViewPhoneNumberField.##@ext##
+classes\controls\ViewShortDateField.##@ext## classes\controls\ViewShortDateField.##@ext##
+classes\controls\ViewTimeField.##@ext## classes\controls\ViewTimeField.##@ext##
+classes\controls\ViewVideoFileField.##@ext## classes\controls\ViewVideoFileField.##@ext##
+classes\controls\ViewLookupWizardField.##@ext## classes\controls\ViewLookupWizardField.##@ext##
+
+classes\controls\FilterControl.##@ext## classes\controls\FilterControl.##@ext##
+classes\controls\FilterValuesList.##@ext## classes\controls\FilterValuesList.##@ext##
+classes\controls\FilterBoolean.##@ext## classes\controls\FilterBoolean.##@ext##
+classes\controls\FilterIntervalList.##@ext## classes\controls\FilterIntervalList.##@ext##
+classes\controls\FilterIntervalSlider.##@ext## classes\controls\FilterIntervalSlider.##@ext##
+classes\controls\FilterIntervalDateSlider.##@ext## classes\controls\FilterIntervalDateSlider.##@ext##
+classes\controls\FilterIntervalTimeSlider.##@ext## classes\controls\FilterIntervalTimeSlider.##@ext##
+
+mfhandler.##@ext## mfhandler.##@ext##
+
+autocomplete.##@ext## autocomplete.##@ext##
+
+include\common\bootstrap include\bootstrap
+include\common\bootstrap\fonts styles\bootstrap\fonts
+include\common\ResizeSensor include\ResizeSensor
+include\common\colresizable.js include\colresizable.js
+include\common\jquery.dragtable.js include\jquery.dragtable.js
+
+include\common\font-awesome styles\font-awesome
+
+##if @BUILDER.tables[arrFieldObj[viewFormats[strViewFormat==FORMAT_FILE_IMAGE].len].len].len##
+include\common\sudo\ include\sudo
+include\common\sudo\jquery.sudoSlider.js include\sudo\jquery.sudoSlider.js
+##endif##
+
+include\common\photoswipe\ include\photoswipe\
+include\common\jquery-ui include\jquery-ui
+
+include\common\chosen include\chosen
+
+include\ciphererdes.##@ext## include\ciphererdes.##@ext##
+
+include\common\loadfirst.js include\loadfirst.js
+
+include\common\jquery.js include\jquery.js
+include\common\json.js include\json.js
+include\common\crosstable.js include\crosstable.js
+
+include\common\jquery.inputhintbox.js include\jquery.inputhintbox.js
+
+##if @BUILDER.m_bDebug##
+include\common\runnerJS\Runner.js include\runnerJS\Runner.js
+include\common\runnerJS\Observer.js include\runnerJS\Observer.js
+include\common\runnerJS\Util.js include\runnerJS\Util.js
+include\common\runnerJS\RunnerBricks.js include\runnerJS\RunnerBricks.js
+include\common\runnerJS\RunnerMenu.js include\runnerJS\RunnerMenu.js
+##if @BUILDER.AuditTrailSettings.bEnableLocking##
+include\common\runnerJS\RunnerLocking.js include\runnerJS\RunnerLocking.js
+##endif##
+##if @BUILDER.bSection508Compatibility##
+include\common\runnerJS\RunnerSection508.js include\runnerJS\RunnerSection508.js
+##endif##
+##if @BUILDER.tables[resizeColumns].len##
+include\common\runnerJS\RunnerResizeGrid.js include\runnerJS\RunnerResizeGrid.js
+##endif##
+include\common\runnerJS\ControlConstants.js include\runnerJS\ControlConstants.js
+include\common\runnerJS\RunnerEvent.js include\runnerJS\RunnerEvent.js
+include\common\runnerJS\Validate.js include\runnerJS\Validate.js
+include\common\runnerJS\ControlManager.js include\runnerJS\ControlManager.js
+include\common\runnerJS\button.js include\runnerJS\button.js
+include\common\runnerJS\editControls\Control.js include\runnerJS\editControls\Control.js
+include\common\runnerJS\MockControl.js include\runnerJS\MockControl.js
+
+include\common\runnerJS\viewControls\ViewControl.js include\runnerJS\viewControls\ViewControl.js
+include\common\runnerJS\viewControls\ViewVideoField.js include\runnerJS\viewControls\ViewVideoField.js
+include\common\runnerJS\viewControls\ViewImageField.js include\runnerJS\viewControls\ViewImageField.js
+include\common\runnerJS\viewControls\ViewFileField.js include\runnerJS\viewControls\ViewFileField.js
+include\common\runnerJS\viewControls\ViewDatabaseImageField.js include\runnerJS\viewControls\ViewDatabaseImageField.js
+
+include\common\runnerJS\editControls\ReadOnly.js include\runnerJS\editControls\ReadOnly.js
+include\common\runnerJS\editControls\TextAreaControl.js include\runnerJS\editControls\TextAreaControl.js
+include\common\runnerJS\editControls\TextFieldControl.js include\runnerJS\editControls\TextFieldControl.js
+include\common\runnerJS\editControls\TimeFieldControl.js include\runnerJS\editControls\TimeFieldControl.js
+include\common\runnerJS\editControls\RteControl.js include\runnerJS\editControls\RteControl.js
+include\common\runnerJS\editControls\FileControl.js include\runnerJS\editControls\FileControl.js
+include\common\runnerJS\editControls\MultiUploadControl.js include\runnerJS\editControls\MultiUploadControl.js
+include\common\runnerJS\editControls\DateFieldControl.js include\runnerJS\editControls\DateFieldControl.js
+include\common\runnerJS\editControls\LookupWizard.js include\runnerJS\editControls\LookupWizard.js
+include\common\runnerJS\editControls\RadioControl.js include\runnerJS\editControls\RadioControl.js
+include\common\runnerJS\editControls\DropDown.js include\runnerJS\editControls\DropDown.js
+include\common\runnerJS\editControls\CheckBox.js include\runnerJS\editControls\CheckBox.js
+include\common\runnerJS\editControls\CheckBoxLookup.js include\runnerJS\editControls\CheckBoxLookup.js
+include\common\runnerJS\editControls\TextFieldLookup.js include\runnerJS\editControls\TextFieldLookup.js
+include\common\runnerJS\editControls\EditBoxLookup.js include\runnerJS\editControls\EditBoxLookup.js
+include\common\runnerJS\editControls\ListPageLookup.js include\runnerJS\editControls\ListPageLookup.js
+
+include\common\runnerJS\InlineEdit.js include\runnerJS\InlineEdit.js
+include\common\runnerJS\pages\PageConstants.js include\runnerJS\pages\PageConstants.js
+include\common\runnerJS\pages\RunnerDefaults.js include\runnerJS\pages\RunnerDefaults.js
+include\common\runnerJS\pages\PageManager.js include\runnerJS\pages\PageManager.js
+include\common\runnerJS\pages\PageSettings.js include\runnerJS\pages\PageSettings.js
+include\common\runnerJS\pages\RunnerPage.js include\runnerJS\pages\RunnerPage.js
+include\common\runnerJS\pages\SearchPage.js include\runnerJS\pages\SearchPage.js
+include\common\runnerJS\pages\ViewPage.js include\runnerJS\pages\ViewPage.js
+include\common\runnerJS\pages\LoginPage.js include\runnerJS\pages\LoginPage.js
+include\common\runnerJS\pages\RemindPage.js include\runnerJS\pages\RemindPage.js
+include\common\runnerJS\pages\EditorPage.js include\runnerJS\pages\EditorPage.js
+include\common\runnerJS\pages\AddPageFly.js include\runnerJS\pages\AddPageFly.js
+include\common\runnerJS\pages\AddPage.js include\runnerJS\pages\AddPage.js
+include\common\runnerJS\pages\AddPageDash.js include\runnerJS\pages\AddPageDash.js
+include\common\runnerJS\pages\EditPage.js include\runnerJS\pages\EditPage.js
+include\common\runnerJS\pages\EditSelectedPage.js include\runnerJS\pages\EditSelectedPage.js
+include\common\runnerJS\pages\EditPageDash.js include\runnerJS\pages\EditPageDash.js
+include\common\runnerJS\pages\PrintPdf.js include\runnerJS\pages\PrintPdf.js
+include\common\runnerJS\pages\PrintPageCommon.js include\runnerJS\pages\PrintPageCommon.js
+include\common\runnerJS\pages\PrintPage.js include\runnerJS\pages\PrintPage.js
+include\common\runnerJS\pages\ReportPrintPage.js include\runnerJS\pages\ReportPrintPage.js
+
+include\common\runnerJS\pages\DataPageWithSearch.js include\runnerJS\pages\DataPageWithSearch.js
+include\common\runnerJS\pages\ListPageCommon.js include\runnerJS\pages\ListPageCommon.js
+include\common\runnerJS\pages\ListPageFly.js include\runnerJS\pages\ListPageFly.js
+include\common\runnerJS\pages\ListPage.js include\runnerJS\pages\ListPage.js
+include\common\runnerJS\pages\ListPageAjax.js include\runnerJS\pages\ListPageAjax.js
+include\common\runnerJS\pages\ListPageDP.js include\runnerJS\pages\ListPageDP.js
+include\common\runnerJS\pages\ChartPageDP.js include\runnerJS\pages\ChartPageDP.js
+include\common\runnerJS\pages\ChartPageMobileDP.js include\runnerJS\pages\ChartPageMobileDP.js
+include\common\runnerJS\pages\ChartPageDash.js include\runnerJS\pages\ChartPageDash.js
+include\common\runnerJS\pages\ChartPageDPDash.js include\runnerJS\pages\ChartPageDPDash.js
+include\common\runnerJS\pages\ReportPageDP.js include\runnerJS\pages\ReportPageDP.js
+include\common\runnerJS\pages\ReportPageMobileDP.js include\runnerJS\pages\ReportPageMobileDP.js
+include\common\runnerJS\pages\ListPageMobile.js include\runnerJS\pages\ListPageMobile.js
+include\common\runnerJS\pages\ListPageMobileDP.js include\runnerJS\pages\ListPageMobileDP.js
+include\common\runnerJS\pages\ReportPageMobile.js include\runnerJS\pages\ReportPageMobile.js
+include\common\runnerJS\pages\ReportPage.js include\runnerJS\pages\ReportPage.js
+include\common\runnerJS\pages\ChartPage.js include\runnerJS\pages\ChartPage.js
+include\common\runnerJS\pages\ChartPageMobile.js include\runnerJS\pages\ChartPageMobile.js
+
+include\common\runnerJS\pages\DashboardPage.js include\runnerJS\pages\DashboardPage.js
+include\common\runnerJS\pages\DashboardPageMobile.js include\runnerJS\pages\DashboardPageMobile.js
+include\common\runnerJS\pages\ListPageDash.js include\runnerJS\pages\ListPageDash.js
+
+include\common\runnerJS\pages\DashboardMap.js include\runnerJS\pages\DashboardMap.js
+include\common\runnerJS\pages\DashboardLeadingMap.js include\runnerJS\pages\DashboardLeadingMap.js
+include\common\runnerJS\pages\DashboardGridBasedMap.js include\runnerJS\pages\DashboardGridBasedMap.js
+
+include\common\runnerJS\pages\CheckboxesPage.js include\runnerJS\pages\CheckboxesPage.js
+include\common\runnerJS\pages\MembersPage.js include\runnerJS\pages\MembersPage.js
+include\common\runnerJS\pages\RightsPage.js include\runnerJS\pages\RightsPage.js
+##if @BUILDER.nLoginMethod==SECURITY_AD##
+include\common\runnerJS\pages\RightsPageAD.js include\runnerJS\pages\RightsPageAD.js
+include\common\runnerJS\pages\MembersPageAD.js include\runnerJS\pages\MembersPageAD.js
+##endif##
+include\common\runnerJS\pages\ExportPage.js include\runnerJS\pages\ExportPage.js
+include\common\runnerJS\pages\ImportPage.js include\runnerJS\pages\ImportPage.js
+include\common\runnerJS\pages\RegisterPage.js include\runnerJS\pages\RegisterPage.js
+include\common\runnerJS\pages\ChangePwdPage.js include\runnerJS\pages\ChangePwdPage.js
+
+include\common\runnerJS\SearchForm.js include\runnerJS\SearchForm.js
+include\common\runnerJS\FilterControl.js include\runnerJS\FilterControl.js
+include\common\runnerJS\SearchField.js include\runnerJS\SearchField.js
+include\common\runnerJS\SearchFormWithUI.js include\runnerJS\SearchFormWithUI.js
+include\common\runnerJS\SearchController.js include\runnerJS\SearchController.js
+include\common\runnerJS\SearchParamsLogger.js include\runnerJS\SearchParamsLogger.js
+include\common\runnerJS\RunnerForm.js include\runnerJS\RunnerForm.js
+include\common\runnerJS\DetPreview.js include\runnerJS\DetPreview.js
+include\common\runnerJS\PDDetails.js include\runnerJS\PDDetails.js
+include\common\runnerJS\PDLayout.js include\runnerJS\PDLayout.js
+##endif##
+
+
+include\common\runnerJS\RunnerAll.js include\runnerJS\RunnerAll.js
+
+include\common\runnerJS\MapManager.js include\runnerJS\MapManager.js
+##if @BUILDER.nMapProviderID==0##
+include\common\runnerJS\gmap.js include\runnerJS\gmap.js
+include\common\markerclusterer.js include\markerclusterer.js
+##elseif @BUILDER.nMapProviderID==1##
+plugins\OpenStreetMap\ plugins\
+include\common\runnerJS\osmap.js include\runnerJS\osmap.js
+##else##
+include\common\runnerJS\bingmap.js include\runnerJS\bingmap.js
+##endif##
+
+##if @BUILDER.pCaptchaSettings.nType == 1##
+include\common\runnerJS\ReCaptcha.js include\runnerJS\ReCaptcha.js
+##endif##
+
+##if @BUILDER.tables[arrFieldObj[viewFormats[strViewFormat==FORMAT_VIDEO || strViewFormat==FORMAT_DATABASE_VIDEO].len].len].len##
+include\common\html5video\ include\video\
+include\common\html5video\jarisplayer.swf jarisplayer.swf
+##endif##
+
+include\common\yui\yui-min.js include\yui\yui-min.js
+
+combo.##@ext## combo.##@ext##
+include\common\yui\yui-min.js include\yui\yui-min.js
+include\common\yui\yui.lib include\yui\yui.lib
+include\common\yui\yuicss.lib include\yui\yuicss.lib
+
+include\common\runnerJS\RunnerResizeGrid.js include\runnerJS\RunnerResizeGrid.js
+
+##if @BUILDER.tables[arrFieldObj[editFormats[useTimePicker].len].len].len##
+include\common\timepickr_jquery.timepickr.js include\timepickr_jquery.timepickr.js
+##endif##
+
+geocoding.##@ext## geocoding.##@ext##
+
+include\common\mupload.js include\mupload.js
+
+download.##@ext## download.##@ext##
+
+fulltext.##@ext## fulltext.##@ext##
+
+checkduplicates.##@ext## checkduplicates.##@ext##
+
+imager.##@ext## imager.##@ext##
+
+autofillfields.##@ext## autofillfields.##@ext##
+
+include\lookuplinks.##@ext## include\lookuplinks.##@ext##
+
+external.##@ext## external.##@ext##
+
+
+innova.##@ext## innova.##@ext##
+getfile.##@ext## getfile.##@ext##
+rte.##@ext## rte.##@ext##
+searchsuggest.##@ext## searchsuggest.##@ext##
+
+lookupsuggest.##@ext## lookupsuggest.##@ext##
+
+index.htm index.htm
+
+templates\error.htm templates\error.htm
+
+templates\mainmenu.htm templates\oldmain_mainmenu.htm .menu.main
+templates\mainmenu_horiz.htm templates\oldmain_mainmenu_horiz.htm .menu.main
+templates\mainmenu_quickjump.htm templates\main_mainmenu_quickjump.htm .menu.main
+include\menunodes.##@ext## include\menunodes_main.##@ext## .menu.main
+
+templates\newmainmenu.htm templates\main_mainmenu.htm .menu.main
+templates\newmainmenu_m.htm templates\main_mainmenu_m.htm .menu.main
+templates\newmainmenu_horiz.htm templates\main_mainmenu_horiz.htm .menu.main
+templates\bsmenu_horiz.htm templates\bsmain_mainmenu_horiz.htm .menu.main
+templates\bsmenu.htm templates\bsmain_mainmenu_tree.htm .menu.main
+
+
+##if @BUILDER.bDynamicPermissions##
+include\menunodes_adminarea.##@ext## include\menunodes_adminarea.##@ext##
+
+templates\mainmenu_adminarea.htm templates\oldadminarea_mainmenu.htm
+templates\mainmenu_adminarea_horiz.htm templates\oldadminarea_mainmenu_horiz.htm
+templates\mainmenu_adminarea_preview.htm templates\oldadminarea_mainmenu_preview.htm
+
+templates\newmainmenu_adminarea.htm templates\adminarea_mainmenu.htm
+templates\newmainmenu_adminarea.htm templates\adminarea_mainmenu_m.htm
+templates\newmainmenu_adminarea_horiz.htm templates\adminarea_mainmenu_horiz.htm
+templates\bsmenu_adminarea_horiz.htm templates\bsadminarea_mainmenu_horiz.htm
+templates\newmainmenu_adminarea_preview.htm templates\adminarea_mainmenu_preview.htm
+templates\newmainmenu_adminarea_horiz_preview.htm templates\adminarea_mainmenu_horiz_preview.htm
+templates\newmainmenu_adminarea_quickjump.htm templates\adminarea_mainmenu_quickjump.htm
+##endif##
+
+
+##foreach @BUILDER.m_arrProjectMenus as @m filter @m.strMenuName!=WELCOME_MENU##
+templates\newmainmenu_m.htm templates\##@m.m_strMenuName##_mainmenu_m.htm .menu.##@m.m_strMenuName##
+templates\mainmenu.htm templates\##@m.m_strMenuName##_mainmenu.htm .menu.##@m.m_strMenuName##
+templates\mainmenu_horiz.htm templates\##@m.m_strMenuName##_mainmenu_horiz.htm .menu.##@m.m_strMenuName##
+templates\mainmenu_quickjump.htm templates\##@m.m_strMenuName##_mainmenu_quickjump.htm .menu.##@m.m_strMenuName##
+templates\bsmenu_horiz.htm templates\bs##@m.m_strMenuName##_mainmenu_horiz.htm .menu.##@m.m_strMenuName##
+templates\bsmenu.htm templates\bs##@m.m_strMenuName##_mainmenu_tree.htm .menu.##@m.m_strMenuName##
+include\menunodes.##@ext## include\menunodes_##@m.m_strMenuName##.##@ext## .menu.##@m.m_strMenuName##
+templates\newmainmenu_horiz.htm templates\##@m.m_strMenuName##_mainmenu_horiz.htm .menu.##@m.m_strMenuName##
+templates\newmainmenu.htm templates\##@m.m_strMenuName##_mainmenu.htm .menu.##@m.m_strMenuName##
+##endfor##
+
+##foreach @BUILDER.m_arrProjectMenus as @m filter @m.strMenuName==WELCOME_MENU##
+templates\bsmenu_welcome.htm templates\bs##@m.m_strMenuName##_mainmenu.htm .menu.##@m.m_strMenuName##
+include\menunodes.##@ext## include\menunodes_##@m.m_strMenuName##.##@ext## .menu.##@m.m_strMenuName##
+##endfor##
+
+
+templates\loadindicator.htm templates\loadindicator.htm
+include\displaymenu.##@ext## include\displaymenu.##@ext##
+include\menuitem.##@ext## include\menuitem.##@ext##
+
+include\common\cookies.js include\cookies.js
+
+menu.##@ext## menu.##@ext##
+templates\menu.htm templates\menu.htm
+
+
+##checkAnyEncryptionUsing()##
+##if @anyEncryptionUsed##
+ciphcoding.##@ext## ciphcoding.##@ext##
+##endif##
+
+##if @BUILDER.bSection508Compatibility##
+helpshortcut.##@ext## helpshortcut.##@ext##
+##endif##
+
+##if @BUILDER.pCaptchaSettings.nType == 0##
+securitycode.swf securitycode.swf
+securitycode.##@ext## securitycode.##@ext##
+##endif##
+
+##if @BUILDER.bCreateLoginPage##
+classes\loginpage.##@ext## classes\loginpage.##@ext##
+login.##@ext## login.##@ext##
+templates\login.htm templates\login.htm
+
+##if @BUILDER.nLoginMethod==LOGIN_AD##
+classes\loginpage_ad.##@ext## classes\loginpage_ad.##@ext##
+##endif##
+
+
+##if @BUILDER.Registration.bNewUserPage && @BUILDER.nLoginMethod==SECURITY_TABLE##
+register.##@ext## register.##@ext## ##@BUILDER.strLoginDataSource##
+classes\registerpage.##@ext## classes\registerpage.##@ext##
+templates\register.htm templates\register.htm ##@BUILDER.strLoginDataSource##
+templates\register_success.htm templates\register_success.htm
+##with @BUILDER.Tables{@BUILDER.strLoginDataSource} as @userTable##
+##foreach @userTable.arrRegisterTabs as @tab##
+templates\tab.htm templates\##@userTable.strShortTableName##_register_##@tab.strTabId##.htm .registerTab.##@tab.strTabId##.table.##@userTable.strDataSourceTable##
+##endfor##
+##endwith##
+##endif##
+
+##if @BUILDER.Registration.bChangePwdPage || @BUILDER.Registration.nRemindPasswordMethod == RPM_RESET##
+changepwd.##@ext## changepwd.##@ext##
+templates\changepwd.htm templates\changepwd.htm
+templates\changepwd_success.htm templates\changepwd_success.htm
+classes\changepwdpage.##@ext## classes\changepwdpage.##@ext##
+##endif##
+
+##if @BUILDER.Registration.bRemindPwdPage##
+remind.##@ext## remind.##@ext##
+templates\remind.htm templates\remind.htm
+templates\remind_success.htm templates\remind_success.htm
+classes\remindpwdpage.##@ext## classes\remindpwdpage.##@ext##
+##endif##
+
+##if @BUILDER.m_bDynamicPermissions##
+templates\admin_rights_list.htm templates\admin_rights_list.htm admin_rights
+ug_rights.##@ext## admin_rights_list.##@ext## admin_rights
+##if @BUILDER.nLoginMethod==SECURITY_TABLE##
+templates\admin_members_list.htm templates\admin_members_list.htm admin_members
+ug_members.##@ext## admin_members_list.##@ext## admin_members
+##endif##
+##if @BUILDER.nLoginMethod==SECURITY_AD##
+templates\admin_admembers_list.htm templates\admin_admembers_list.htm admin_admembers
+ad_members.##@ext## admin_admembers_list.##@ext## admin_admembers
+##endif##
+ug_group.##@ext## ug_group.##@ext##
+##endif##
+##endif##
+
+include\languages.##@ext## include\languages.##@ext##
+
+##foreach @BUILDER.arrLanguages as @l##
+include\common\runnerJS\constants\language\RunnerLang.js include\lang\##langfile @l##.js .language.##@l##
+include\lang\lang.##@ext## include\lang\##langfile @l##.##@ext## .language.##@l##
+##endfor##
+
+##foreach @BUILDER.Tables as @t filter @t.nType==titDASHBOARD##
+templates\dashboard.htm templates\##@t.strShortTableName##_dashboard.htm ##@t.strDataSourceTable##
+dashboard.##@ext## ##@t.strShortTableName##_dashboard.##@ext## ##@t.strDataSourceTable##
+include\dashsettings.##@ext## include\##@t.strShortTableName##_settings.##@ext## ##@t.strDataSourceTable##
+include\dashvariables.##@ext## include\##@t.strShortTableName##_variables.##@ext## ##@t.strDataSourceTable##
+
+templates\search.htm templates\##@t.strShortTableName##_search.htm ##@t.strDataSourceTable##
+search.##@ext## ##@t.strShortTableName##_search.##@ext## ##@t.strDataSourceTable##
+
+##set @hasDashSnippets=0##
+##foreach @t.pDashboard.arrElements as @e filter @e.nType == DASHBOARD_SNIPPET##
+##if @first##
+##set @hasDashSnippets=1##
+##endif##
+##endfor##
+
+##if @t.arrEventHandlers.len || @t.controlLinks.len || @hasDashSnippets##
+include\events.##@ext## include\##@t.strShortTableName##_events.##@ext## ##@t.strDataSourceTable##
+##endif##
+##endfor##
+
+##foreach @BUILDER.Tables as @t filter @t.nType==titTABLE || @t.nType==titVIEW##
+
+templates\list.htm templates\##@t.strShortTableName##_list.htm ##@t.strDataSourceTable##
+
+##if @t.strDataSourceTable!="admin_rights" && @t.strDataSourceTable!="admin_members" && @t.strDataSourceTable!="admin_admembers"##
+list.##@ext## ##@t.strShortTableName##_list.##@ext## ##@t.strDataSourceTable##
+##endif##
+
+##if 1=0##
+
+##if @t.arrMasterTables[nDetailPreview!=dpNONE].len##
+detailspreview.##@ext## ##@t.strShortTableName##_detailspreview.##@ext## ##@t.strDataSourceTable##
+templates\detailspreview.htm templates\##@t.strShortTableName##_detailspreview.htm ##@t.strDataSourceTable##
+##endif##
+
+
+##if @BUILDER.Tables[arrMasterTables[strMasterTable=@t.strDataSourceTable].len].len ##
+templates\masterlist.htm templates\##@t.strShortTableName##_masterlist.htm ##@t.strDataSourceTable##
+templates\masterprint.htm templates\##@t.strShortTableName##_masterprint.htm ##@t.strDataSourceTable##
+##endif##
+
+##endif##
+templates\print.htm templates\##@t.strShortTableName##_print.htm ##@t.strDataSourceTable##
+print.##@ext## ##@t.strShortTableName##_print.##@ext## ##@t.strDataSourceTable##
+templates\export.htm templates\##@t.strShortTableName##_export.htm ##@t.strDataSourceTable##
+export.##@ext## ##@t.strShortTableName##_export.##@ext## ##@t.strDataSourceTable##
+include\export_functions.##@ext## include\export_functions.##@ext##
+templates\import.htm templates\##@t.strShortTableName##_import.htm ##@t.strDataSourceTable##
+import.##@ext## ##@t.strShortTableName##_import.##@ext## ##@t.strDataSourceTable##
+
+edit.##@ext## ##@t.strShortTableName##_edit.##@ext## ##@t.strDataSourceTable##
+templates\edit.htm templates\##@t.strShortTableName##_edit.htm ##@t.strDataSourceTable##
+
+
+add.##@ext## ##@t.strShortTableName##_add.##@ext## ##@t.strDataSourceTable##
+templates\add.htm templates\##@t.strShortTableName##_add.htm ##@t.strDataSourceTable##
+
+search.##@ext## ##@t.strShortTableName##_search.##@ext## ##@t.strDataSourceTable##
+templates\search.htm templates\##@t.strShortTableName##_search.htm ##@t.strDataSourceTable##
+
+view.##@ext## ##@t.strShortTableName##_view.##@ext## ##@t.strDataSourceTable##
+templates\view.htm templates\##@t.strShortTableName##_view.htm ##@t.strDataSourceTable##
+
+include\variables.##@ext## include\##@t.strShortTableName##_variables.##@ext## ##@t.strDataSourceTable##
+include\settings.##@ext## include\##@t.strShortTableName##_settings.##@ext## ##@t.strDataSourceTable##
+
+##if @t.arrEventHandlers.len || @t.controlLinks.len##
+include\events.##@ext## include\##@t.strShortTableName##_events.##@ext## ##@t.strDataSourceTable##
+##elseif @t.strDataSourceTable=="admin_members" && @BUILDER.controlLinks[page==PAGE_ADMIN_MEMBERS].len##
+include\events.##@ext## include\##@t.strShortTableName##_events.##@ext## ##@t.strDataSourceTable##
+##elseif @t.strDataSourceTable=="admin_rights" && @BUILDER.controlLinks[page==PAGE_ADMIN_RIGHTS].len##
+include\events.##@ext## include\##@t.strShortTableName##_events.##@ext## ##@t.strDataSourceTable##
+##endif##
+
+##endfor##
+
+
+buttonhandler.##@ext## buttonhandler.##@ext##
+
+
+##foreach @BUILDER.Tables as @t##
+##set @tableHasButtons=0##
+##if @t.arrEventHandlers.len || @t.controlLinks.len##
+	##set @tableHasButtons=1##
+##elseif @t.arrMasterTables[@BUILDER.tables{@element.strMasterTable}.controlLinks[page==PAGE_MASTER_INFO_LIST].len].len##
+	##set @tableHasButtons=1##
+##endif##
+
+##set @tableHasFieldEvent=0##
+##foreach @BUILDER.controlHandlers as @EVENT filter @EVENT.strEventID=="EVENT_FIELD"##
+	##if @t.arrFieldObj[editFormats[arrFieldEventLinks[strHandlerID == @EVENT.strName].len].len].len##
+		##set @tableHasFieldEvent=1##
+	##endif##
+	##if @t.arrFieldObj[viewFormats[arrFieldEventLinks[strHandlerID == @EVENT.strName].len].len].len##
+		##set @tableHasFieldEvent=1##
+	##endif##
+##endfor##
+
+##if @tableHasButtons || @tableHasFieldEvent##
+include\common\runnerJS\events\pageevents.js include\runnerJS\events\pageevents_##@t.strShortTableName##.js ##@t.strDataSourceTable##
+##endif##
+##endfor##
+
+##if @BUILDER.arrEventHandlers.len || @BUILDER.controlHandlers[strEventID == "EVENT_BUTTON"].len##
+include\common\runnerJS\events\globalevents.js include\runnerJS\events\globalevents.js
+##endif##
+
+##foreach @BUILDER.controlHandlers as @e filter @e.strEventID=="EVENT_BUTTON"##
+include\common\button.js include\button_##@e.strName##.js .buttonevent.##@e.strName##
+##endfor##
+
+##foreach @BUILDER.Tables as @t filter @t.nType==titREPORT##
+templates\report.htm templates\##@t.strShortTableName##_report.htm ##@t.strDataSourceTable##
+templates\export.htm templates\##@t.strShortTableName##_export.htm ##@t.strDataSourceTable##
+
+report.##@ext## ##@t.strShortTableName##_report.##@ext## ##@t.strDataSourceTable##
+export.##@ext## ##@t.strShortTableName##_export.##@ext## ##@t.strDataSourceTable##
+
+include\variables.##@ext## include\##@t.strShortTableName##_variables.##@ext## ##@t.strDataSourceTable##
+include\settings.##@ext## include\##@t.strShortTableName##_settings.##@ext## ##@t.strDataSourceTable##
+
+##if @t.arrEventHandlers.len || @t.controlLinks.len##
+include\events.##@ext## include\##@t.strShortTableName##_events.##@ext## ##@t.strDataSourceTable##
+##endif##
+
+##if @t.arrFieldObj[viewFormats[strViewFormat==FORMAT_FILE].len].len##
+download.##@ext## ##@t.strShortTableName##_download.##@ext## ##@t.strDataSourceTable##
+##endif##
+
+
+search.##@ext## ##@t.strShortTableName##_search.##@ext## ##@t.strDataSourceTable##
+templates\search.htm templates\##@t.strShortTableName##_search.htm ##@t.strDataSourceTable##
+
+templates\rprint.htm templates\##@t.strShortTableName##_rprint.htm ##@t.strDataSourceTable##
+rprint.##@ext## ##@t.strShortTableName##_print.##@ext## ##@t.strDataSourceTable##
+
+
+##if @BUILDER.Tables[arrMasterTables[strMasterTable=@t.strDataSourceTable].len].len ##
+templates\masterreport.htm templates\##@t.strShortTableName##_masterreport.htm ##@t.strDataSourceTable##
+templates\masterrprint.htm templates\##@t.strShortTableName##_masterrprint.htm ##@t.strDataSourceTable##
+##endif##
+
+##endfor##
+
+##foreach @BUILDER.Tables as @t filter @t.nType==titCHART##
+templates\chart.htm templates\##@t.strShortTableName##_chart.htm ##@t.strDataSourceTable##
+chart.##@ext## ##@t.strShortTableName##_chart.##@ext## ##@t.strDataSourceTable##
+include\variables.##@ext## include\##@t.strShortTableName##_variables.##@ext## ##@t.strDataSourceTable##
+include\settings.##@ext## include\##@t.strShortTableName##_settings.##@ext## ##@t.strDataSourceTable##
+
+##if @t.arrEventHandlers.len || @t.controlLinks.len##
+include\events.##@ext## include\##@t.strShortTableName##_events.##@ext## ##@t.strDataSourceTable##
+##endif##
+
+##if @BUILDER.Tables[arrMasterTables[strMasterTable=@t.strDataSourceTable].len].len ##
+templates\masterchart.htm templates\##@t.strShortTableName##_masterchart.htm ##@t.strDataSourceTable##
+##endif##
+
+search.##@ext## ##@t.strShortTableName##_search.##@ext## ##@t.strDataSourceTable##
+templates\search.htm templates\##@t.strShortTableName##_search.htm ##@t.strDataSourceTable##
+
+##endfor##
+
+##if @BUILDER.Tables[arrMasterTables.len].len##
+detreccount.##@ext## detreccount.##@ext##
+##endif##
+
+
+connections\ConnectionManager.##@ext## connections\ConnectionManager.##@ext##
+connections\Connection.##@ext## connections\Connection.##@ext##
+
+
+##if @BUILDER.m_strRTEType==RTE_INNOVA && @BUILDER.tables[arrFieldObj[editFormats[bUseRTE].len].len].len##
+plugins\innovaeditor plugins\innovaeditor
+##endif##
+
+##if @BUILDER.m_strRTEType==RTE_CK && @BUILDER.tables[arrFieldObj[editFormats[bUseRTE].len].len].len##
+plugins\ckeditor plugins\ckeditor
+plugins\ckfinder plugins\ckfinder
+##endif##
+
+##if @BUILDER.m_strRTEType==RTE_BASIC && @BUILDER.tables[arrFieldObj[editFormats[bUseRTE].len].len].len##
+include\common\rte include\rte
+##endif##
+
+
+include\common\pdfmake include\pdfmake
+##if 1=2##
+include\common\pdfmake\_pdfmake.js include\pdfmake\_pdfmake.js
+##endif##
+
+
+##if 1=2##
+include\layoutbuilder.##@ext## include\layoutbuilder.##@ext##
+connections\CustomConnection.##@ext## connections\CustomConnection.##@ext##
+connections\CustomConnectionTemplate.##@ext## connections\CustomConnectionTemplate.##@ext##
+include\query.##@ext## include\query.##@ext##
+include\reportfunctions.##@ext## include\reportfunctions.##@ext##
+include\dbcommon_preview.##@ext## include\dbcommon_preview.##@ext##
+include\common\rte\richtext.uncompressed.js include\richtext.uncompressed.js
+
+macros.txt macros.txt
+files.txt files.txt
+CommonMacroFunctions.txt CommonMacroFunctions.txt
+chart_preview.htm chart_preview.htm
+EventsCode.xml EventsCode.xml
+templates\lheader.htm templates\lheader.htm
+templates\lfooter.htm templates\lfooter.htm
+templates\rheader.htm templates\rheader.htm
+templates\rfooter.htm templates\rfooter.htm
+
+templates\menuitem_horiz.htm templates\menuitem_horiz.htm
+templates\menuitem_preview.htm templates\menuitem_preview.htm
+templates\menuitem.htm templates\menuitem.htm
+templates\lmenu.htm templates\lmenu.htm
+templates\styleVMenu.htm templates\styleVMenu.htm
+templates\styleGMenu.htm templates\styleGMenu.htm
+templates\topmenuitem_hpreview.htm templates\topmenuitem_hpreview.htm
+templates\mainmenu_hpreview.htm templates\mainmenu_hpreview.htm
+templates\topmenuitem.htm templates\topmenuitem.htm
+templates\mainmenu_preview.htm templates\mainmenu_preview.htm
+templates\mainmenu_horiz.htm templates\mainmenu_horiz.htm
+templates\topmenuitem_horiz.htm templates\topmenuitem_horiz.htm
+templates\topmenuitem_preview.htm templates\topmenuitem_preview.htm
+templates\mlmenu.htm templates\mlmenu.htm
+
+webreports webreports
+plugins plugins
+include\common\jquery.uncompressed.js include\common\jquery.uncompressed.js
+include\common include
+libs libs
+##endif##
+
+##if @BUILDER.tables[nType==titCHART].len##
+libs\js libs\js
+dchartdata.##@ext## dchartdata.##@ext##
+##endif##
+
+include\xtempl.##@ext## include\xtempl.##@ext##
+classes\xtempl_base.##@ext## classes\xtempl_base.##@ext##
+include\audit.##@ext## include\audit.##@ext##
+include\locking.##@ext## include\locking.##@ext##
+include\testing.##@ext## include\testing.##@ext##
+
+include\dal.##@ext## include\dal.##@ext##
+
+include\cacert.pem include\cacert.pem
+
+##foreach @BUILDER.arrConnections as @conn##
+##foreach @conn.dbtables as @t##
+include\dal\table.##@ext## include\dal\##@conn.strID g##_##@t.schema g##_##@t.name ag##.##@ext## .dbtable.##@t.schema##.##@t.name##.dbconn.##@conn.strID g##
+##endfor##
+##endfor##
+##if @BUILDER.bWebReports##
+webreports\classes\webreportpage.##@ext## classes\webreportpage.##@ext##
+
+libs\js libs\js
+webreports\images images
+webreports\include\css include\css
+webreports\include\fancybox include\fancybox
+webreports\include\js include\js
+webreports\include\ui include\ui
+libs libs
+dchartdata.##@ext## dchartdata.##@ext##
+
+webreports\reportfunctions.##@ext## include\reportfunctions.##@ext##
+webreports\classes\crosstable_webreport.##@ext## classes\crosstable_webreport.##@ext##
+
+include\xml.##@ext## include\xml.##@ext##
+webreports\dsearch.##@ext## dsearch.##@ext##
+webreports\dimager.##@ext## dimager.##@ext##
+webreports\templates\dsearch.htm templates\dsearch.htm
+webreports\web_query.##@ext## web_query.##@ext##
+webreports\templates\web_query.htm templates\web_query.htm
+
+webreports\dreport.##@ext## dreport.##@ext##
+webreports\get-state.##@ext## get-state.##@ext##
+webreports\save-state.##@ext## save-state.##@ext##
+webreports\save-style.##@ext## save-style.##@ext##
+webreports\save-admin.##@ext## save-admin.##@ext##
+webreports\webreport_admin.##@ext## webreport_admin.##@ext##
+webreports\webreport_sql.##@ext## webreport_sql.##@ext##
+
+webreports\dchart.##@ext## dchart.##@ext##
+webreports\dchart_preview.##@ext## dchart_preview.##@ext##
+webreports\webchart0.##@ext## webchart0.##@ext##
+webreports\webchart1.##@ext## webchart1.##@ext##
+webreports\webchart2.##@ext## webchart2.##@ext##
+webreports\webchart3.##@ext## webchart3.##@ext##
+webreports\webchart4.##@ext## webchart4.##@ext##
+webreports\webchart5.##@ext## webchart5.##@ext##
+webreports\webchart6.##@ext## webchart6.##@ext##
+webreports\webchart7.##@ext## webchart7.##@ext##
+
+webreports\webreport.##@ext## webreport.##@ext##
+webreports\webreport0.##@ext## webreport0.##@ext##
+webreports\webreport1.##@ext## webreport1.##@ext##
+webreports\webreport2.##@ext## webreport2.##@ext##
+webreports\webreport3.##@ext## webreport3.##@ext##
+webreports\webreport4.##@ext## webreport4.##@ext##
+webreports\webreport5.##@ext## webreport5.##@ext##
+webreports\webreport6.##@ext## webreport6.##@ext##
+webreports\webreport8.##@ext## webreport8.##@ext##
+webreports\webreport9.##@ext## webreport9.##@ext##
+
+webreports\templates\dchart.htm templates\dchart.htm
+webreports\templates\dchart_preview.htm templates\dchart_preview.htm
+webreports\templates\jump_report.htm templates\jump_report.htm
+webreports\templates\colorpicker.htm templates\colorpicker.htm
+webreports\templates\webreport_admin.htm templates\webreport_admin.htm
+webreports\templates\webreport_sql.htm templates\webreport_sql.htm
+
+webreports\templates\dreport.htm templates\dreport.htm
+webreports\templates\dreport1.htm templates\dreport1.htm
+webreports\templates\dreport2.htm templates\dreport2.htm
+webreports\templates\dreport3.htm templates\dreport3.htm
+webreports\templates\dreport5.htm templates\dreport5.htm
+webreports\templates\dreport_preview.htm templates\dreport_preview.htm
+webreports\templates\dreport1_preview.htm templates\dreport1_preview.htm
+webreports\templates\dreport2_preview.htm templates\dreport2_preview.htm
+webreports\templates\dreport3_preview.htm templates\dreport3_preview.htm
+webreports\templates\dreport5_preview.htm templates\dreport5_preview.htm
+webreports\templates\dreport5_style.htm templates\dreport5_style.htm
+
+webreports\templates\dprint.htm templates\dprint.htm
+webreports\templates\dprint1.htm templates\dprint1.htm
+webreports\templates\dprint2.htm templates\dprint2.htm
+webreports\templates\dprint3.htm templates\dprint3.htm
+webreports\templates\dprint5.htm templates\dprint5.htm
+
+webreports\templates\webchart0.htm templates\webchart0.htm
+webreports\templates\webchart1.htm templates\webchart1.htm
+webreports\templates\webchart2.htm templates\webchart2.htm
+webreports\templates\webchart3.htm templates\webchart3.htm
+webreports\templates\webchart4.htm templates\webchart4.htm
+webreports\templates\webchart4_gauge.htm templates\webchart4_gauge.htm
+webreports\templates\webchart4_ohlc.htm templates\webchart4_ohlc.htm
+webreports\templates\webchart5.htm templates\webchart5.htm
+webreports\templates\webchart6.htm templates\webchart6.htm
+webreports\templates\webchart7.htm templates\webchart7.htm
+
+webreports\templates\webreport.htm templates\webreport.htm
+webreports\templates\webreport0.htm templates\webreport0.htm
+webreports\templates\webreport1.htm templates\webreport1.htm
+webreports\templates\webreport2.htm templates\webreport2.htm
+webreports\templates\webreport3.htm templates\webreport3.htm
+webreports\templates\webreport4.htm templates\webreport4.htm
+webreports\templates\webreport5.htm templates\webreport5.htm
+webreports\templates\webreport6.htm templates\webreport6.htm
+webreports\templates\webreport8.htm templates\webreport8.htm
+webreports\templates\webreport9.htm templates\webreport9.htm
+
+webreports\include\actionscript.js include\js\actionscript.js
+webreports\include\js\chart.js include\js\chart.js
+##endif##

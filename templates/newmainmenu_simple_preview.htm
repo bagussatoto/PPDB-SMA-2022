@@ -1,0 +1,69 @@
+<ul class="rnr-b-vmenu simple {$menustyle}" originalMenuTag="$$originalMenuTag" menuID="$$menuID">
+##foreach MenuChildren(0) as @m0##
+##set @menu=@m0##
+	<li class="##if exists(@TABLE)####if @menu.table==@TABLE.strDataSourceTable## current##endif####endif## menu##@menu.type##">
+	##include templates\newmenuitem_preview.htm##
+	##foreach MenuChildren(@m0.id) as @m1##
+	##if @first##
+		<ul >
+	##endif##
+	##set @menu=@m1##
+			<li  parent="group##@menu.parent##" class="##@menu.type## ##if exists(@TABLE)####if @menu.table==@TABLE.strDataSourceTable## current##endif####endif## menu##@menu.type##">
+			##include templates\newmenuitem_preview.htm##
+			##foreach MenuChildren(@m1.id) as @m2##
+			##if @first##
+				<ul >
+			##endif##
+			##set @menu=@m2##
+					<li  parent="group##@menu.parent##" class="##@menu.type## ##if exists(@TABLE)####if @menu.table==@TABLE.strDataSourceTable## current##endif####endif## menu##@menu.type##">
+					##include templates\newmenuitem_preview.htm##
+					##foreach MenuChildren(@m2.id) as @m3##
+					##if @first##
+						<ul >
+					##endif##
+					##set @menu=@m3##
+							<li  parent="group##@menu.parent##" class="##@menu.type## ##if exists(@TABLE)####if @menu.table==@TABLE.strDataSourceTable## current##endif####endif## menu##@menu.type##">
+							##include templates\newmenuitem_preview.htm##
+							##foreach MenuChildren(@m3.id) as @m4##
+							##if @first##
+								<ul >
+							##endif##
+							##set @menu=@m4##
+									<li  parent="group##@menu.parent##" class="##@menu.type## ##if exists(@TABLE)####if @menu.table==@TABLE.strDataSourceTable## current##endif####endif## menu##@menu.type##">
+									##include templates\newmenuitem_preview.htm##
+									##foreach MenuChildren(@m4.id) as @m5##
+									##if @first##
+										<ul >
+									##endif##
+									##set @menu=@m5##
+											<li  parent="group##@menu.parent##" class="##@menu.type## ##if exists(@TABLE)####if @menu.table==@TABLE.strDataSourceTable## current##endif####endif## menu##@menu.type##">
+											##include templates\newmenuitem_preview.htm##
+											</li>
+
+									##if @last##
+										</ul>
+									##endif##
+									##endfor##
+									</li>
+							##if @last##
+								</ul>
+							##endif##
+							##endfor##
+							</li>
+					##if @last##
+						</ul>
+					##endif##
+					##endfor##
+					</li>
+			##if @last##
+				</ul>
+			##endif##
+			##endfor##
+			</li>
+	##if @last##
+		</ul>
+	##endif##
+	##endfor##
+	</li>
+##endfor##
+</ul>

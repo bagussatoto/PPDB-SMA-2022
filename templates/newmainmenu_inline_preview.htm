@@ -1,0 +1,66 @@
+<ul class="rnr-b-vmenu tree {$menustyle}" originalMenuTag="$$originalMenuTag" menuID="$$menuID">
+##set @break = 1##
+##foreach MenuChildren(0) as @m0 filter @break##
+##foreach MenuChildren(@m0.id) as @m1 filter @break##
+##if @break == 1##
+##set @break = 0##
+	<li class="manage">
+		<div>
+			<a href="#"><img alt="*" src="images/minus.gif">
+				##message COLLAPSE_ALL##
+			</a>
+		</div>
+	</li>
+##endif##
+##endfor##
+##endfor##
+
+##foreach MenuChildren(0) as @m0##
+##set @menu=@m0##
+	{BEGIN item##@m0.id##_menulink}
+	<li id="item##@menu.id##" class="##if exists(@TABLE)####if @menu.table==@TABLE.strDataSourceTable## current##endif####endif## menu##@menu.type##">
+			##include templates\newmenuitem_inline_preview.htm##
+	</li>
+	##foreach MenuChildren(@m0.id) as @m1##
+	##set @menu=@m1##
+			{BEGIN item##@m1.id##_menulink}
+			<li id="item##@menu.id##" class="subitem level2 ##if exists(@TABLE)####if @menu.table==@TABLE.strDataSourceTable## current##endif####endif## menu##@menu.type##">
+					##include templates\newmenuitem_inline_preview.htm##
+			</li>
+			##foreach MenuChildren(@m1.id) as @m2##
+			##set @menu=@m2##
+					{BEGIN item##@m2.id##_menulink}
+					<li id="item##@menu.id##" class="subitem level3 ##if exists(@TABLE)####if @menu.table==@TABLE.strDataSourceTable## current##endif####endif## menu##@menu.type##">
+							##include templates\newmenuitem_inline_preview.htm##
+					</li>
+					##foreach MenuChildren(@m2.id) as @m3##
+					##set @menu=@m3##
+							{BEGIN item##@m3.id##_menulink}
+							<li id="item##@menu.id##" class="subitem level4 ##if exists(@TABLE)####if @menu.table==@TABLE.strDataSourceTable## current##endif####endif## menu##@menu.type##">
+									##include templates\newmenuitem_inline_preview.htm##
+							</li>
+							##foreach MenuChildren(@m3.id) as @m4##
+							##set @menu=@m4##
+									{BEGIN item##@m4.id##_menulink}
+									<li id="item##@menu.id##" class="subitem level5 ##if exists(@TABLE)####if @menu.table==@TABLE.strDataSourceTable## current##endif####endif## menu##@menu.type##">
+											##include templates\newmenuitem_inline_preview.htm##
+									</li>
+									##foreach MenuChildren(@m4.id) as @m5##
+									##set @menu=@m5##
+											{BEGIN item##@m5.id##_menulink}
+											<li id="item##@menu.id##" class="subitem level6 ##if exists(@TABLE)####if @menu.table==@TABLE.strDataSourceTable## current##endif####endif## menu##@menu.type##">
+													##include templates\newmenuitem_inline_preview.htm##
+											</li>
+											{END item##@m5.id##_menulink}
+									##endfor##
+									{END item##@m4.id##_menulink}
+							##endfor##
+							{END item##@m3.id##_menulink}
+					##endfor##
+					{END item##@m2.id##_menulink}
+			##endfor##
+			{END item##@m1.id##_menulink}
+	##endfor##
+	{END item##@m0.id##_menulink}
+##endfor##
+</ul>

@@ -1,0 +1,60 @@
+<ul class="rnr-b-vmenu tree {$menustyle}" data-menuname="{$menuName}">
+{BEGIN menu_collapse_expand_all}
+	<li class="manage">
+		<div>
+			<a href="#"><img alt="*" src="images/plus.gif">
+				<span class=expand>##message EXPAND_ALL##</span>
+				<span class="hide" style="display:none;">##message COLLAPSE_ALL##</span>
+			</a>
+		</div>
+	</li>
+{END menu_collapse_expand_all}
+##foreach MenuChildren(0) as @m0##
+##set @menu=@m0##
+	{BEGIN item##@m0.id##_menulink}
+	<li id="item##@menu.id##" class="{$item##@menu.id##_groupclass} {$item##@menu.id##_current} menu##@menu.type##" level=1>
+			##include templates\newmenuitem_inline.htm##
+	</li>
+	##foreach MenuChildren(@m0.id) as @m1##
+	##set @menu=@m1##
+			{BEGIN item##@m1.id##_menulink}
+			<li id="item##@menu.id##" style="display:none" class="subitem level2 {$item##@menu.id##_groupclass} {$item##@menu.id##_current} menu##@menu.type##" level=2>
+					##include templates\newmenuitem_inline.htm##
+			</li>
+			##foreach MenuChildren(@m1.id) as @m2##
+			##set @menu=@m2##
+					{BEGIN item##@m2.id##_menulink}
+					<li id="item##@menu.id##" style="display:none" class="subitem level3 {$item##@menu.id##_groupclass} {$item##@menu.id##_current} menu##@menu.type##" level=3>
+							##include templates\newmenuitem_inline.htm##
+					</li>
+					##foreach MenuChildren(@m2.id) as @m3##
+					##set @menu=@m3##
+							{BEGIN item##@m3.id##_menulink}
+							<li id="item##@menu.id##" style="display:none" class="subitem level4 {$item##@menu.id##_groupclass} {$item##@menu.id##_current} menu##@menu.type##" level=4>
+									##include templates\newmenuitem_inline.htm##
+							</li>
+							##foreach MenuChildren(@m3.id) as @m4##
+							##set @menu=@m4##
+									{BEGIN item##@m4.id##_menulink}
+									<li id="item##@menu.id##" style="display:none" class="subitem level5 {$item##@menu.id##_groupclass} {$item##@menu.id##_current} menu##@menu.type##" level=5>
+											##include templates\newmenuitem_inline.htm##
+									</li>
+									##foreach MenuChildren(@m4.id) as @m5##
+									##set @menu=@m5##
+											{BEGIN item##@m5.id##_menulink}
+											<li id="item##@menu.id##" style="display:none" class="subitem level6 {$item##@menu.id##_groupclass} {$item##@menu.id##_current} menu##@menu.type##" level=6>
+													##include templates\newmenuitem_inline.htm##
+											</li>
+											{END item##@m5.id##_menulink}
+									##endfor##
+									{END item##@m4.id##_menulink}
+							##endfor##
+							{END item##@m3.id##_menulink}
+					##endfor##
+					{END item##@m2.id##_menulink}
+			##endfor##
+			{END item##@m1.id##_menulink}
+	##endfor##
+	{END item##@m0.id##_menulink}
+##endfor##
+</ul>

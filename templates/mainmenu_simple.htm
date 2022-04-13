@@ -1,0 +1,89 @@
+##foreach MenuChildren(0) as @m0##
+##set @menu=@m0##
+{BEGIN item##@m0.id##_menulink}
+<tr class="runner-b-vmenu runner-vmenu simple ##@m0.type##{BEGIN item##@menu.id##_current} current{END item##@menu.id##_current}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		##include templates\menuitem.htm##
+		##foreach MenuChildren(@m0.id) as @m1##
+		##if @first##
+		<ul>
+		##endif##
+		##set @menu=@m1##
+			{BEGIN item##@m1.id##_menulink}
+			<li parent="group##@m1.parent##" class="##@m1.type##{BEGIN item##@menu.id##_current} current{END item##@menu.id##_current}">
+				##include templates\menuitem.htm##
+				##foreach MenuChildren(@m1.id) as @m2##
+				##if @first##
+				<ul>
+				##endif##
+				##set @menu=@m2##
+					{BEGIN item##@m2.id##_menulink}
+					<li parent="group##@m2.parent##" class="##@m2.type##{BEGIN item##@menu.id##_current} current{END item##@menu.id##_current}">
+						##include templates\menuitem.htm##
+						##foreach MenuChildren(@m2.id) as @m3##
+						##if @first##
+						<ul>
+						##endif##
+						##set @menu=@m3##
+							{BEGIN item##@m3.id##_menulink}
+							<li parent="group##@m3.parent##" class="##@m3.type##{BEGIN item##@menu.id##_current} current{END item##@menu.id##_current}">
+								##include templates\menuitem.htm##
+								##foreach MenuChildren(@m3.id) as @m4##
+								##if @first##
+								<ul>
+								##endif##
+								##set @menu=@m4##
+									{BEGIN item##@m4.id##_menulink}
+									<li parent="group##@m4.parent##" class="##@m4.type##{BEGIN item##@menu.id##_current} current{END item##@menu.id##_current}">
+										##include templates\menuitem.htm##
+										##foreach MenuChildren(@m4.id) as @m5##
+										##if @first##
+										<ul>
+										##endif##
+										##set @menu=@m5##
+											{BEGIN item##@m5.id##_menulink}
+											<li parent="group##@m5.parent##" class="##@m5.type##{BEGIN item##@menu.id##_current} current{END item##@menu.id##_current}">
+												##include templates\menuitem.htm##
+											</li>
+											{END item##@m5.id##_menulink}
+										##if @last##
+										</ul>
+										##endif##
+										##endfor##
+									</li>
+									{END item##@m4.id##_menulink}
+								##if @last##
+								</ul>
+								##endif##
+								##endfor##
+							</li>
+							{END item##@m3.id##_menulink}
+						##if @last##
+						</ul>
+						##endif##
+						##endfor##
+					</li>
+					{END item##@m2.id##_menulink}
+				##if @last##
+				</ul>
+				##endif##
+				##endfor##
+			</li>
+			{END item##@m1.id##_menulink}
+		##if @last##
+		</ul>
+		##endif##
+		##endfor##
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+{END item##@m0.id##_menulink}
+##if @last##
+	##if @BUILDER.bDynamicPermissions##
+	{BEGIN adminarea_link}
+	##include templates\menuitem_adminarea.htm##
+	{END adminarea_link}
+	##endif##
+##endif##
+##endfor##

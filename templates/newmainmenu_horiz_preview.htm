@@ -1,0 +1,80 @@
+{BEGIN mainmenu_block}
+
+##if exists(@TABLE)##
+	##set @isAdminTable=eval(IsAdminTable(@TABLE))##
+##else##
+	##set @isAdminTable="0"##
+##endif##
+
+##if !@isAdminTable##
+	##foreach MenuChildren(0) as @m0##
+	##set @menu=@m0##
+		<div id="item##@m0.id##" class="rnr-b-hmenu {$menustyle} ##@m0.type## ##if exists(@TABLE)####if @menu.table==@TABLE.strDataSourceTable## current##endif####endif##" originalMenuTag="$$originalMenuTag" menuID="$$menuID">
+		##include templates\newmenuitem_horiz_preview.htm##
+		##foreach MenuChildren(@m0.id) as @m1##
+		##if @first##
+			<ul >
+		##endif##
+		##set @menu=@m1##
+				<li  parent="group##@menu.parent##" class="##@menu.type## ##if exists(@TABLE)####if @menu.table==@TABLE.strDataSourceTable## current##endif####endif## menu##@menu.type##">
+				##include templates\newmenuitem_preview.htm##
+				##foreach MenuChildren(@m1.id) as @m2##
+				##if @first##
+					<ul >
+				##endif##
+				##set @menu=@m2##
+						<li  parent="group##@menu.parent##" class="##@menu.type## ##if exists(@TABLE)####if @menu.table==@TABLE.strDataSourceTable## current##endif####endif## menu##@menu.type##">
+						##include templates\newmenuitem_preview.htm##
+						##foreach MenuChildren(@m2.id) as @m3##
+						##if @first##
+							<ul >
+						##endif##
+						##set @menu=@m3##
+								<li  parent="group##@menu.parent##" class="##@menu.type## ##if exists(@TABLE)####if @menu.table==@TABLE.strDataSourceTable## current##endif####endif## menu##@menu.type##">
+								##include templates\newmenuitem_preview.htm##
+								##foreach MenuChildren(@m3.id) as @m4##
+								##if @first##
+									<ul >
+								##endif##
+								##set @menu=@m4##
+										<li  parent="group##@menu.parent##" class="##@menu.type## ##if exists(@TABLE)####if @menu.table==@TABLE.strDataSourceTable## current##endif####endif## menu##@menu.type##">
+										##include templates\newmenuitem_preview.htm##
+										##foreach MenuChildren(@m4.id) as @m5##
+										##if @first##
+											<ul >
+										##endif##
+										##set @menu=@m5##
+												<li  parent="group##@menu.parent##" class="##@menu.type## ##if exists(@TABLE)####if @menu.table==@TABLE.strDataSourceTable## current##endif####endif## menu##@menu.type##">
+												##include templates\newmenuitem_preview.htm##
+												</li>
+										##if @last##
+											</ul>
+										##endif##
+										##endfor##
+										</li>
+								##if @last##
+									</ul>
+								##endif##
+								##endfor##
+								</li>
+						##if @last##
+							</ul>
+						##endif##
+						##endfor##
+						</li>
+				##if @last##
+					</ul>
+				##endif##
+				##endfor##
+				</li>
+		##if @last##
+			</ul>
+		##endif##
+		##endfor##
+		</div>
+	##endfor##
+##else##
+	##include templates\newmainmenu_adminarea_horiz_preview.htm##
+##endif##
+{END mainmenu_block}
+

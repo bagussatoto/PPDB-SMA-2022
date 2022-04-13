@@ -1,0 +1,31 @@
+[data-cellid="above-grid_c"][data-page="calonppdb_add"][data-cellid="above-grid_c"][data-page="calonppdb_add"][data-cellid="above-grid_c"][data-page="calonppdb_add"] {
+  background-color: #e8ff00;
+  white-space: normal;
+}
+[data-page="calonppdb_add"][data-itemid="add_back_list"] {
+  padding-top: 10px;
+}
+[data-page="calonppdb_add"][data-itemid="text"] {
+  color: #0001ff;
+  font-weight: bold;
+  font-size: 16px;
+  white-space: normal;
+  padding-top: 5px;
+}
+[data-page="calonppdb_add"][data-itemid="text1"] {
+  color: #c90000;
+  font-weight: bold;
+  font-size: 18px;
+}
+[data-page="calonppdb_add"][data-itemid="text2"] {
+  font-weight: bold;
+  font-size: 14px;
+  white-space: normal;
+}
+[data-page="calonppdb_add"][data-itemid="text3"] {
+  color: #de0b0b;
+  font-style: italic;
+  white-space: normal;
+}
+
+

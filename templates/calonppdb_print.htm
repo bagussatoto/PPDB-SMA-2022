@@ -1,0 +1,3455 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="left"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c2" data-pageid="{$pageid}"	{$cell_top_c2}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		<h2 data-itemtype="print_header" data-itemid="print_header" {$item_print_header} data-pageid="{$pageid}" >{$pagetitlelabel calonppdb print}</h2>
+	 
+		{BEGIN printtabheader}
+<span data-itemtype="print_subheader" data-itemid="print_subheader" {$item_print_subheader} data-pageid="{$pageid}" >
+{$printtabheader_text}
+</span>
+{END printtabheader}
+		</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		<span data-itemtype="print_pages" data-itemid="print_pages" {$item_print_pages} data-pageid="{$pageid}" data-small >
+	{$print_pages_labelprint_pages}
+</span>			{END firstAboveGridCell}	
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+{BEGIN message_block}
+<div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
+{END message_block}<table data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" class=" table {$grid_classes}  rnr-b-grid rnr-gridtable" 
+	cellpadding="0" 
+	data-body-height="1"
+>
+						<thead>
+			{BEGIN grid_header}
+					
+		 
+						<tr {$rowattrs} {$row_grid_0} class="{$rowclass} 
+									{$gridHeader_class}
+									
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_headcell_field}
+	<th
+	
+	{$cell_grid_headcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ID_class}
+			"
+
+			data-field="ID"
+	
+	data-cellId="grid_headcell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ID_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field52" {$item_simple_grid_field52} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ID">
+	{$label calonppdb ID }	</span>
+{END ID_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field}
+				 
+					{BEGIN cellblock_grid_headcell_field1}
+	<th
+	
+	{$cell_grid_headcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$tanggaldaftar_class}
+			"
+
+			data-field="tanggaldaftar"
+	
+	data-cellId="grid_headcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN tanggaldaftar_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field53" {$item_simple_grid_field53} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="tanggaldaftar">
+	{$label calonppdb tanggaldaftar }	</span>
+{END tanggaldaftar_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field1}
+				 
+					{BEGIN cellblock_grid_headcell_field2}
+	<th
+	
+	{$cell_grid_headcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nomap_class}
+			"
+
+			data-field="nomap"
+	
+	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nomap_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field54" {$item_simple_grid_field54} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nomap">
+	{$label calonppdb nomap }	</span>
+{END nomap_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field2}
+				 
+					{BEGIN cellblock_grid_headcell_field3}
+	<th
+	
+	{$cell_grid_headcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$namalengkap_class}
+			"
+
+			data-field="namalengkap"
+	
+	data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN namalengkap_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field55" {$item_simple_grid_field55} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="namalengkap">
+	{$label calonppdb namalengkap }	</span>
+{END namalengkap_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field3}
+				 
+					{BEGIN cellblock_grid_headcell_field4}
+	<th
+	
+	{$cell_grid_headcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jeniskelamin_class}
+			"
+
+			data-field="jeniskelamin"
+	
+	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jeniskelamin_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field56" {$item_simple_grid_field56} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jeniskelamin">
+	{$label calonppdb jeniskelamin }	</span>
+{END jeniskelamin_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field4}
+				 
+					{BEGIN cellblock_grid_headcell_field5}
+	<th
+	
+	{$cell_grid_headcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nisn_class}
+			"
+
+			data-field="nisn"
+	
+	data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nisn_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field57" {$item_simple_grid_field57} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nisn">
+	{$label calonppdb nisn }	</span>
+{END nisn_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field5}
+				 
+					{BEGIN cellblock_grid_headcell_field6}
+	<th
+	
+	{$cell_grid_headcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nik_class}
+			"
+
+			data-field="nik"
+	
+	data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nik_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field58" {$item_simple_grid_field58} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nik">
+	{$label calonppdb nik }	</span>
+{END nik_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field6}
+				 
+					{BEGIN cellblock_grid_headcell_field7}
+	<th
+	
+	{$cell_grid_headcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$tempatlahir_class}
+			"
+
+			data-field="tempatlahir"
+	
+	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN tempatlahir_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field59" {$item_simple_grid_field59} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="tempatlahir">
+	{$label calonppdb tempatlahir }	</span>
+{END tempatlahir_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field7}
+				 
+					{BEGIN cellblock_grid_headcell_field8}
+	<th
+	
+	{$cell_grid_headcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$tanggallahir1_class}
+			"
+
+			data-field="tanggallahir1"
+	
+	data-cellId="grid_headcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN tanggallahir1_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field60" {$item_simple_grid_field60} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="tanggallahir1">
+	{$label calonppdb tanggallahir1 }	</span>
+{END tanggallahir1_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field8}
+				 
+					{BEGIN cellblock_grid_headcell_field9}
+	<th
+	
+	{$cell_grid_headcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$noaktalahir_class}
+			"
+
+			data-field="noaktalahir"
+	
+	data-cellId="grid_headcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN noaktalahir_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field61" {$item_simple_grid_field61} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="noaktalahir">
+	{$label calonppdb noaktalahir }	</span>
+{END noaktalahir_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field9}
+				 
+					{BEGIN cellblock_grid_headcell_field10}
+	<th
+	
+	{$cell_grid_headcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$agama_class}
+			"
+
+			data-field="agama"
+	
+	data-cellId="grid_headcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN agama_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field62" {$item_simple_grid_field62} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="agama">
+	{$label calonppdb agama }	</span>
+{END agama_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field10}
+				 
+					{BEGIN cellblock_grid_headcell_field11}
+	<th
+	
+	{$cell_grid_headcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$alamatjalan_class}
+			"
+
+			data-field="alamatjalan"
+	
+	data-cellId="grid_headcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN alamatjalan_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field63" {$item_simple_grid_field63} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="alamatjalan">
+	{$label calonppdb alamatjalan }	</span>
+{END alamatjalan_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field11}
+				 
+					{BEGIN cellblock_grid_headcell_field12}
+	<th
+	
+	{$cell_grid_headcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$rt_class}
+			"
+
+			data-field="rt"
+	
+	data-cellId="grid_headcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN rt_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field64" {$item_simple_grid_field64} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="rt">
+	{$label calonppdb rt }	</span>
+{END rt_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field12}
+				 
+					{BEGIN cellblock_grid_headcell_field13}
+	<th
+	
+	{$cell_grid_headcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$rw_class}
+			"
+
+			data-field="rw"
+	
+	data-cellId="grid_headcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN rw_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field65" {$item_simple_grid_field65} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="rw">
+	{$label calonppdb rw }	</span>
+{END rw_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field13}
+				 
+					{BEGIN cellblock_grid_headcell_field14}
+	<th
+	
+	{$cell_grid_headcell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$dusun_class}
+			"
+
+			data-field="dusun"
+	
+	data-cellId="grid_headcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dusun_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field66" {$item_simple_grid_field66} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dusun">
+	{$label calonppdb dusun }	</span>
+{END dusun_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field14}
+				 
+					{BEGIN cellblock_grid_headcell_field15}
+	<th
+	
+	{$cell_grid_headcell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$deskel_class}
+			"
+
+			data-field="deskel"
+	
+	data-cellId="grid_headcell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN deskel_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field67" {$item_simple_grid_field67} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="deskel">
+	{$label calonppdb deskel }	</span>
+{END deskel_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field15}
+				 
+					{BEGIN cellblock_grid_headcell_field16}
+	<th
+	
+	{$cell_grid_headcell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kecamatan_class}
+			"
+
+			data-field="kecamatan"
+	
+	data-cellId="grid_headcell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kecamatan_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field68" {$item_simple_grid_field68} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kecamatan">
+	{$label calonppdb kecamatan }	</span>
+{END kecamatan_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field16}
+				 
+					{BEGIN cellblock_grid_headcell_field17}
+	<th
+	
+	{$cell_grid_headcell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kodepos_class}
+			"
+
+			data-field="kodepos"
+	
+	data-cellId="grid_headcell_field17" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kodepos_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field69" {$item_simple_grid_field69} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kodepos">
+	{$label calonppdb kodepos }	</span>
+{END kodepos_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field17}
+				 
+					{BEGIN cellblock_grid_headcell_field18}
+	<th
+	
+	{$cell_grid_headcell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$tempattinggal_class}
+			"
+
+			data-field="tempattinggal"
+	
+	data-cellId="grid_headcell_field18" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN tempattinggal_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field70" {$item_simple_grid_field70} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="tempattinggal">
+	{$label calonppdb tempattinggal }	</span>
+{END tempattinggal_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field18}
+				 
+					{BEGIN cellblock_grid_headcell_field19}
+	<th
+	
+	{$cell_grid_headcell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$modatransportasi_class}
+			"
+
+			data-field="modatransportasi"
+	
+	data-cellId="grid_headcell_field19" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN modatransportasi_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field71" {$item_simple_grid_field71} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="modatransportasi">
+	{$label calonppdb modatransportasi }	</span>
+{END modatransportasi_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field19}
+				 
+					{BEGIN cellblock_grid_headcell_field20}
+	<th
+	
+	{$cell_grid_headcell_field20}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$anakke_class}
+			"
+
+			data-field="anakke"
+	
+	data-cellId="grid_headcell_field20" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN anakke_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field72" {$item_simple_grid_field72} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="anakke">
+	{$label calonppdb anakke }	</span>
+{END anakke_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field20}
+				 
+					{BEGIN cellblock_grid_headcell_field21}
+	<th
+	
+	{$cell_grid_headcell_field21}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$namaayah_class}
+			"
+
+			data-field="namaayah"
+	
+	data-cellId="grid_headcell_field21" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN namaayah_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field73" {$item_simple_grid_field73} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="namaayah">
+	{$label calonppdb namaayah }	</span>
+{END namaayah_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field21}
+				 
+					{BEGIN cellblock_grid_headcell_field22}
+	<th
+	
+	{$cell_grid_headcell_field22}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nikayah_class}
+			"
+
+			data-field="nikayah"
+	
+	data-cellId="grid_headcell_field22" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nikayah_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field74" {$item_simple_grid_field74} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nikayah">
+	{$label calonppdb nikayah }	</span>
+{END nikayah_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field22}
+				 
+					{BEGIN cellblock_grid_headcell_field23}
+	<th
+	
+	{$cell_grid_headcell_field23}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$tanggallahir2_class}
+			"
+
+			data-field="tanggallahir2"
+	
+	data-cellId="grid_headcell_field23" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN tanggallahir2_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field75" {$item_simple_grid_field75} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="tanggallahir2">
+	{$label calonppdb tanggallahir2 }	</span>
+{END tanggallahir2_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field23}
+				 
+					{BEGIN cellblock_grid_headcell_field24}
+	<th
+	
+	{$cell_grid_headcell_field24}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$pendidikan1_class}
+			"
+
+			data-field="pendidikan1"
+	
+	data-cellId="grid_headcell_field24" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN pendidikan1_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field76" {$item_simple_grid_field76} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="pendidikan1">
+	{$label calonppdb pendidikan1 }	</span>
+{END pendidikan1_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field24}
+				 
+					{BEGIN cellblock_grid_headcell_field25}
+	<th
+	
+	{$cell_grid_headcell_field25}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$pekerjaan1_class}
+			"
+
+			data-field="pekerjaan1"
+	
+	data-cellId="grid_headcell_field25" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN pekerjaan1_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field77" {$item_simple_grid_field77} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="pekerjaan1">
+	{$label calonppdb pekerjaan1 }	</span>
+{END pekerjaan1_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field25}
+				 
+					{BEGIN cellblock_grid_headcell_field26}
+	<th
+	
+	{$cell_grid_headcell_field26}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$penghasilan1_class}
+			"
+
+			data-field="penghasilan1"
+	
+	data-cellId="grid_headcell_field26" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN penghasilan1_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field78" {$item_simple_grid_field78} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="penghasilan1">
+	{$label calonppdb penghasilan1 }	</span>
+{END penghasilan1_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field26}
+				 
+					{BEGIN cellblock_grid_headcell_field27}
+	<th
+	
+	{$cell_grid_headcell_field27}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$statusayah_class}
+			"
+
+			data-field="statusayah"
+	
+	data-cellId="grid_headcell_field27" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN statusayah_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field79" {$item_simple_grid_field79} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="statusayah">
+	{$label calonppdb statusayah }	</span>
+{END statusayah_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field27}
+				 
+					{BEGIN cellblock_grid_headcell_field28}
+	<th
+	
+	{$cell_grid_headcell_field28}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$statusibu_class}
+			"
+
+			data-field="statusibu"
+	
+	data-cellId="grid_headcell_field28" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN statusibu_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field80" {$item_simple_grid_field80} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="statusibu">
+	{$label calonppdb statusibu }	</span>
+{END statusibu_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field28}
+				 
+					{BEGIN cellblock_grid_headcell_field29}
+	<th
+	
+	{$cell_grid_headcell_field29}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nikibu_class}
+			"
+
+			data-field="nikibu"
+	
+	data-cellId="grid_headcell_field29" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nikibu_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field81" {$item_simple_grid_field81} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nikibu">
+	{$label calonppdb nikibu }	</span>
+{END nikibu_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field29}
+				 
+					{BEGIN cellblock_grid_headcell_field30}
+	<th
+	
+	{$cell_grid_headcell_field30}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$tanggallahir3_class}
+			"
+
+			data-field="tanggallahir3"
+	
+	data-cellId="grid_headcell_field30" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN tanggallahir3_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field82" {$item_simple_grid_field82} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="tanggallahir3">
+	{$label calonppdb tanggallahir3 }	</span>
+{END tanggallahir3_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field30}
+				 
+					{BEGIN cellblock_grid_headcell_field31}
+	<th
+	
+	{$cell_grid_headcell_field31}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$pendidikan2_class}
+			"
+
+			data-field="pendidikan2"
+	
+	data-cellId="grid_headcell_field31" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN pendidikan2_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field83" {$item_simple_grid_field83} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="pendidikan2">
+	{$label calonppdb pendidikan2 }	</span>
+{END pendidikan2_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field31}
+				 
+					{BEGIN cellblock_grid_headcell_field32}
+	<th
+	
+	{$cell_grid_headcell_field32}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$pekerjaan2_class}
+			"
+
+			data-field="pekerjaan2"
+	
+	data-cellId="grid_headcell_field32" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN pekerjaan2_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field84" {$item_simple_grid_field84} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="pekerjaan2">
+	{$label calonppdb pekerjaan2 }	</span>
+{END pekerjaan2_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field32}
+				 
+					{BEGIN cellblock_grid_headcell_field33}
+	<th
+	
+	{$cell_grid_headcell_field33}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$penghasilan2_class}
+			"
+
+			data-field="penghasilan2"
+	
+	data-cellId="grid_headcell_field33" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN penghasilan2_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field85" {$item_simple_grid_field85} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="penghasilan2">
+	{$label calonppdb penghasilan2 }	</span>
+{END penghasilan2_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field33}
+				 
+					{BEGIN cellblock_grid_headcell_field34}
+	<th
+	
+	{$cell_grid_headcell_field34}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$namawali_class}
+			"
+
+			data-field="namawali"
+	
+	data-cellId="grid_headcell_field34" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN namawali_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field86" {$item_simple_grid_field86} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="namawali">
+	{$label calonppdb namawali }	</span>
+{END namawali_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field34}
+				 
+					{BEGIN cellblock_grid_headcell_field35}
+	<th
+	
+	{$cell_grid_headcell_field35}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nikwali_class}
+			"
+
+			data-field="nikwali"
+	
+	data-cellId="grid_headcell_field35" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nikwali_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field87" {$item_simple_grid_field87} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nikwali">
+	{$label calonppdb nikwali }	</span>
+{END nikwali_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field35}
+				 
+					{BEGIN cellblock_grid_headcell_field36}
+	<th
+	
+	{$cell_grid_headcell_field36}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$tanggallahir4_class}
+			"
+
+			data-field="tanggallahir4"
+	
+	data-cellId="grid_headcell_field36" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN tanggallahir4_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field88" {$item_simple_grid_field88} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="tanggallahir4">
+	{$label calonppdb tanggallahir4 }	</span>
+{END tanggallahir4_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field36}
+				 
+					{BEGIN cellblock_grid_headcell_field37}
+	<th
+	
+	{$cell_grid_headcell_field37}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$pendidikan3_class}
+			"
+
+			data-field="pendidikan3"
+	
+	data-cellId="grid_headcell_field37" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN pendidikan3_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field89" {$item_simple_grid_field89} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="pendidikan3">
+	{$label calonppdb pendidikan3 }	</span>
+{END pendidikan3_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field37}
+				 
+					{BEGIN cellblock_grid_headcell_field38}
+	<th
+	
+	{$cell_grid_headcell_field38}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$pekerjaan3_class}
+			"
+
+			data-field="pekerjaan3"
+	
+	data-cellId="grid_headcell_field38" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN pekerjaan3_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field90" {$item_simple_grid_field90} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="pekerjaan3">
+	{$label calonppdb pekerjaan3 }	</span>
+{END pekerjaan3_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field38}
+				 
+					{BEGIN cellblock_grid_headcell_field39}
+	<th
+	
+	{$cell_grid_headcell_field39}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$penghasilan3_class}
+			"
+
+			data-field="penghasilan3"
+	
+	data-cellId="grid_headcell_field39" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN penghasilan3_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field91" {$item_simple_grid_field91} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="penghasilan3">
+	{$label calonppdb penghasilan3 }	</span>
+{END penghasilan3_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field39}
+				 
+					{BEGIN cellblock_grid_headcell_field40}
+	<th
+	
+	{$cell_grid_headcell_field40}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kontak_class}
+			"
+
+			data-field="kontak"
+	
+	data-cellId="grid_headcell_field40" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kontak_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field92" {$item_simple_grid_field92} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kontak">
+	{$label calonppdb kontak }	</span>
+{END kontak_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field40}
+				 
+					{BEGIN cellblock_grid_headcell_field41}
+	<th
+	
+	{$cell_grid_headcell_field41}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nomorwa_class}
+			"
+
+			data-field="nomorwa"
+	
+	data-cellId="grid_headcell_field41" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nomorwa_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field93" {$item_simple_grid_field93} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nomorwa">
+	{$label calonppdb nomorwa }	</span>
+{END nomorwa_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field41}
+				 
+					{BEGIN cellblock_grid_headcell_field42}
+	<th
+	
+	{$cell_grid_headcell_field42}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$email_class}
+			"
+
+			data-field="email"
+	
+	data-cellId="grid_headcell_field42" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN email_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field94" {$item_simple_grid_field94} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="email">
+	{$label calonppdb email }	</span>
+{END email_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field42}
+				 
+					{BEGIN cellblock_grid_headcell_field43}
+	<th
+	
+	{$cell_grid_headcell_field43}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$tinggibadan_class}
+			"
+
+			data-field="tinggibadan"
+	
+	data-cellId="grid_headcell_field43" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN tinggibadan_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field95" {$item_simple_grid_field95} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="tinggibadan">
+	{$label calonppdb tinggibadan }	</span>
+{END tinggibadan_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field43}
+				 
+					{BEGIN cellblock_grid_headcell_field44}
+	<th
+	
+	{$cell_grid_headcell_field44}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$beratbadan_class}
+			"
+
+			data-field="beratbadan"
+	
+	data-cellId="grid_headcell_field44" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN beratbadan_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field96" {$item_simple_grid_field96} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="beratbadan">
+	{$label calonppdb beratbadan }	</span>
+{END beratbadan_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field44}
+				 
+					{BEGIN cellblock_grid_headcell_field45}
+	<th
+	
+	{$cell_grid_headcell_field45}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jaraktempatkesekolah_class}
+			"
+
+			data-field="jaraktempatkesekolah"
+	
+	data-cellId="grid_headcell_field45" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jaraktempatkesekolah_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field97" {$item_simple_grid_field97} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jaraktempatkesekolah">
+	{$label calonppdb jaraktempatkesekolah }	</span>
+{END jaraktempatkesekolah_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field45}
+				 
+					{BEGIN cellblock_grid_headcell_field46}
+	<th
+	
+	{$cell_grid_headcell_field46}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahsaudarakandung_class}
+			"
+
+			data-field="jumlahsaudarakandung"
+	
+	data-cellId="grid_headcell_field46" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahsaudarakandung_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field98" {$item_simple_grid_field98} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahsaudarakandung">
+	{$label calonppdb jumlahsaudarakandung }	</span>
+{END jumlahsaudarakandung_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field46}
+				 
+					{BEGIN cellblock_grid_headcell_field47}
+	<th
+	
+	{$cell_grid_headcell_field47}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$asaltk_class}
+			"
+
+			data-field="asaltk"
+	
+	data-cellId="grid_headcell_field47" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN asaltk_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field99" {$item_simple_grid_field99} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="asaltk">
+	{$label calonppdb asaltk }	</span>
+{END asaltk_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field47}
+				 
+					{BEGIN cellblock_grid_headcell_field48}
+	<th
+	
+	{$cell_grid_headcell_field48}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nomorsurattk_class}
+			"
+
+			data-field="nomorsurattk"
+	
+	data-cellId="grid_headcell_field48" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nomorsurattk_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field100" {$item_simple_grid_field100} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nomorsurattk">
+	{$label calonppdb nomorsurattk }	</span>
+{END nomorsurattk_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field48}
+				 
+					{BEGIN cellblock_grid_headcell_field49}
+	<th
+	
+	{$cell_grid_headcell_field49}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$paktaintegritas_class}
+			"
+
+			data-field="paktaintegritas"
+	
+	data-cellId="grid_headcell_field49" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN paktaintegritas_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field101" {$item_simple_grid_field101} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="paktaintegritas">
+	{$label calonppdb paktaintegritas }	</span>
+{END paktaintegritas_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field49}
+				 
+					{BEGIN cellblock_grid_headcell_field50}
+	<th
+	
+	{$cell_grid_headcell_field50}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$namaibu_class}
+			"
+
+			data-field="namaibu"
+	
+	data-cellId="grid_headcell_field50" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN namaibu_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field102" {$item_simple_grid_field102} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="namaibu">
+	{$label calonppdb namaibu }	</span>
+{END namaibu_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field50}
+				 
+					{BEGIN cellblock_grid_headcell_field51}
+	<th
+	
+	{$cell_grid_headcell_field51}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$status_class}
+			"
+
+			data-field="status"
+	
+	data-cellId="grid_headcell_field51" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN status_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field103" {$item_simple_grid_field103} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="status">
+	{$label calonppdb status }	</span>
+{END status_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field51}
+							</tr>
+					 
+					 
+					
+					{END grid_header}
+			</thead>
+															{BEGIN grid_row}
+					<tbody>
+									
+		 
+					 
+						<tr {$rowattrs} {$row_grid_1} class="{$rowclass} 
+								
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_cell_field}
+	<td
+	
+	{$cell_grid_cell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ID_class}
+			"
+
+			data-field="ID"
+	
+	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ID_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ID" data-default-width >
+{$ID_value}
+</span>
+{END ID_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field}
+				 
+					{BEGIN cellblock_grid_cell_field1}
+	<td
+	
+	{$cell_grid_cell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$tanggaldaftar_class}
+			"
+
+			data-field="tanggaldaftar"
+	
+	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN tanggaldaftar_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="tanggaldaftar" data-default-width >
+{$tanggaldaftar_value}
+</span>
+{END tanggaldaftar_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field1}
+				 
+					{BEGIN cellblock_grid_cell_field2}
+	<td
+	
+	{$cell_grid_cell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nomap_class}
+			"
+
+			data-field="nomap"
+	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nomap_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nomap" data-default-width >
+{$nomap_value}
+</span>
+{END nomap_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field2}
+				 
+					{BEGIN cellblock_grid_cell_field3}
+	<td
+	
+	{$cell_grid_cell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$namalengkap_class}
+			"
+
+			data-field="namalengkap"
+	
+	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN namalengkap_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="namalengkap" data-default-width >
+{$namalengkap_value}
+</span>
+{END namalengkap_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field3}
+				 
+					{BEGIN cellblock_grid_cell_field4}
+	<td
+	
+	{$cell_grid_cell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jeniskelamin_class}
+			"
+
+			data-field="jeniskelamin"
+	
+	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jeniskelamin_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jeniskelamin" data-default-width >
+{$jeniskelamin_value}
+</span>
+{END jeniskelamin_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field4}
+				 
+					{BEGIN cellblock_grid_cell_field5}
+	<td
+	
+	{$cell_grid_cell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nisn_class}
+			"
+
+			data-field="nisn"
+	
+	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nisn_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nisn" data-default-width >
+{$nisn_value}
+</span>
+{END nisn_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field5}
+				 
+					{BEGIN cellblock_grid_cell_field6}
+	<td
+	
+	{$cell_grid_cell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nik_class}
+			"
+
+			data-field="nik"
+	
+	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nik_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nik" data-default-width >
+{$nik_value}
+</span>
+{END nik_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field6}
+				 
+					{BEGIN cellblock_grid_cell_field7}
+	<td
+	
+	{$cell_grid_cell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$tempatlahir_class}
+			"
+
+			data-field="tempatlahir"
+	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN tempatlahir_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="tempatlahir" data-default-width >
+{$tempatlahir_value}
+</span>
+{END tempatlahir_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field7}
+				 
+					{BEGIN cellblock_grid_cell_field8}
+	<td
+	
+	{$cell_grid_cell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$tanggallahir1_class}
+			"
+
+			data-field="tanggallahir1"
+	
+	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN tanggallahir1_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="tanggallahir1" data-default-width >
+{$tanggallahir1_value}
+</span>
+{END tanggallahir1_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field8}
+				 
+					{BEGIN cellblock_grid_cell_field9}
+	<td
+	
+	{$cell_grid_cell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$noaktalahir_class}
+			"
+
+			data-field="noaktalahir"
+	
+	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN noaktalahir_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="noaktalahir" data-default-width >
+{$noaktalahir_value}
+</span>
+{END noaktalahir_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field9}
+				 
+					{BEGIN cellblock_grid_cell_field10}
+	<td
+	
+	{$cell_grid_cell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$agama_class}
+			"
+
+			data-field="agama"
+	
+	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN agama_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="agama" data-default-width >
+{$agama_value}
+</span>
+{END agama_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field10}
+				 
+					{BEGIN cellblock_grid_cell_field11}
+	<td
+	
+	{$cell_grid_cell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$alamatjalan_class}
+			"
+
+			data-field="alamatjalan"
+	
+	data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN alamatjalan_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="alamatjalan" data-default-width >
+{$alamatjalan_value}
+</span>
+{END alamatjalan_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field11}
+				 
+					{BEGIN cellblock_grid_cell_field12}
+	<td
+	
+	{$cell_grid_cell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$rt_class}
+			"
+
+			data-field="rt"
+	
+	data-cellId="grid_cell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN rt_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="rt" data-default-width >
+{$rt_value}
+</span>
+{END rt_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field12}
+				 
+					{BEGIN cellblock_grid_cell_field13}
+	<td
+	
+	{$cell_grid_cell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$rw_class}
+			"
+
+			data-field="rw"
+	
+	data-cellId="grid_cell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN rw_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="rw" data-default-width >
+{$rw_value}
+</span>
+{END rw_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field13}
+				 
+					{BEGIN cellblock_grid_cell_field14}
+	<td
+	
+	{$cell_grid_cell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$dusun_class}
+			"
+
+			data-field="dusun"
+	
+	data-cellId="grid_cell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dusun_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dusun" data-default-width >
+{$dusun_value}
+</span>
+{END dusun_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field14}
+				 
+					{BEGIN cellblock_grid_cell_field15}
+	<td
+	
+	{$cell_grid_cell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$deskel_class}
+			"
+
+			data-field="deskel"
+	
+	data-cellId="grid_cell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN deskel_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="deskel" data-default-width >
+{$deskel_value}
+</span>
+{END deskel_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field15}
+				 
+					{BEGIN cellblock_grid_cell_field16}
+	<td
+	
+	{$cell_grid_cell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kecamatan_class}
+			"
+
+			data-field="kecamatan"
+	
+	data-cellId="grid_cell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kecamatan_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kecamatan" data-default-width >
+{$kecamatan_value}
+</span>
+{END kecamatan_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field16}
+				 
+					{BEGIN cellblock_grid_cell_field17}
+	<td
+	
+	{$cell_grid_cell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kodepos_class}
+			"
+
+			data-field="kodepos"
+	
+	data-cellId="grid_cell_field17" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kodepos_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kodepos" data-default-width >
+{$kodepos_value}
+</span>
+{END kodepos_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field17}
+				 
+					{BEGIN cellblock_grid_cell_field18}
+	<td
+	
+	{$cell_grid_cell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$tempattinggal_class}
+			"
+
+			data-field="tempattinggal"
+	
+	data-cellId="grid_cell_field18" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN tempattinggal_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field18" {$item_simple_grid_field18} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="tempattinggal" data-default-width >
+{$tempattinggal_value}
+</span>
+{END tempattinggal_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field18}
+				 
+					{BEGIN cellblock_grid_cell_field19}
+	<td
+	
+	{$cell_grid_cell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$modatransportasi_class}
+			"
+
+			data-field="modatransportasi"
+	
+	data-cellId="grid_cell_field19" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN modatransportasi_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field19" {$item_simple_grid_field19} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="modatransportasi" data-default-width >
+{$modatransportasi_value}
+</span>
+{END modatransportasi_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field19}
+				 
+					{BEGIN cellblock_grid_cell_field20}
+	<td
+	
+	{$cell_grid_cell_field20}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$anakke_class}
+			"
+
+			data-field="anakke"
+	
+	data-cellId="grid_cell_field20" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN anakke_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field20" {$item_simple_grid_field20} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="anakke" data-default-width >
+{$anakke_value}
+</span>
+{END anakke_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field20}
+				 
+					{BEGIN cellblock_grid_cell_field21}
+	<td
+	
+	{$cell_grid_cell_field21}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$namaayah_class}
+			"
+
+			data-field="namaayah"
+	
+	data-cellId="grid_cell_field21" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN namaayah_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field21" {$item_simple_grid_field21} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="namaayah" data-default-width >
+{$namaayah_value}
+</span>
+{END namaayah_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field21}
+				 
+					{BEGIN cellblock_grid_cell_field22}
+	<td
+	
+	{$cell_grid_cell_field22}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nikayah_class}
+			"
+
+			data-field="nikayah"
+	
+	data-cellId="grid_cell_field22" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nikayah_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field22" {$item_simple_grid_field22} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nikayah" data-default-width >
+{$nikayah_value}
+</span>
+{END nikayah_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field22}
+				 
+					{BEGIN cellblock_grid_cell_field23}
+	<td
+	
+	{$cell_grid_cell_field23}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$tanggallahir2_class}
+			"
+
+			data-field="tanggallahir2"
+	
+	data-cellId="grid_cell_field23" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN tanggallahir2_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field23" {$item_simple_grid_field23} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="tanggallahir2" data-default-width >
+{$tanggallahir2_value}
+</span>
+{END tanggallahir2_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field23}
+				 
+					{BEGIN cellblock_grid_cell_field24}
+	<td
+	
+	{$cell_grid_cell_field24}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$pendidikan1_class}
+			"
+
+			data-field="pendidikan1"
+	
+	data-cellId="grid_cell_field24" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN pendidikan1_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field24" {$item_simple_grid_field24} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="pendidikan1" data-default-width >
+{$pendidikan1_value}
+</span>
+{END pendidikan1_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field24}
+				 
+					{BEGIN cellblock_grid_cell_field25}
+	<td
+	
+	{$cell_grid_cell_field25}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$pekerjaan1_class}
+			"
+
+			data-field="pekerjaan1"
+	
+	data-cellId="grid_cell_field25" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN pekerjaan1_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field25" {$item_simple_grid_field25} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="pekerjaan1" data-default-width >
+{$pekerjaan1_value}
+</span>
+{END pekerjaan1_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field25}
+				 
+					{BEGIN cellblock_grid_cell_field26}
+	<td
+	
+	{$cell_grid_cell_field26}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$penghasilan1_class}
+			"
+
+			data-field="penghasilan1"
+	
+	data-cellId="grid_cell_field26" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN penghasilan1_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field26" {$item_simple_grid_field26} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="penghasilan1" data-default-width >
+{$penghasilan1_value}
+</span>
+{END penghasilan1_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field26}
+				 
+					{BEGIN cellblock_grid_cell_field27}
+	<td
+	
+	{$cell_grid_cell_field27}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$statusayah_class}
+			"
+
+			data-field="statusayah"
+	
+	data-cellId="grid_cell_field27" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN statusayah_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field27" {$item_simple_grid_field27} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="statusayah" data-default-width >
+{$statusayah_value}
+</span>
+{END statusayah_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field27}
+				 
+					{BEGIN cellblock_grid_cell_field28}
+	<td
+	
+	{$cell_grid_cell_field28}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$statusibu_class}
+			"
+
+			data-field="statusibu"
+	
+	data-cellId="grid_cell_field28" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN statusibu_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field28" {$item_simple_grid_field28} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="statusibu" data-default-width >
+{$statusibu_value}
+</span>
+{END statusibu_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field28}
+				 
+					{BEGIN cellblock_grid_cell_field29}
+	<td
+	
+	{$cell_grid_cell_field29}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nikibu_class}
+			"
+
+			data-field="nikibu"
+	
+	data-cellId="grid_cell_field29" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nikibu_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field29" {$item_simple_grid_field29} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nikibu" data-default-width >
+{$nikibu_value}
+</span>
+{END nikibu_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field29}
+				 
+					{BEGIN cellblock_grid_cell_field30}
+	<td
+	
+	{$cell_grid_cell_field30}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$tanggallahir3_class}
+			"
+
+			data-field="tanggallahir3"
+	
+	data-cellId="grid_cell_field30" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN tanggallahir3_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field30" {$item_simple_grid_field30} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="tanggallahir3" data-default-width >
+{$tanggallahir3_value}
+</span>
+{END tanggallahir3_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field30}
+				 
+					{BEGIN cellblock_grid_cell_field31}
+	<td
+	
+	{$cell_grid_cell_field31}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$pendidikan2_class}
+			"
+
+			data-field="pendidikan2"
+	
+	data-cellId="grid_cell_field31" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN pendidikan2_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field31" {$item_simple_grid_field31} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="pendidikan2" data-default-width >
+{$pendidikan2_value}
+</span>
+{END pendidikan2_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field31}
+				 
+					{BEGIN cellblock_grid_cell_field32}
+	<td
+	
+	{$cell_grid_cell_field32}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$pekerjaan2_class}
+			"
+
+			data-field="pekerjaan2"
+	
+	data-cellId="grid_cell_field32" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN pekerjaan2_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field32" {$item_simple_grid_field32} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="pekerjaan2" data-default-width >
+{$pekerjaan2_value}
+</span>
+{END pekerjaan2_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field32}
+				 
+					{BEGIN cellblock_grid_cell_field33}
+	<td
+	
+	{$cell_grid_cell_field33}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$penghasilan2_class}
+			"
+
+			data-field="penghasilan2"
+	
+	data-cellId="grid_cell_field33" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN penghasilan2_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field33" {$item_simple_grid_field33} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="penghasilan2" data-default-width >
+{$penghasilan2_value}
+</span>
+{END penghasilan2_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field33}
+				 
+					{BEGIN cellblock_grid_cell_field34}
+	<td
+	
+	{$cell_grid_cell_field34}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$namawali_class}
+			"
+
+			data-field="namawali"
+	
+	data-cellId="grid_cell_field34" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN namawali_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field34" {$item_simple_grid_field34} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="namawali" data-default-width >
+{$namawali_value}
+</span>
+{END namawali_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field34}
+				 
+					{BEGIN cellblock_grid_cell_field35}
+	<td
+	
+	{$cell_grid_cell_field35}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nikwali_class}
+			"
+
+			data-field="nikwali"
+	
+	data-cellId="grid_cell_field35" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nikwali_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field35" {$item_simple_grid_field35} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nikwali" data-default-width >
+{$nikwali_value}
+</span>
+{END nikwali_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field35}
+				 
+					{BEGIN cellblock_grid_cell_field36}
+	<td
+	
+	{$cell_grid_cell_field36}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$tanggallahir4_class}
+			"
+
+			data-field="tanggallahir4"
+	
+	data-cellId="grid_cell_field36" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN tanggallahir4_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field36" {$item_simple_grid_field36} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="tanggallahir4" data-default-width >
+{$tanggallahir4_value}
+</span>
+{END tanggallahir4_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field36}
+				 
+					{BEGIN cellblock_grid_cell_field37}
+	<td
+	
+	{$cell_grid_cell_field37}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$pendidikan3_class}
+			"
+
+			data-field="pendidikan3"
+	
+	data-cellId="grid_cell_field37" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN pendidikan3_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field37" {$item_simple_grid_field37} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="pendidikan3" data-default-width >
+{$pendidikan3_value}
+</span>
+{END pendidikan3_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field37}
+				 
+					{BEGIN cellblock_grid_cell_field38}
+	<td
+	
+	{$cell_grid_cell_field38}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$pekerjaan3_class}
+			"
+
+			data-field="pekerjaan3"
+	
+	data-cellId="grid_cell_field38" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN pekerjaan3_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field38" {$item_simple_grid_field38} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="pekerjaan3" data-default-width >
+{$pekerjaan3_value}
+</span>
+{END pekerjaan3_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field38}
+				 
+					{BEGIN cellblock_grid_cell_field39}
+	<td
+	
+	{$cell_grid_cell_field39}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$penghasilan3_class}
+			"
+
+			data-field="penghasilan3"
+	
+	data-cellId="grid_cell_field39" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN penghasilan3_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field39" {$item_simple_grid_field39} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="penghasilan3" data-default-width >
+{$penghasilan3_value}
+</span>
+{END penghasilan3_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field39}
+				 
+					{BEGIN cellblock_grid_cell_field40}
+	<td
+	
+	{$cell_grid_cell_field40}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kontak_class}
+			"
+
+			data-field="kontak"
+	
+	data-cellId="grid_cell_field40" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kontak_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field40" {$item_simple_grid_field40} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kontak" data-default-width >
+{$kontak_value}
+</span>
+{END kontak_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field40}
+				 
+					{BEGIN cellblock_grid_cell_field41}
+	<td
+	
+	{$cell_grid_cell_field41}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nomorwa_class}
+			"
+
+			data-field="nomorwa"
+	
+	data-cellId="grid_cell_field41" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nomorwa_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field41" {$item_simple_grid_field41} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nomorwa" data-default-width >
+{$nomorwa_value}
+</span>
+{END nomorwa_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field41}
+				 
+					{BEGIN cellblock_grid_cell_field42}
+	<td
+	
+	{$cell_grid_cell_field42}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$email_class}
+			"
+
+			data-field="email"
+	
+	data-cellId="grid_cell_field42" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN email_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field42" {$item_simple_grid_field42} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="email" data-default-width >
+{$email_value}
+</span>
+{END email_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field42}
+				 
+					{BEGIN cellblock_grid_cell_field43}
+	<td
+	
+	{$cell_grid_cell_field43}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$tinggibadan_class}
+			"
+
+			data-field="tinggibadan"
+	
+	data-cellId="grid_cell_field43" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN tinggibadan_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field43" {$item_simple_grid_field43} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="tinggibadan" data-default-width >
+{$tinggibadan_value}
+</span>
+{END tinggibadan_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field43}
+				 
+					{BEGIN cellblock_grid_cell_field44}
+	<td
+	
+	{$cell_grid_cell_field44}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$beratbadan_class}
+			"
+
+			data-field="beratbadan"
+	
+	data-cellId="grid_cell_field44" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN beratbadan_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field44" {$item_simple_grid_field44} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="beratbadan" data-default-width >
+{$beratbadan_value}
+</span>
+{END beratbadan_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field44}
+				 
+					{BEGIN cellblock_grid_cell_field45}
+	<td
+	
+	{$cell_grid_cell_field45}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jaraktempatkesekolah_class}
+			"
+
+			data-field="jaraktempatkesekolah"
+	
+	data-cellId="grid_cell_field45" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jaraktempatkesekolah_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field45" {$item_simple_grid_field45} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jaraktempatkesekolah" data-default-width >
+{$jaraktempatkesekolah_value}
+</span>
+{END jaraktempatkesekolah_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field45}
+				 
+					{BEGIN cellblock_grid_cell_field46}
+	<td
+	
+	{$cell_grid_cell_field46}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahsaudarakandung_class}
+			"
+
+			data-field="jumlahsaudarakandung"
+	
+	data-cellId="grid_cell_field46" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahsaudarakandung_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field46" {$item_simple_grid_field46} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahsaudarakandung" data-default-width >
+{$jumlahsaudarakandung_value}
+</span>
+{END jumlahsaudarakandung_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field46}
+				 
+					{BEGIN cellblock_grid_cell_field47}
+	<td
+	
+	{$cell_grid_cell_field47}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$asaltk_class}
+			"
+
+			data-field="asaltk"
+	
+	data-cellId="grid_cell_field47" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN asaltk_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field47" {$item_simple_grid_field47} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="asaltk" data-default-width >
+{$asaltk_value}
+</span>
+{END asaltk_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field47}
+				 
+					{BEGIN cellblock_grid_cell_field48}
+	<td
+	
+	{$cell_grid_cell_field48}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nomorsurattk_class}
+			"
+
+			data-field="nomorsurattk"
+	
+	data-cellId="grid_cell_field48" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nomorsurattk_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field48" {$item_simple_grid_field48} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nomorsurattk" data-default-width >
+{$nomorsurattk_value}
+</span>
+{END nomorsurattk_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field48}
+				 
+					{BEGIN cellblock_grid_cell_field49}
+	<td
+	
+	{$cell_grid_cell_field49}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$paktaintegritas_class}
+			"
+
+			data-field="paktaintegritas"
+	
+	data-cellId="grid_cell_field49" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN paktaintegritas_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field49" {$item_simple_grid_field49} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="paktaintegritas" data-default-width >
+{$paktaintegritas_value}
+</span>
+{END paktaintegritas_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field49}
+				 
+					{BEGIN cellblock_grid_cell_field50}
+	<td
+	
+	{$cell_grid_cell_field50}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$namaibu_class}
+			"
+
+			data-field="namaibu"
+	
+	data-cellId="grid_cell_field50" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN namaibu_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field50" {$item_simple_grid_field50} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="namaibu" data-default-width >
+{$namaibu_value}
+</span>
+{END namaibu_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field50}
+				 
+					{BEGIN cellblock_grid_cell_field51}
+	<td
+	
+	{$cell_grid_cell_field51}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$status_class}
+			"
+
+			data-field="status"
+	
+	data-cellId="grid_cell_field51" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN status_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field51" {$item_simple_grid_field51} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="status" data-default-width >
+{$status_value}
+</span>
+{END status_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field51}
+							</tr>
+					 
+					
+											</tbody>
+					{END grid_row}
+													<tfoot>
+					
+		 
+					 
+					 
+						<tr {$rowattrs} {$row_grid_2} class="{$rowclass} 
+									{$gridFooter_class}
+									
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_footcell_field}
+	<td
+	
+	{$cell_grid_footcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field}
+				 
+					{BEGIN cellblock_grid_footcell_field1}
+	<td
+	
+	{$cell_grid_footcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field1}
+				 
+					{BEGIN cellblock_grid_footcell_field2}
+	<td
+	
+	{$cell_grid_footcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field2}
+				 
+					{BEGIN cellblock_grid_footcell_field3}
+	<td
+	
+	{$cell_grid_footcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field3}
+				 
+					{BEGIN cellblock_grid_footcell_field4}
+	<td
+	
+	{$cell_grid_footcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field4}
+				 
+					{BEGIN cellblock_grid_footcell_field5}
+	<td
+	
+	{$cell_grid_footcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field5}
+				 
+					{BEGIN cellblock_grid_footcell_field6}
+	<td
+	
+	{$cell_grid_footcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field6}
+				 
+					{BEGIN cellblock_grid_footcell_field7}
+	<td
+	
+	{$cell_grid_footcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field7}
+				 
+					{BEGIN cellblock_grid_footcell_field8}
+	<td
+	
+	{$cell_grid_footcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field8}
+				 
+					{BEGIN cellblock_grid_footcell_field9}
+	<td
+	
+	{$cell_grid_footcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field9}
+				 
+					{BEGIN cellblock_grid_footcell_field10}
+	<td
+	
+	{$cell_grid_footcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field10}
+				 
+					{BEGIN cellblock_grid_footcell_field11}
+	<td
+	
+	{$cell_grid_footcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field11}
+				 
+					{BEGIN cellblock_grid_footcell_field12}
+	<td
+	
+	{$cell_grid_footcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field12}
+				 
+					{BEGIN cellblock_grid_footcell_field13}
+	<td
+	
+	{$cell_grid_footcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field13}
+				 
+					{BEGIN cellblock_grid_footcell_field14}
+	<td
+	
+	{$cell_grid_footcell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field14}
+				 
+					{BEGIN cellblock_grid_footcell_field15}
+	<td
+	
+	{$cell_grid_footcell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field15" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field15}
+				 
+					{BEGIN cellblock_grid_footcell_field16}
+	<td
+	
+	{$cell_grid_footcell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field16" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field16}
+				 
+					{BEGIN cellblock_grid_footcell_field17}
+	<td
+	
+	{$cell_grid_footcell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field17" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field17}
+				 
+					{BEGIN cellblock_grid_footcell_field18}
+	<td
+	
+	{$cell_grid_footcell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field18" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field18}
+				 
+					{BEGIN cellblock_grid_footcell_field19}
+	<td
+	
+	{$cell_grid_footcell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field19" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field19}
+				 
+					{BEGIN cellblock_grid_footcell_field20}
+	<td
+	
+	{$cell_grid_footcell_field20}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field20" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field20}
+				 
+					{BEGIN cellblock_grid_footcell_field21}
+	<td
+	
+	{$cell_grid_footcell_field21}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field21" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field21}
+				 
+					{BEGIN cellblock_grid_footcell_field22}
+	<td
+	
+	{$cell_grid_footcell_field22}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field22" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field22}
+				 
+					{BEGIN cellblock_grid_footcell_field23}
+	<td
+	
+	{$cell_grid_footcell_field23}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field23" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field23}
+				 
+					{BEGIN cellblock_grid_footcell_field24}
+	<td
+	
+	{$cell_grid_footcell_field24}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field24" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field24}
+				 
+					{BEGIN cellblock_grid_footcell_field25}
+	<td
+	
+	{$cell_grid_footcell_field25}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field25" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field25}
+				 
+					{BEGIN cellblock_grid_footcell_field26}
+	<td
+	
+	{$cell_grid_footcell_field26}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field26" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field26}
+				 
+					{BEGIN cellblock_grid_footcell_field27}
+	<td
+	
+	{$cell_grid_footcell_field27}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field27" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field27}
+				 
+					{BEGIN cellblock_grid_footcell_field28}
+	<td
+	
+	{$cell_grid_footcell_field28}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field28" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field28}
+				 
+					{BEGIN cellblock_grid_footcell_field29}
+	<td
+	
+	{$cell_grid_footcell_field29}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field29" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field29}
+				 
+					{BEGIN cellblock_grid_footcell_field30}
+	<td
+	
+	{$cell_grid_footcell_field30}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field30" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field30}
+				 
+					{BEGIN cellblock_grid_footcell_field31}
+	<td
+	
+	{$cell_grid_footcell_field31}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field31" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field31}
+				 
+					{BEGIN cellblock_grid_footcell_field32}
+	<td
+	
+	{$cell_grid_footcell_field32}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field32" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field32}
+				 
+					{BEGIN cellblock_grid_footcell_field33}
+	<td
+	
+	{$cell_grid_footcell_field33}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field33" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field33}
+				 
+					{BEGIN cellblock_grid_footcell_field34}
+	<td
+	
+	{$cell_grid_footcell_field34}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field34" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field34}
+				 
+					{BEGIN cellblock_grid_footcell_field35}
+	<td
+	
+	{$cell_grid_footcell_field35}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field35" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field35}
+				 
+					{BEGIN cellblock_grid_footcell_field36}
+	<td
+	
+	{$cell_grid_footcell_field36}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field36" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field36}
+				 
+					{BEGIN cellblock_grid_footcell_field37}
+	<td
+	
+	{$cell_grid_footcell_field37}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field37" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field37}
+				 
+					{BEGIN cellblock_grid_footcell_field38}
+	<td
+	
+	{$cell_grid_footcell_field38}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field38" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field38}
+				 
+					{BEGIN cellblock_grid_footcell_field39}
+	<td
+	
+	{$cell_grid_footcell_field39}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field39" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field39}
+				 
+					{BEGIN cellblock_grid_footcell_field40}
+	<td
+	
+	{$cell_grid_footcell_field40}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field40" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field40}
+				 
+					{BEGIN cellblock_grid_footcell_field41}
+	<td
+	
+	{$cell_grid_footcell_field41}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field41" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field41}
+				 
+					{BEGIN cellblock_grid_footcell_field42}
+	<td
+	
+	{$cell_grid_footcell_field42}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field42" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field42}
+				 
+					{BEGIN cellblock_grid_footcell_field43}
+	<td
+	
+	{$cell_grid_footcell_field43}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field43" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field43}
+				 
+					{BEGIN cellblock_grid_footcell_field44}
+	<td
+	
+	{$cell_grid_footcell_field44}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field44" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field44}
+				 
+					{BEGIN cellblock_grid_footcell_field45}
+	<td
+	
+	{$cell_grid_footcell_field45}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field45" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field45}
+				 
+					{BEGIN cellblock_grid_footcell_field46}
+	<td
+	
+	{$cell_grid_footcell_field46}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field46" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field46}
+				 
+					{BEGIN cellblock_grid_footcell_field47}
+	<td
+	
+	{$cell_grid_footcell_field47}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field47" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field47}
+				 
+					{BEGIN cellblock_grid_footcell_field48}
+	<td
+	
+	{$cell_grid_footcell_field48}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field48" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field48}
+				 
+					{BEGIN cellblock_grid_footcell_field49}
+	<td
+	
+	{$cell_grid_footcell_field49}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field49" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field49}
+				 
+					{BEGIN cellblock_grid_footcell_field50}
+	<td
+	
+	{$cell_grid_footcell_field50}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field50" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field50}
+				 
+					{BEGIN cellblock_grid_footcell_field51}
+	<td
+	
+	{$cell_grid_footcell_field51}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field51" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field51}
+							</tr>
+					
+					</tfoot>
+				</table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}" >		
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

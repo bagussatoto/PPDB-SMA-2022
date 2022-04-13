@@ -1,0 +1,1851 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-list" {$bodyattrs}>
+	{BEGIN body}
+		<style>
+		{$containerCss}
+		</style>
+		<div class="r-vbar-page">
+			<div data-width="" data-fixed class="r-left clearfix {$leftbar_class}" >
+								<div data-location="left" id="form_left_{$pageid}" data-makeup="leftbar" {$form_left} data-pageid="{$pageid}">
+{BEGIN left_block}
+ 
+     
+         
+
+			<div data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell class="clearfix " data-itemid="logo1" {$item_logo1}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo1" {$item_logo1} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</div>
+		
+ 
+
+			<div class="clearfix " data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell data-itemid="expand_button" {$item_expand_button} data-topcell-item-type="expand_button" >
+				<span data-itemtype="expand_button" data-itemid="expand_button" {$item_expand_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Expand" class="btn btn-link   
+	" href="#" >
+					<span class="glyphicon glyphicon-triangle-right"></span>
+										</a>
+</span>
+			</div>
+		
+     
+     
+         
+
+			<div data-cellId="left_c1" data-pageid="{$pageid}" class="clearfix  r-ori-vert " data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{$menu main}			</div>
+		
+ 
+
+			<div class="clearfix  r-ori-vert" data-cellId="left_c1" data-pageid="{$pageid}" data-itemid="search_panel" {$item_search_panel} data-topcell-item-type="search_panel" >
+				<!-- Begin Search panel content -->
+<div class="searchOptions panel panel-primary searchPanelContainer " {$srchOpt_attrs} data-itemtype="search_panel" data-itemid="search_panel" {$item_search_panel} data-pageid="{$pageid}" >
+
+	<div class="panel-heading">
+		<div class="btn-group" id="addSearchFieldButton{$id}">
+			<button id="showHideControlChooseMenu{$id}" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Search in			<span class="caret"></span>
+			</button>
+		</div>
+
+
+		<div class="btn-group searchpanel-options" id="searchPanelOptions{$id}">
+			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon glyphicon-option-vertical"></span>
+			</button>
+			<ul class="dropdown-menu dropdown-left">
+				<li id="showHideSearchType{$id}" {$showHideCtrlsOpt_attrs}><a>Show options</a></li>
+				<li role="separator" class="divider"></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAll" {$all_checkbox}><label for="radioAll"><span class="glyphicon">&nbsp;</span>all conditions</label></a></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAny" {$any_checkbox}><label for="radioAny"><span class="glyphicon">&nbsp;</span>any condition</label></a></li>
+				<li role="separator" class="divider"></li>
+				<li><a class="close-button"><span class="glyphicon glyphicon-remove">&nbsp;</span>hide</a></li>
+			</ul>
+		</div>
+
+
+		</div>
+	<div class="panel-body controlsBlock" {$bottomSearchButt_attrs} >
+
+
+		
+		{BEGIN searchCtrlBlock}
+		<div class="srchPanelRow form-group" {$filterRow_attrs}>
+			<label>{$fLabel}</label>	{$delCtrlButt}
+				<span class="rnr-searchtype">{$searchtype}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol1}</span>
+		</div>
+		{END searchCtrlBlock}
+																		{BEGIN searchCtrlBlock_ID}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_ID}" {$filterRow_attrs_ID}>
+			<label>{$label calonppdb ID }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_ID}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_ID}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_ID}</span>
+						</div>
+		{END searchCtrlBlock_ID}
+																{BEGIN searchCtrlBlock_status}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_status}" {$filterRow_attrs_status}>
+			<label>{$label calonppdb status }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_status}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_status}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_status}</span>
+						</div>
+		{END searchCtrlBlock_status}
+																{BEGIN searchCtrlBlock_namaibu}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_namaibu}" {$filterRow_attrs_namaibu}>
+			<label>{$label calonppdb namaibu }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_namaibu}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_namaibu}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_namaibu}</span>
+						</div>
+		{END searchCtrlBlock_namaibu}
+																{BEGIN searchCtrlBlock_tinggibadan}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_tinggibadan}" {$filterRow_attrs_tinggibadan}>
+			<label>{$label calonppdb tinggibadan }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_tinggibadan}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_tinggibadan}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_tinggibadan}</span>
+						</div>
+		{END searchCtrlBlock_tinggibadan}
+																{BEGIN searchCtrlBlock_tempattinggal}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_tempattinggal}" {$filterRow_attrs_tempattinggal}>
+			<label>{$label calonppdb tempattinggal }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_tempattinggal}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_tempattinggal}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_tempattinggal}</span>
+						</div>
+		{END searchCtrlBlock_tempattinggal}
+																{BEGIN searchCtrlBlock_tempatlahir}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_tempatlahir}" {$filterRow_attrs_tempatlahir}>
+			<label>{$label calonppdb tempatlahir }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_tempatlahir}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_tempatlahir}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_tempatlahir}</span>
+						</div>
+		{END searchCtrlBlock_tempatlahir}
+																{BEGIN searchCtrlBlock_tanggallahir4}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_tanggallahir4}" {$filterRow_attrs_tanggallahir4}>
+			<label>{$label calonppdb tanggallahir4 }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_tanggallahir4}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_tanggallahir4}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_tanggallahir4}</span>
+						</div>
+		{END searchCtrlBlock_tanggallahir4}
+																{BEGIN searchCtrlBlock_tanggallahir3}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_tanggallahir3}" {$filterRow_attrs_tanggallahir3}>
+			<label>{$label calonppdb tanggallahir3 }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_tanggallahir3}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_tanggallahir3}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_tanggallahir3}</span>
+						</div>
+		{END searchCtrlBlock_tanggallahir3}
+																{BEGIN searchCtrlBlock_tanggallahir2}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_tanggallahir2}" {$filterRow_attrs_tanggallahir2}>
+			<label>{$label calonppdb tanggallahir2 }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_tanggallahir2}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_tanggallahir2}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_tanggallahir2}</span>
+						</div>
+		{END searchCtrlBlock_tanggallahir2}
+																{BEGIN searchCtrlBlock_tanggallahir1}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_tanggallahir1}" {$filterRow_attrs_tanggallahir1}>
+			<label>{$label calonppdb tanggallahir1 }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_tanggallahir1}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_tanggallahir1}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_tanggallahir1}</span>
+						</div>
+		{END searchCtrlBlock_tanggallahir1}
+																{BEGIN searchCtrlBlock_tanggaldaftar}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_tanggaldaftar}" {$filterRow_attrs_tanggaldaftar}>
+			<label>{$label calonppdb tanggaldaftar }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_tanggaldaftar}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_tanggaldaftar}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_tanggaldaftar}</span>
+						</div>
+		{END searchCtrlBlock_tanggaldaftar}
+																{BEGIN searchCtrlBlock_statusibu}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_statusibu}" {$filterRow_attrs_statusibu}>
+			<label>{$label calonppdb statusibu }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_statusibu}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_statusibu}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_statusibu}</span>
+						</div>
+		{END searchCtrlBlock_statusibu}
+																{BEGIN searchCtrlBlock_statusayah}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_statusayah}" {$filterRow_attrs_statusayah}>
+			<label>{$label calonppdb statusayah }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_statusayah}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_statusayah}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_statusayah}</span>
+						</div>
+		{END searchCtrlBlock_statusayah}
+																{BEGIN searchCtrlBlock_rw}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_rw}" {$filterRow_attrs_rw}>
+			<label>{$label calonppdb rw }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_rw}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_rw}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_rw}</span>
+						</div>
+		{END searchCtrlBlock_rw}
+																{BEGIN searchCtrlBlock_rt}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_rt}" {$filterRow_attrs_rt}>
+			<label>{$label calonppdb rt }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_rt}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_rt}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_rt}</span>
+						</div>
+		{END searchCtrlBlock_rt}
+																{BEGIN searchCtrlBlock_penghasilan3}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_penghasilan3}" {$filterRow_attrs_penghasilan3}>
+			<label>{$label calonppdb penghasilan3 }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_penghasilan3}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_penghasilan3}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_penghasilan3}</span>
+						</div>
+		{END searchCtrlBlock_penghasilan3}
+																{BEGIN searchCtrlBlock_penghasilan2}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_penghasilan2}" {$filterRow_attrs_penghasilan2}>
+			<label>{$label calonppdb penghasilan2 }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_penghasilan2}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_penghasilan2}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_penghasilan2}</span>
+						</div>
+		{END searchCtrlBlock_penghasilan2}
+																{BEGIN searchCtrlBlock_penghasilan1}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_penghasilan1}" {$filterRow_attrs_penghasilan1}>
+			<label>{$label calonppdb penghasilan1 }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_penghasilan1}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_penghasilan1}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_penghasilan1}</span>
+						</div>
+		{END searchCtrlBlock_penghasilan1}
+																{BEGIN searchCtrlBlock_pendidikan3}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_pendidikan3}" {$filterRow_attrs_pendidikan3}>
+			<label>{$label calonppdb pendidikan3 }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_pendidikan3}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_pendidikan3}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_pendidikan3}</span>
+						</div>
+		{END searchCtrlBlock_pendidikan3}
+																{BEGIN searchCtrlBlock_pendidikan2}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_pendidikan2}" {$filterRow_attrs_pendidikan2}>
+			<label>{$label calonppdb pendidikan2 }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_pendidikan2}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_pendidikan2}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_pendidikan2}</span>
+						</div>
+		{END searchCtrlBlock_pendidikan2}
+																{BEGIN searchCtrlBlock_pendidikan1}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_pendidikan1}" {$filterRow_attrs_pendidikan1}>
+			<label>{$label calonppdb pendidikan1 }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_pendidikan1}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_pendidikan1}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_pendidikan1}</span>
+						</div>
+		{END searchCtrlBlock_pendidikan1}
+																{BEGIN searchCtrlBlock_pekerjaan3}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_pekerjaan3}" {$filterRow_attrs_pekerjaan3}>
+			<label>{$label calonppdb pekerjaan3 }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_pekerjaan3}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_pekerjaan3}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_pekerjaan3}</span>
+						</div>
+		{END searchCtrlBlock_pekerjaan3}
+																{BEGIN searchCtrlBlock_pekerjaan2}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_pekerjaan2}" {$filterRow_attrs_pekerjaan2}>
+			<label>{$label calonppdb pekerjaan2 }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_pekerjaan2}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_pekerjaan2}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_pekerjaan2}</span>
+						</div>
+		{END searchCtrlBlock_pekerjaan2}
+																{BEGIN searchCtrlBlock_pekerjaan1}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_pekerjaan1}" {$filterRow_attrs_pekerjaan1}>
+			<label>{$label calonppdb pekerjaan1 }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_pekerjaan1}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_pekerjaan1}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_pekerjaan1}</span>
+						</div>
+		{END searchCtrlBlock_pekerjaan1}
+																{BEGIN searchCtrlBlock_paktaintegritas}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_paktaintegritas}" {$filterRow_attrs_paktaintegritas}>
+			<label>{$label calonppdb paktaintegritas }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_paktaintegritas}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_paktaintegritas}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_paktaintegritas}</span>
+						</div>
+		{END searchCtrlBlock_paktaintegritas}
+																{BEGIN searchCtrlBlock_nomorwa}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_nomorwa}" {$filterRow_attrs_nomorwa}>
+			<label>{$label calonppdb nomorwa }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_nomorwa}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_nomorwa}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_nomorwa}</span>
+						</div>
+		{END searchCtrlBlock_nomorwa}
+																{BEGIN searchCtrlBlock_nomorsurattk}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_nomorsurattk}" {$filterRow_attrs_nomorsurattk}>
+			<label>{$label calonppdb nomorsurattk }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_nomorsurattk}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_nomorsurattk}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_nomorsurattk}</span>
+						</div>
+		{END searchCtrlBlock_nomorsurattk}
+																{BEGIN searchCtrlBlock_nomap}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_nomap}" {$filterRow_attrs_nomap}>
+			<label>{$label calonppdb nomap }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_nomap}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_nomap}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_nomap}</span>
+						</div>
+		{END searchCtrlBlock_nomap}
+																{BEGIN searchCtrlBlock_noaktalahir}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_noaktalahir}" {$filterRow_attrs_noaktalahir}>
+			<label>{$label calonppdb noaktalahir }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_noaktalahir}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_noaktalahir}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_noaktalahir}</span>
+						</div>
+		{END searchCtrlBlock_noaktalahir}
+																{BEGIN searchCtrlBlock_nisn}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_nisn}" {$filterRow_attrs_nisn}>
+			<label>{$label calonppdb nisn }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_nisn}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_nisn}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_nisn}</span>
+						</div>
+		{END searchCtrlBlock_nisn}
+																{BEGIN searchCtrlBlock_nikwali}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_nikwali}" {$filterRow_attrs_nikwali}>
+			<label>{$label calonppdb nikwali }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_nikwali}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_nikwali}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_nikwali}</span>
+						</div>
+		{END searchCtrlBlock_nikwali}
+																{BEGIN searchCtrlBlock_nikibu}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_nikibu}" {$filterRow_attrs_nikibu}>
+			<label>{$label calonppdb nikibu }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_nikibu}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_nikibu}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_nikibu}</span>
+						</div>
+		{END searchCtrlBlock_nikibu}
+																{BEGIN searchCtrlBlock_nikayah}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_nikayah}" {$filterRow_attrs_nikayah}>
+			<label>{$label calonppdb nikayah }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_nikayah}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_nikayah}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_nikayah}</span>
+						</div>
+		{END searchCtrlBlock_nikayah}
+																{BEGIN searchCtrlBlock_nik}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_nik}" {$filterRow_attrs_nik}>
+			<label>{$label calonppdb nik }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_nik}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_nik}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_nik}</span>
+						</div>
+		{END searchCtrlBlock_nik}
+																{BEGIN searchCtrlBlock_namawali}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_namawali}" {$filterRow_attrs_namawali}>
+			<label>{$label calonppdb namawali }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_namawali}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_namawali}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_namawali}</span>
+						</div>
+		{END searchCtrlBlock_namawali}
+																{BEGIN searchCtrlBlock_namalengkap}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_namalengkap}" {$filterRow_attrs_namalengkap}>
+			<label>{$label calonppdb namalengkap }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_namalengkap}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_namalengkap}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_namalengkap}</span>
+						</div>
+		{END searchCtrlBlock_namalengkap}
+																{BEGIN searchCtrlBlock_namaayah}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_namaayah}" {$filterRow_attrs_namaayah}>
+			<label>{$label calonppdb namaayah }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_namaayah}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_namaayah}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_namaayah}</span>
+						</div>
+		{END searchCtrlBlock_namaayah}
+																{BEGIN searchCtrlBlock_modatransportasi}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_modatransportasi}" {$filterRow_attrs_modatransportasi}>
+			<label>{$label calonppdb modatransportasi }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_modatransportasi}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_modatransportasi}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_modatransportasi}</span>
+						</div>
+		{END searchCtrlBlock_modatransportasi}
+																{BEGIN searchCtrlBlock_kontak}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_kontak}" {$filterRow_attrs_kontak}>
+			<label>{$label calonppdb kontak }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_kontak}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_kontak}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_kontak}</span>
+						</div>
+		{END searchCtrlBlock_kontak}
+																{BEGIN searchCtrlBlock_kodepos}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_kodepos}" {$filterRow_attrs_kodepos}>
+			<label>{$label calonppdb kodepos }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_kodepos}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_kodepos}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_kodepos}</span>
+						</div>
+		{END searchCtrlBlock_kodepos}
+																{BEGIN searchCtrlBlock_kecamatan}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_kecamatan}" {$filterRow_attrs_kecamatan}>
+			<label>{$label calonppdb kecamatan }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_kecamatan}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_kecamatan}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_kecamatan}</span>
+						</div>
+		{END searchCtrlBlock_kecamatan}
+																{BEGIN searchCtrlBlock_jumlahsaudarakandung}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_jumlahsaudarakandung}" {$filterRow_attrs_jumlahsaudarakandung}>
+			<label>{$label calonppdb jumlahsaudarakandung }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_jumlahsaudarakandung}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_jumlahsaudarakandung}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_jumlahsaudarakandung}</span>
+						</div>
+		{END searchCtrlBlock_jumlahsaudarakandung}
+																{BEGIN searchCtrlBlock_jeniskelamin}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_jeniskelamin}" {$filterRow_attrs_jeniskelamin}>
+			<label>{$label calonppdb jeniskelamin }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_jeniskelamin}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_jeniskelamin}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_jeniskelamin}</span>
+						</div>
+		{END searchCtrlBlock_jeniskelamin}
+																{BEGIN searchCtrlBlock_jaraktempatkesekolah}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_jaraktempatkesekolah}" {$filterRow_attrs_jaraktempatkesekolah}>
+			<label>{$label calonppdb jaraktempatkesekolah }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_jaraktempatkesekolah}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_jaraktempatkesekolah}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_jaraktempatkesekolah}</span>
+						</div>
+		{END searchCtrlBlock_jaraktempatkesekolah}
+																{BEGIN searchCtrlBlock_email}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_email}" {$filterRow_attrs_email}>
+			<label>{$label calonppdb email }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_email}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_email}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_email}</span>
+						</div>
+		{END searchCtrlBlock_email}
+																{BEGIN searchCtrlBlock_dusun}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_dusun}" {$filterRow_attrs_dusun}>
+			<label>{$label calonppdb dusun }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_dusun}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_dusun}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_dusun}</span>
+						</div>
+		{END searchCtrlBlock_dusun}
+																{BEGIN searchCtrlBlock_deskel}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_deskel}" {$filterRow_attrs_deskel}>
+			<label>{$label calonppdb deskel }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_deskel}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_deskel}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_deskel}</span>
+						</div>
+		{END searchCtrlBlock_deskel}
+																{BEGIN searchCtrlBlock_beratbadan}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_beratbadan}" {$filterRow_attrs_beratbadan}>
+			<label>{$label calonppdb beratbadan }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_beratbadan}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_beratbadan}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_beratbadan}</span>
+						</div>
+		{END searchCtrlBlock_beratbadan}
+																{BEGIN searchCtrlBlock_asaltk}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_asaltk}" {$filterRow_attrs_asaltk}>
+			<label>{$label calonppdb asaltk }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_asaltk}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_asaltk}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_asaltk}</span>
+						</div>
+		{END searchCtrlBlock_asaltk}
+																{BEGIN searchCtrlBlock_anakke}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_anakke}" {$filterRow_attrs_anakke}>
+			<label>{$label calonppdb anakke }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_anakke}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_anakke}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_anakke}</span>
+						</div>
+		{END searchCtrlBlock_anakke}
+																{BEGIN searchCtrlBlock_alamatjalan}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_alamatjalan}" {$filterRow_attrs_alamatjalan}>
+			<label>{$label calonppdb alamatjalan }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_alamatjalan}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_alamatjalan}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_alamatjalan}</span>
+						</div>
+		{END searchCtrlBlock_alamatjalan}
+																{BEGIN searchCtrlBlock_agama}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_agama}" {$filterRow_attrs_agama}>
+			<label>{$label calonppdb agama }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_agama}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_agama}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_agama}</span>
+						</div>
+		{END searchCtrlBlock_agama}
+		
+
+	</div>
+
+	<div class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}>
+		<button class="btn btn-primary" id="searchButton{$id}" {$searchbutton_attrs}>Cari</button>
+		<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs}>Perlihatkan semua</button>
+	</div>
+</div>
+<!-- End Search panel content -->
+			</div>
+		
+    {END left_block}
+</div>				</div>	
+			<div class="r-content-col" data-resize-left="leftbar">
+				<div  class="r-topheader" data-resize-name="topbar">
+									{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="leftbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span class="navbar-form  navbar-header" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="collapse_button" {$item_collapse_button} data-topcell-item-type="collapse_button" >
+				<span data-itemtype="collapse_button" data-itemid="collapse_button" {$item_collapse_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Collapse" class="btn-link   
+	 glyphicon glyphicon-triangle-left" href="#" >		
+				
+								</a>
+</span>
+			</span>
+		 
+				<span class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="breadcrumb" {$item_breadcrumb} data-topcell-item-type="breadcrumb" >
+				{BEGIN breadcrumb}
+<ol class="breadcrumb" data-itemtype="breadcrumb" data-itemid="breadcrumb" {$item_breadcrumb} data-pageid="{$pageid}">
+<li ><a href="{$crumb_home_link}"><span class="glyphicon glyphicon-home"></span></a>{$crumb_dropdown}</li>
+{BEGIN crumb}
+  <li class="{$crumb_item_class}">
+{BEGIN crumb_title_link}
+	<a {$crumb_attrs}>{$crumb_title}</a>
+{END crumb_title_link}
+{BEGIN crumb_title_span}
+	<span {$crumb_attrs}>{$crumb_title}</span>
+{END crumb_title_span}	
+	{$crumb_dropdown}
+  </li>
+{END crumb}
+</ol>
+{END breadcrumb}			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="simple_search" {$item_simple_search} data-topcell-item-type="simple_search" >
+				<span data-itemtype="simple_search" data-itemid="simple_search" {$item_simple_search} data-pageid="{$pageid}" class="form-group">
+
+<div  class="input-group">
+{BEGIN searchform_text}
+	<input type="search" class="form-control" {$searchfor_attrs} size="25">
+{END searchform_text}
+	<span class="input-group-btn">
+	{BEGIN searchform_showall}
+		<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="Perlihatkan semua">
+			<span class="glyphicon glyphicon-remove"></span>
+		</button>
+	{END searchform_showall}
+	{BEGIN searchform_search}
+	<button {$searchbutton_attrs} class="btn btn-primary" >
+		<span class="glyphicon glyphicon-search"></span>
+	</button>
+	{END searchform_search}
+	</span>
+</div>
+		
+</span>			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="list_options" {$item_list_options} data-topcell-item-type="list_options" >
+				<span data-itemtype="list_options" data-itemid="list_options" {$item_list_options} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-cog"></span>
+									<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN exportselected_link}
+	<li data-itemtype="export_selected" data-itemid="export_selected" {$item_export_selected} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$exportselectedlink_attrs} {$exportselectedlink_span}  title="" >
+				
+		Pilihan Ekspor		
+		</a>
+	</li>
+{END exportselected_link}
+							{BEGIN deleteselected_link}
+	<li data-itemtype="delete_selected" data-itemid="delete_selected" {$item_delete_selected} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$deleteselectedlink_attrs} {$deleteselectedlink_span}  title="" >
+				
+		Hapus dipilih		
+		</a>
+	</li>
+{END deleteselected_link}
+							<li role="separator" class="divider"></li>								<li data-itemtype="advsearch_link" data-itemid="advsearch_link" {$item_advsearch_link} data-pageid="{$pageid}" data-small >
+				<a   href="calonppdb_search.php" {$advsearchlink_attrs}  title="" >
+				
+		Pencarian canggih		
+		</a>
+	</li>
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="show_search_panel" data-itemid="show_search_panel" {$item_show_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="showOptPanel{$id}"  title="" >
+				
+		Show search panel		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="hide_search_panel" data-itemid="hide_search_panel" {$item_hide_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="hideOptPanel{$id}"  title="" >
+				
+		Hide search panel		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							<li role="separator" class="divider"></li>							{BEGIN export_link}
+	<li data-itemtype="export" data-itemid="export" {$item_export} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$exportlink_attrs}  title="" >
+				
+		Ekspor hasil		
+		</a>
+	</li>
+{END export_link}
+							<li role="separator" class="divider"></li>							{BEGIN import_link}
+	<li data-itemtype="import" data-itemid="import" {$item_import} data-pageid="{$pageid}" data-small >
+				<a  {$importlink_attrs} href="calonppdb_import.php?{$crosstable_attrs}"  title="" >
+				
+		Import		
+		</a>
+	</li>
+{END import_link}
+					</ul>
+	</span>
+</span>
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Login			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-user"></span>
+						{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Log out		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN adminarea_link}
+	<li data-itemtype="adminarea_link" data-itemid="adminarea_link" {$item_adminarea_link} data-pageid="{$pageid}" data-small >
+				<a  href="admin_rights_list.php"  title="" >
+				
+		Admin Area		
+		</a>
+	</li>
+{END adminarea_link}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+						{$locking}
+				</div>	
+				<div class="r-body" data-resize-top="topbar" data-body-width="standard">
+					{$header}
+					<div class="r-top">
+									{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="leftbar" {$form_top} data-pageid="{$pageid}" >		
+	</div>		
+{END top_block}
+						</div>
+					<div class="r-above">
+										{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="leftbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class="			col-md-6
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		{BEGIN add_link}
+<span data-itemtype="add" data-itemid="add" {$item_add} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$addlink_attrs} href="calonppdb_add.php" >
+							Daftar PPDB Online Sekarang			</a>
+</span>
+{END add_link}
+	 
+		{BEGIN deleteselected_link}
+<span data-itemtype="delete" data-itemid="delete" {$item_delete} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$deleteselectedlink_attrs} {$deleteselectedlink_span} disabled >
+							Hapus			</a>
+</span>
+{END deleteselected_link}
+			{END firstAboveGridCell}	
+	</div>			 
+				<div 
+	data-cellId="above-grid_c2" data-pageid="{$pageid}"	{$cell_above-grid_c2}
+	class="r-align-right			col-md-6
+	
+">
+		 
+		<span data-itemtype="details_found" data-itemid="details_found" {$item_details_found} data-pageid="{$pageid}" data-small >
+{$details_found_labeldetails_found}
+</span>	 
+		<span data-itemtype="page_size" data-itemid="page_size" {$item_page_size} data-pageid="{$pageid}" >
+		{$recsPerPage}
+</span>	 
+		{BEGIN print_friendly}
+<span id="printpanelblock{$id}"  data-pageid="{$pageid}" {$printpanel_hiddenattr} data-itemtype="print_panel" data-itemid="print_panel" {$item_print_panel} data-pageid="{$pageid}">
+	<button title="Print-friendly page" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					<span class="glyphicon glyphicon-print"></span>
+				<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu pull-right">
+										 
+				 
+					<li class="container-fluid 
+										">
+									<div id="print_friendly_scope{$id}">
+	<div class="row">
+		<div class="col-md-4">
+			Scope:		</div>
+
+		{BEGIN print_friendly_all}
+		<div class="col-md-8">
+			<label for="printAll{$id}">
+				<input type="radio" id="printAll{$id}" data-href="calonppdb_print.php?all=1&amp;{$crosstable_attrs}" name="printScope">
+									Print all pages							</label>
+		</div>
+		{END print_friendly_all}
+	</div>
+	<div class="row">
+		<div class="col-md-4">&nbsp;</div>
+		<div class="col-md-8">
+			<label for="printPage{$id}">
+				<input name="printScope" id="printPage{$id}" type="radio" checked data-href="calonppdb_print.php?{$crosstable_attrs}">
+				Print this page			</label>
+		</div>
+	</div>
+	
+		<div class="row">
+		<div class="col-md-4">
+			&nbsp;
+		</div>
+		<div class="col-md-8">
+			<label style="color: gray;" for="printSelection{$id}">
+			<input name="printScope" disabled="disabled" id="printSelection{$id}" type="radio">
+			Print selected			</label>
+		</div>
+	</div>
+	</div>				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+										">
+									<div>
+	<label for="printPerPage{$id}">
+					Catatan per halaman							
+	</label>
+	<input type="number" id="printPerPage{$id}" value="{$print_recspp}" class="rnr-printrecspp">		
+</div>
+				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+					 text-center 					">
+									<span data-itemtype="print_button" data-itemid="print_button" {$item_print_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" id="print_friendly_button{$id}" >
+							Print			</a>
+</span>
+				 
+					</li>
+															</ul>
+</span>
+{END print_friendly}
+		</div>					</div>
+	</div>		
+{END above-grid_block}
+						</div>
+					<div class="r-grid">
+										{BEGIN grid_block}
+{BEGIN grid_tabs}
+  <ul class="nav nav-tabs bsgrid_tabs">
+	{$grid_tabs_content}
+  </ul>
+{END grid_tabs}
+{BEGIN message_block}
+<div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
+{END message_block}	<style>
+@media screen and (max-width: 767px) {
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="ID"]:before {
+		content: "{$label calonppdb ID}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="tanggaldaftar"]:before {
+		content: "{$label calonppdb tanggaldaftar}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="nomap"]:before {
+		content: "{$label calonppdb nomap}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="namalengkap"]:before {
+		content: "{$label calonppdb namalengkap}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="jeniskelamin"]:before {
+		content: "{$label calonppdb jeniskelamin}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="nisn"]:before {
+		content: "{$label calonppdb nisn}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="nik"]:before {
+		content: "{$label calonppdb nik}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="tempatlahir"]:before {
+		content: "{$label calonppdb tempatlahir}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="tanggallahir1"]:before {
+		content: "{$label calonppdb tanggallahir1}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="noaktalahir"]:before {
+		content: "{$label calonppdb noaktalahir}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="agama"]:before {
+		content: "{$label calonppdb agama}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="alamatjalan"]:before {
+		content: "{$label calonppdb alamatjalan}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="rt"]:before {
+		content: "{$label calonppdb rt}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="rw"]:before {
+		content: "{$label calonppdb rw}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="dusun"]:before {
+		content: "{$label calonppdb dusun}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="deskel"]:before {
+		content: "{$label calonppdb deskel}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="kecamatan"]:before {
+		content: "{$label calonppdb kecamatan}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="kodepos"]:before {
+		content: "{$label calonppdb kodepos}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="tempattinggal"]:before {
+		content: "{$label calonppdb tempattinggal}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="modatransportasi"]:before {
+		content: "{$label calonppdb modatransportasi}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="anakke"]:before {
+		content: "{$label calonppdb anakke}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="namaayah"]:before {
+		content: "{$label calonppdb namaayah}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="nikayah"]:before {
+		content: "{$label calonppdb nikayah}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="tanggallahir2"]:before {
+		content: "{$label calonppdb tanggallahir2}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="pendidikan1"]:before {
+		content: "{$label calonppdb pendidikan1}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="pekerjaan1"]:before {
+		content: "{$label calonppdb pekerjaan1}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="penghasilan1"]:before {
+		content: "{$label calonppdb penghasilan1}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="statusayah"]:before {
+		content: "{$label calonppdb statusayah}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="statusibu"]:before {
+		content: "{$label calonppdb statusibu}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="nikibu"]:before {
+		content: "{$label calonppdb nikibu}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="tanggallahir3"]:before {
+		content: "{$label calonppdb tanggallahir3}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="pendidikan2"]:before {
+		content: "{$label calonppdb pendidikan2}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="pekerjaan2"]:before {
+		content: "{$label calonppdb pekerjaan2}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="penghasilan2"]:before {
+		content: "{$label calonppdb penghasilan2}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="namawali"]:before {
+		content: "{$label calonppdb namawali}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="nikwali"]:before {
+		content: "{$label calonppdb nikwali}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="tanggallahir4"]:before {
+		content: "{$label calonppdb tanggallahir4}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="pendidikan3"]:before {
+		content: "{$label calonppdb pendidikan3}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="pekerjaan3"]:before {
+		content: "{$label calonppdb pekerjaan3}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="penghasilan3"]:before {
+		content: "{$label calonppdb penghasilan3}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="kontak"]:before {
+		content: "{$label calonppdb kontak}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="nomorwa"]:before {
+		content: "{$label calonppdb nomorwa}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="email"]:before {
+		content: "{$label calonppdb email}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="tinggibadan"]:before {
+		content: "{$label calonppdb tinggibadan}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="beratbadan"]:before {
+		content: "{$label calonppdb beratbadan}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="jaraktempatkesekolah"]:before {
+		content: "{$label calonppdb jaraktempatkesekolah}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="jumlahsaudarakandung"]:before {
+		content: "{$label calonppdb jumlahsaudarakandung}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="asaltk"]:before {
+		content: "{$label calonppdb asaltk}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="nomorsurattk"]:before {
+		content: "{$label calonppdb nomorsurattk}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="paktaintegritas"]:before {
+		content: "{$label calonppdb paktaintegritas}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="namaibu"]:before {
+		content: "{$label calonppdb namaibu}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="status"]:before {
+		content: "{$label calonppdb status}";
+	}
+	
+}
+</style>
+<table data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" class=" table {$grid_classes}  r-flexgrid rnr-b-grid rnr-gridtable" 
+	cellpadding="0" 
+	data-body-height="1"
+>
+						<thead>
+			{BEGIN grid_header}
+					
+		 
+						<tr {$rowattrs} {$row_grid_0} class="{$rowclass} 
+									{$gridHeader_class}
+									
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_headcell_icons}
+	<th
+	
+	{$cell_grid_headcell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_list"		data-control-cell
+	
+	>
+
+	
+	</th>
+	{END cellblock_grid_headcell_icons}
+				 
+					{BEGIN cellblock_grid_headcell_checkbox}
+	<th
+	
+	{$cell_grid_headcell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_list"	
+		data-checkbox-cell
+	>
+
+	 
+		{BEGIN checkbox_column}
+<span data-itemtype="grid_checkbox_head" data-itemid="grid_checkbox_head" {$item_grid_checkbox_head} data-pageid="{$pageid}" data-record-id="{$recId}" >
+	<input type="checkbox" {$checkboxheader_attrs}>
+</span>
+{END checkbox_column}
+	
+	</th>
+	{END cellblock_grid_headcell_checkbox}
+				 
+					{BEGIN cellblock_grid_headcell_field}
+	<th
+	
+	{$cell_grid_headcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nomap_class}
+			"
+
+			data-field="nomap"
+	
+	data-cellId="grid_headcell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nomap_fieldheadercolumn}
+	{BEGIN nomap_fieldheader}
+	<SPAN {$nomap_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nomap">
+	{$label calonppdb nomap }	{$arrow_icon_nomap}
+	</SPAN>
+	{END nomap_fieldheader}
+{END nomap_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field}
+				 
+					{BEGIN cellblock_grid_headcell_field1}
+	<th
+	
+	{$cell_grid_headcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$namalengkap_class}
+			"
+
+			data-field="namalengkap"
+	
+	data-cellId="grid_headcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN namalengkap_fieldheadercolumn}
+	{BEGIN namalengkap_fieldheader}
+	<SPAN {$namalengkap_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="namalengkap">
+	{$label calonppdb namalengkap }	{$arrow_icon_namalengkap}
+	</SPAN>
+	{END namalengkap_fieldheader}
+{END namalengkap_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field1}
+				 
+					{BEGIN cellblock_grid_headcell_field2}
+	<th
+	
+	{$cell_grid_headcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$asaltk_class}
+			"
+
+			data-field="asaltk"
+	
+	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN asaltk_fieldheadercolumn}
+	{BEGIN asaltk_fieldheader}
+	<SPAN {$asaltk_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field48" {$item_simple_grid_field48} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="asaltk">
+	{$label calonppdb asaltk }	{$arrow_icon_asaltk}
+	</SPAN>
+	{END asaltk_fieldheader}
+{END asaltk_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field2}
+				 
+					{BEGIN cellblock_grid_headcell_field3}
+	<th
+	
+	{$cell_grid_headcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$namaayah_class}
+			"
+
+			data-field="namaayah"
+	
+	data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN namaayah_fieldheadercolumn}
+	{BEGIN namaayah_fieldheader}
+	<SPAN {$namaayah_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field22" {$item_simple_grid_field22} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="namaayah">
+	{$label calonppdb namaayah }	{$arrow_icon_namaayah}
+	</SPAN>
+	{END namaayah_fieldheader}
+{END namaayah_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field3}
+				 
+					{BEGIN cellblock_grid_headcell_field4}
+	<th
+	
+	{$cell_grid_headcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$namaibu_class}
+			"
+
+			data-field="namaibu"
+	
+	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN namaibu_fieldheadercolumn}
+	{BEGIN namaibu_fieldheader}
+	<SPAN {$namaibu_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="namaibu">
+	{$label calonppdb namaibu }	{$arrow_icon_namaibu}
+	</SPAN>
+	{END namaibu_fieldheader}
+{END namaibu_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field4}
+							</tr>
+					 
+					 
+					
+					{END grid_header}
+			</thead>
+															<tbody>
+					{BEGIN grid_row}
+									
+		 
+					 
+						<tr {$rowattrs} {$row_grid_1} class="{$rowclass} 
+								
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_cell_icons}
+	<td
+	
+	{$cell_grid_cell_icons}
+	{$recordattrs}
+	class="
+					"
+
+	
+	data-cellId="grid_cell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_list"		data-control-cell
+	
+	>
+
+	 
+		{BEGIN edit_column}
+{BEGIN edit_link}
+<span data-itemtype="grid_edit" data-itemid="grid_edit" {$item_grid_edit} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Edit" class="btn-link   
+	 glyphicon glyphicon-pencil" href="calonppdb_edit.php?{$editlink}" {$editlink_attrs} title="Edit" >		
+				
+								</a>
+</span>
+{END edit_link}
+{END edit_column}
+	 
+		{BEGIN view_column}
+{BEGIN view_link}
+<span data-itemtype="grid_view" data-itemid="grid_view" {$item_grid_view} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Lihat Catatan" class="btn-link   
+	 glyphicon glyphicon-search" href="calonppdb_view.php?{$editlink}" {$viewlink_attrs} title="Lihat" >		
+				
+								</a>
+</span>
+{END view_link}
+{END view_column}
+	
+	</td>
+	{END cellblock_grid_cell_icons}
+				 
+					{BEGIN cellblock_grid_cell_checkbox}
+	<td
+	
+	{$cell_grid_cell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}"		data-control-cell
+	
+		data-checkbox-cell
+	>
+
+	 
+		{BEGIN checkbox_column}
+<span data-itemtype="grid_checkbox" data-itemid="grid_checkbox" {$item_grid_checkbox} data-pageid="{$pageid}" data-record-id="{$recId}" >
+	<input type="checkbox" {$checkbox_attrs}>
+</span>	
+{END checkbox_column}
+	
+	</td>
+	{END cellblock_grid_cell_checkbox}
+				 
+					{BEGIN cellblock_grid_cell_field}
+	<td
+	
+	{$cell_grid_cell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nomap_class}
+			"
+
+			data-field="nomap"
+	
+	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nomap_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nomap" data-default-width >
+{$nomap_value}
+</span>
+{END nomap_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field}
+				 
+					{BEGIN cellblock_grid_cell_field1}
+	<td
+	
+	{$cell_grid_cell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$namalengkap_class}
+			"
+
+			data-field="namalengkap"
+	
+	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN namalengkap_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="namalengkap" data-default-width >
+{$namalengkap_value}
+</span>
+{END namalengkap_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field1}
+				 
+					{BEGIN cellblock_grid_cell_field2}
+	<td
+	
+	{$cell_grid_cell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$asaltk_class}
+			"
+
+			data-field="asaltk"
+	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN asaltk_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field47" {$item_simple_grid_field47} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="asaltk" data-default-width >
+{$asaltk_value}
+</span>
+{END asaltk_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field2}
+				 
+					{BEGIN cellblock_grid_cell_field3}
+	<td
+	
+	{$cell_grid_cell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$namaayah_class}
+			"
+
+			data-field="namaayah"
+	
+	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN namaayah_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field21" {$item_simple_grid_field21} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="namaayah" data-default-width >
+{$namaayah_value}
+</span>
+{END namaayah_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field3}
+				 
+					{BEGIN cellblock_grid_cell_field4}
+	<td
+	
+	{$cell_grid_cell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$namaibu_class}
+			"
+
+			data-field="namaibu"
+	
+	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN namaibu_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="namaibu" data-default-width >
+{$namaibu_value}
+</span>
+{END namaibu_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field4}
+							</tr>
+					 
+					
+											{END grid_row}
+					</tbody>
+													<tfoot>
+					
+		 
+					 
+					 
+						<tr {$rowattrs} {$row_grid_2} class="{$rowclass} 
+									{$gridFooter_class}
+									
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_footcell_icons}
+	<td
+	
+	{$cell_grid_footcell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_icons}
+				 
+					{BEGIN cellblock_grid_footcell_checkbox}
+	<td
+	
+	{$cell_grid_footcell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_checkbox}
+				 
+					{BEGIN cellblock_grid_footcell_field}
+	<td
+	
+	{$cell_grid_footcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field}
+				 
+					{BEGIN cellblock_grid_footcell_field1}
+	<td
+	
+	{$cell_grid_footcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field1}
+				 
+					{BEGIN cellblock_grid_footcell_field2}
+	<td
+	
+	{$cell_grid_footcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field2}
+				 
+					{BEGIN cellblock_grid_footcell_field3}
+	<td
+	
+	{$cell_grid_footcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field3}
+				 
+					{BEGIN cellblock_grid_footcell_field4}
+	<td
+	
+	{$cell_grid_footcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="calonppdb_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field4}
+							</tr>
+					
+					</tfoot>
+				</table>
+{END grid_block}
+						</div>
+					<div class="r-below">
+										{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="leftbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="r-align-center r-ori-vert			col-md-12
+	
+">
+		 
+		{BEGIN pagination_block}
+<span data-itemtype="pagination" data-itemid="pagination" {$item_pagination} data-pageid="{$pageid}" >
+{$pagination}
+</span>
+{END pagination_block}
+		</div>					</div>
+	</div>		
+{END below-grid_block}
+						</div>
+					{$footer}
+				</div>	
+			</div>	
+		</div>
+	{END body}
+	</body>
+</html>

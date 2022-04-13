@@ -1,0 +1,369 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+	<body class="{$stylename} function-admin_members_list" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<div class="r-topbar-page">
+			<div data-menu-width="full" 
+				 
+				class="r-topheader" 
+				data-resize-name="topbar"
+				data-body-align="left"
+			>
+								{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="topbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span data-cellId="supertop_c1" data-pageid="{$pageid}" class="r-align-left navbar-header" data-itemid="logo" {$item_logo}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo" {$item_logo} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</span>
+		 
+				<span data-cellId="supertop_c1" data-pageid="{$pageid}" class="r-align-left navbar-collapse" data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{$menu main horizontal}			</span>
+							 
+							 
+				<span class="navbar-form r-align-right r-ori-vert navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-user"></span>
+						{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Log out		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN exitadminarea_link}
+	<li data-itemtype="exit_adminarea_link" data-itemid="exit_adminarea_link" {$item_exit_adminarea_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$exitaalink_attrs}  title="" >
+				
+		Exit Admin Area		
+		</a>
+	</li>
+{END exitadminarea_link}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+					{$locking}
+			</div>	
+			<div data-body-align="left"  data-body-width="standard" class="r-body" data-resize-top="topbar" >
+				<div class="r-top">
+								{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="topbar" {$form_top} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class="			col-md-12
+	
+">
+		 
+		{BEGIN breadcrumb}
+<ol class="breadcrumb" data-itemtype="breadcrumb" data-itemid="breadcrumb" {$item_breadcrumb} data-pageid="{$pageid}">
+<li ><a href="{$crumb_home_link}"><span class="glyphicon glyphicon-home"></span></a>{$crumb_dropdown}</li>
+{BEGIN crumb}
+  <li class="{$crumb_item_class}">
+{BEGIN crumb_title_link}
+	<a {$crumb_attrs}>{$crumb_title}</a>
+{END crumb_title_link}
+{BEGIN crumb_title_span}
+	<span {$crumb_attrs}>{$crumb_title}</span>
+{END crumb_title_span}	
+	{$crumb_dropdown}
+  </li>
+{END crumb}
+</ol>
+{END breadcrumb}	 
+		{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Login			</a>
+</span>
+{END guestloginbutton}
+		</div>					</div>
+	</div>		
+{END top_block}
+					</div>
+				<div class="r-content">
+										<div class="r-data-block" data-body-width="standard" >
+						
+										{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="topbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class="			col-md-6
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		<span data-itemtype="members_save" data-itemid="members_save" {$item_members_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Simpan			</a>
+</span>
+	 
+		<span data-itemtype="members_reset" data-itemid="members_reset" {$item_members_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Tata ulang			</a>
+</span>
+			{END firstAboveGridCell}	
+	</div>			 
+				<div 
+	data-cellId="above-grid_c2" data-pageid="{$pageid}"	{$cell_above-grid_c2}
+	class="			col-md-6
+	
+">
+		 
+		<span data-itemtype="members_choose_columns" data-itemid="members_choose_columns" {$item_members_choose_columns} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$choosecolumnsbutton_attrs} >
+							Choose columns...			</a>
+</span>
+	 
+		<span data-itemtype="members_displaying_filter" data-itemid="members_displaying_filter" {$item_members_displaying_filter} data-pageid="{$pageid}">
+Displaying
+	<span id="linkselectFilter" class="btn-group">
+		<span class="btn btn-link dropdown-toggle inline-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">all users</span>
+		<ul class="dropdown-menu">
+			<li data-value="all" ><a href="#">all users</a></li>
+			<li data-value="modified" ><a href="#">modified users</a></li>
+		</ul>
+	</span>
+</span>
+		</div>					</div>
+	</div>		
+{END above-grid_block}
+							
+						<div class="r-grid">
+										{BEGIN grid_block}
+<table class="table table-striped table-bordered adminMembersTable menuordered" cellpadding="0" data-location="grid" id="form_grid_{$pageid}" data-makeup="topbar" {$form_grid} data-pageid="{$pageid}">
+											<thead>
+			
+								<tr >
+									
+	<th 
+			class=" r-ori-vert"
+				
+		data-cellId="grid_hcell_username" data-pageid="{$pageid}"	>
+
+ 
+	<a class="rnr-orderlink" {$usernameheadersort_attrs} data-itemtype="members_username_label" data-itemid="members_username_label" {$item_members_username_label} data-pageid="{$pageid}">Username</a>
+
+	</th>
+	
+									{BEGIN displayname_column}
+
+	<th 
+			class=" r-ori-vert"
+				
+		data-cellId="grid_hcell_displayname" data-pageid="{$pageid}" {$displayuserheadertdsort_attrs}	>
+
+ 
+	<a class="rnr-orderlink" {$displayuserheadersort_attrs} data-itemtype="members_displayname_label" data-itemid="members_displayname_label" {$item_members_displayname_label} data-pageid="{$pageid}">Display name</a>
+
+	</th>
+	
+{END displayname_column}
+									{BEGIN email_column}
+
+	<th 
+			class=" r-ori-vert"
+				
+		data-cellId="grid_hcell_email" data-pageid="{$pageid}" {$emailuserheadertdsort_attrs}	>
+
+ 
+	<a class="rnr-orderlink" {$emailuserheadersort_attrs} data-itemtype="members_email_label" data-itemid="members_email_label" {$item_members_email_label} data-pageid="{$pageid}">E-mail</a>
+
+	</th>
+	
+{END email_column}
+									{BEGIN usergroup_header}
+
+	<th 
+			class=" r-ori-vert"
+				
+		data-cellId="grid_hcell_groupname" data-pageid="{$pageid}" {$groupheadertdsort_attrs}	>
+
+ 
+	<a class="rnr-orderlink" {$groupheadersort_attrs}  data-itemtype="members_groupname_label" data-itemid="members_groupname_label" {$item_members_groupname_label} data-pageid="{$pageid}">{$groupname}</a>
+
+	</th>
+	
+{END usergroup_header}
+							</tr>
+											<tr >
+									
+	<th 
+			class=" r-ori-vert"
+				
+		data-cellId="grid_hcell_search" data-pageid="{$pageid}"	>
+
+ 
+	<div data-itemtype="members_search" data-itemid="members_search" {$item_members_search} data-pageid="{$pageid}">
+	<input class="form-control" type=search id="adminMembersSearch"  placeholder="search">			
+</div>
+
+	</th>
+	
+									{BEGIN displayname_column}
+
+	<th 
+			class=" r-ori-vert"
+				
+		data-cellId="grid_hcell_dn" data-pageid="{$pageid}" {$displayuserheadertdbox_attrs}	>
+
+
+	</th>
+	
+{END displayname_column}
+									{BEGIN email_column}
+
+	<th 
+			class=" r-ori-vert"
+				
+		data-cellId="grid_hcell_e" data-pageid="{$pageid}" {$emailuserheadertdbox_attrs}	>
+
+
+	</th>
+	
+{END email_column}
+									{BEGIN usergroup_header}
+
+	<th 
+			class=" r-ori-vert"
+				
+		data-cellId="grid_hcell_all_checkbox" data-pageid="{$pageid}" {$groupheadertdbox_attrs}	>
+
+ 
+	<span data-itemtype="members_all_users_checkbox" data-itemid="members_all_users_checkbox" {$item_members_all_users_checkbox} data-pageid="{$pageid}">
+		<span class="r-admin-checkbox columnheader" {$groupheaderbox_attrs} ></span>
+	</span>
+
+	</th>
+	
+{END usergroup_header}
+							</tr>
+										
+						</thead>
+																		<tbody>
+				{BEGIN grid_row}
+			
+																		<tr {$usernamerow_attrs}>
+									
+	<td
+			class=""
+				
+		data-cellId="grid_cell_u" data-pageid="{$pageid}" {$usernamecell_attrs}	>
+
+ 
+	<span data-itemtype="members_all_groups_checkbox" data-itemid="members_all_groups_checkbox" {$item_members_all_groups_checkbox} data-pageid="{$pageid}">
+		<span class="r-admin-checkbox rowheader" {$usernamebox_attrs} ></span>
+	</span>
+ 
+	{$username}
+	</td>
+	
+									{BEGIN displayname_column}
+
+	<td
+			class=" r-ori-vert"
+				
+		data-cellId="grid_cell_dn" data-pageid="{$pageid}" {$displayusername_attrs}	>
+
+ 
+	{$displayusername}
+
+	</td>
+	
+{END displayname_column}
+									{BEGIN email_column}
+
+	<td
+			class=" r-ori-vert"
+				
+		data-cellId="grid_cell_e" data-pageid="{$pageid}" {$emailuser_attrs}	>
+
+ 
+	{$emailuser}
+	</td>
+	
+{END email_column}
+									{BEGIN usergroup_boxes}
+
+	<td
+			class=" r-ori-vert"
+				
+		data-cellId="grid_c_gn" data-pageid="{$pageid}" {$groupcellbox_attrs}	>
+
+ 
+	<span data-itemtype="members_group_checkbox" data-itemid="members_group_checkbox" {$item_members_group_checkbox} data-pageid="{$pageid}">
+	{BEGIN usergroup_box} 	<span class="r-admin-checkbox " {$groupbox_attrs} ></span>
+	{END usergroup_box} </span>
+
+	</td>
+	
+{END usergroup_boxes}
+							</tr>
+					
+						{END grid_row}
+				</tbody>
+					
+</table>
+{END grid_block}
+							</div>
+						
+										{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="topbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	</div>		
+{END below-grid_block}
+							
+					</div>
+				</div>
+			</div>
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

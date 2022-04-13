@@ -1,0 +1,17 @@
+[data-page=".global_menu"][data-itemid="welcome_item"] > .bs-welcome-header {
+  background-color: #00C2C5;
+}
+[data-page=".global_menu"][data-itemid="welcome_item1"] > .bs-welcome-header {
+  background-color: #B22222;
+}
+[data-page=".global_menu"][data-itemid="welcome_item2"] > .bs-welcome-header {
+  background-color: #5F9EA0;
+}
+[data-page=".global_menu"][data-itemid="welcome_item3"] > .bs-welcome-header {
+  background-color: #EDCA00;
+}
+[data-page=".global_menu"][data-itemid="welcome_item4"] > .bs-welcome-header {
+  background-color: #9ACD32;
+}
+
+

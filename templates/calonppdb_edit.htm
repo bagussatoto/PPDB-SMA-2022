@@ -1,0 +1,1374 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="edit_header" data-itemid="edit_header" {$item_edit_header} data-pageid="{$pageid}" >{$pagetitlelabel calonppdb edit}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<div data-itemtype="edit_message" data-itemid="edit_message" {$item_edit_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+			<button class="btn btn-sm btn-default" {$backbutton_attrs}>Balik ke daftar</button>
+	{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>Lihat</button>
+{END view_page_button}
+</div>
+</div>
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN tanggaldaftar_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tanggaldaftar}  r-vertical-field" 
+	data-fieldname="tanggaldaftar" 
+	data-signal-error-for="tanggaldaftar{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="tanggaldaftar" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_tanggaldaftar}">
+		{BEGIN tanggaldaftar_label}{$label calonppdb tanggaldaftar }{END tanggaldaftar_label}
+	</label>
+	<div class="r-edit-field">
+		{$tanggaldaftar_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="tanggaldaftar">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END tanggaldaftar_fieldblock}
+											
+{BEGIN nomap_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nomap}  r-vertical-field" 
+	data-fieldname="nomap" 
+	data-signal-error-for="nomap{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="nomap" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_nomap}">
+		{BEGIN nomap_label}{$label calonppdb nomap }{END nomap_label}
+	</label>
+	<div class="r-edit-field">
+		{$nomap_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="nomap">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END nomap_fieldblock}
+											
+{BEGIN namalengkap_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_namalengkap}  r-vertical-field" 
+	data-fieldname="namalengkap" 
+	data-signal-error-for="namalengkap{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="namalengkap" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_namalengkap}">
+		{BEGIN namalengkap_label}{$label calonppdb namalengkap }{END namalengkap_label}
+	</label>
+	<div class="r-edit-field">
+		{$namalengkap_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="namalengkap">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END namalengkap_fieldblock}
+											
+{BEGIN jeniskelamin_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jeniskelamin}  r-vertical-field" 
+	data-fieldname="jeniskelamin" 
+	data-signal-error-for="jeniskelamin{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="jeniskelamin" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_jeniskelamin}">
+		{BEGIN jeniskelamin_label}{$label calonppdb jeniskelamin }{END jeniskelamin_label}
+	</label>
+	<div class="r-edit-field">
+		{$jeniskelamin_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="jeniskelamin">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END jeniskelamin_fieldblock}
+											
+{BEGIN nisn_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nisn}  r-vertical-field" 
+	data-fieldname="nisn" 
+	data-signal-error-for="nisn{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="nisn" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_nisn}">
+		{BEGIN nisn_label}{$label calonppdb nisn }{END nisn_label}
+	</label>
+	<div class="r-edit-field">
+		{$nisn_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="nisn">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END nisn_fieldblock}
+											
+{BEGIN nik_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nik}  r-vertical-field" 
+	data-fieldname="nik" 
+	data-signal-error-for="nik{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="nik" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_nik}">
+		{BEGIN nik_label}{$label calonppdb nik }{END nik_label}
+	</label>
+	<div class="r-edit-field">
+		{$nik_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="nik">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END nik_fieldblock}
+											
+{BEGIN tempatlahir_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tempatlahir}  r-vertical-field" 
+	data-fieldname="tempatlahir" 
+	data-signal-error-for="tempatlahir{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="tempatlahir" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_tempatlahir}">
+		{BEGIN tempatlahir_label}{$label calonppdb tempatlahir }{END tempatlahir_label}
+	</label>
+	<div class="r-edit-field">
+		{$tempatlahir_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="tempatlahir">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END tempatlahir_fieldblock}
+											
+{BEGIN tanggallahir1_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tanggallahir1}  r-vertical-field" 
+	data-fieldname="tanggallahir1" 
+	data-signal-error-for="tanggallahir1{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="tanggallahir1" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_tanggallahir1}">
+		{BEGIN tanggallahir1_label}{$label calonppdb tanggallahir1 }{END tanggallahir1_label}
+	</label>
+	<div class="r-edit-field">
+		{$tanggallahir1_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="tanggallahir1">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END tanggallahir1_fieldblock}
+											
+{BEGIN noaktalahir_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_noaktalahir}  r-vertical-field" 
+	data-fieldname="noaktalahir" 
+	data-signal-error-for="noaktalahir{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="noaktalahir" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_noaktalahir}">
+		{BEGIN noaktalahir_label}{$label calonppdb noaktalahir }{END noaktalahir_label}
+	</label>
+	<div class="r-edit-field">
+		{$noaktalahir_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="noaktalahir">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END noaktalahir_fieldblock}
+											
+{BEGIN agama_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_agama}  r-vertical-field" 
+	data-fieldname="agama" 
+	data-signal-error-for="agama{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="agama" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_agama}">
+		{BEGIN agama_label}{$label calonppdb agama }{END agama_label}
+	</label>
+	<div class="r-edit-field">
+		{$agama_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="agama">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END agama_fieldblock}
+											
+{BEGIN alamatjalan_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_alamatjalan}  r-vertical-field" 
+	data-fieldname="alamatjalan" 
+	data-signal-error-for="alamatjalan{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="alamatjalan" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_alamatjalan}">
+		{BEGIN alamatjalan_label}{$label calonppdb alamatjalan }{END alamatjalan_label}
+	</label>
+	<div class="r-edit-field">
+		{$alamatjalan_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="alamatjalan">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END alamatjalan_fieldblock}
+											
+{BEGIN rt_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_rt}  r-vertical-field" 
+	data-fieldname="rt" 
+	data-signal-error-for="rt{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="rt" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_rt}">
+		{BEGIN rt_label}{$label calonppdb rt }{END rt_label}
+	</label>
+	<div class="r-edit-field">
+		{$rt_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="rt">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END rt_fieldblock}
+											
+{BEGIN rw_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_rw}  r-vertical-field" 
+	data-fieldname="rw" 
+	data-signal-error-for="rw{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="rw" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_rw}">
+		{BEGIN rw_label}{$label calonppdb rw }{END rw_label}
+	</label>
+	<div class="r-edit-field">
+		{$rw_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="rw">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END rw_fieldblock}
+											
+{BEGIN dusun_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dusun}  r-vertical-field" 
+	data-fieldname="dusun" 
+	data-signal-error-for="dusun{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="dusun" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_dusun}">
+		{BEGIN dusun_label}{$label calonppdb dusun }{END dusun_label}
+	</label>
+	<div class="r-edit-field">
+		{$dusun_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="dusun">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END dusun_fieldblock}
+											
+{BEGIN deskel_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_deskel}  r-vertical-field" 
+	data-fieldname="deskel" 
+	data-signal-error-for="deskel{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="deskel" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_deskel}">
+		{BEGIN deskel_label}{$label calonppdb deskel }{END deskel_label}
+	</label>
+	<div class="r-edit-field">
+		{$deskel_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="deskel">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END deskel_fieldblock}
+											
+{BEGIN kecamatan_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kecamatan}  r-vertical-field" 
+	data-fieldname="kecamatan" 
+	data-signal-error-for="kecamatan{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="kecamatan" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_kecamatan}">
+		{BEGIN kecamatan_label}{$label calonppdb kecamatan }{END kecamatan_label}
+	</label>
+	<div class="r-edit-field">
+		{$kecamatan_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="kecamatan">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END kecamatan_fieldblock}
+											
+{BEGIN kodepos_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kodepos}  r-vertical-field" 
+	data-fieldname="kodepos" 
+	data-signal-error-for="kodepos{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="kodepos" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_kodepos}">
+		{BEGIN kodepos_label}{$label calonppdb kodepos }{END kodepos_label}
+	</label>
+	<div class="r-edit-field">
+		{$kodepos_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="kodepos">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END kodepos_fieldblock}
+											
+{BEGIN tempattinggal_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tempattinggal}  r-vertical-field" 
+	data-fieldname="tempattinggal" 
+	data-signal-error-for="tempattinggal{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="tempattinggal" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_tempattinggal}">
+		{BEGIN tempattinggal_label}{$label calonppdb tempattinggal }{END tempattinggal_label}
+	</label>
+	<div class="r-edit-field">
+		{$tempattinggal_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="tempattinggal">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END tempattinggal_fieldblock}
+											
+{BEGIN modatransportasi_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_modatransportasi}  r-vertical-field" 
+	data-fieldname="modatransportasi" 
+	data-signal-error-for="modatransportasi{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-field="modatransportasi" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_modatransportasi}">
+		{BEGIN modatransportasi_label}{$label calonppdb modatransportasi }{END modatransportasi_label}
+	</label>
+	<div class="r-edit-field">
+		{$modatransportasi_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="modatransportasi">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END modatransportasi_fieldblock}
+											
+{BEGIN anakke_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_anakke}  r-vertical-field" 
+	data-fieldname="anakke" 
+	data-signal-error-for="anakke{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="anakke" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_anakke}">
+		{BEGIN anakke_label}{$label calonppdb anakke }{END anakke_label}
+	</label>
+	<div class="r-edit-field">
+		{$anakke_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="anakke">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END anakke_fieldblock}
+											
+{BEGIN namaayah_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_namaayah}  r-vertical-field" 
+	data-fieldname="namaayah" 
+	data-signal-error-for="namaayah{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field20" {$item_integrated_edit_field20} data-pageid="{$pageid}" data-field="namaayah" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_namaayah}">
+		{BEGIN namaayah_label}{$label calonppdb namaayah }{END namaayah_label}
+	</label>
+	<div class="r-edit-field">
+		{$namaayah_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="namaayah">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END namaayah_fieldblock}
+											
+{BEGIN nikayah_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nikayah}  r-vertical-field" 
+	data-fieldname="nikayah" 
+	data-signal-error-for="nikayah{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field21" {$item_integrated_edit_field21} data-pageid="{$pageid}" data-field="nikayah" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_nikayah}">
+		{BEGIN nikayah_label}{$label calonppdb nikayah }{END nikayah_label}
+	</label>
+	<div class="r-edit-field">
+		{$nikayah_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="nikayah">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END nikayah_fieldblock}
+											
+{BEGIN tanggallahir2_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tanggallahir2}  r-vertical-field" 
+	data-fieldname="tanggallahir2" 
+	data-signal-error-for="tanggallahir2{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field22" {$item_integrated_edit_field22} data-pageid="{$pageid}" data-field="tanggallahir2" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_tanggallahir2}">
+		{BEGIN tanggallahir2_label}{$label calonppdb tanggallahir2 }{END tanggallahir2_label}
+	</label>
+	<div class="r-edit-field">
+		{$tanggallahir2_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="tanggallahir2">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END tanggallahir2_fieldblock}
+											
+{BEGIN pendidikan1_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_pendidikan1}  r-vertical-field" 
+	data-fieldname="pendidikan1" 
+	data-signal-error-for="pendidikan1{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field23" {$item_integrated_edit_field23} data-pageid="{$pageid}" data-field="pendidikan1" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_pendidikan1}">
+		{BEGIN pendidikan1_label}{$label calonppdb pendidikan1 }{END pendidikan1_label}
+	</label>
+	<div class="r-edit-field">
+		{$pendidikan1_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="pendidikan1">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END pendidikan1_fieldblock}
+											
+{BEGIN pekerjaan1_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_pekerjaan1}  r-vertical-field" 
+	data-fieldname="pekerjaan1" 
+	data-signal-error-for="pekerjaan1{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field24" {$item_integrated_edit_field24} data-pageid="{$pageid}" data-field="pekerjaan1" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_pekerjaan1}">
+		{BEGIN pekerjaan1_label}{$label calonppdb pekerjaan1 }{END pekerjaan1_label}
+	</label>
+	<div class="r-edit-field">
+		{$pekerjaan1_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="pekerjaan1">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END pekerjaan1_fieldblock}
+											
+{BEGIN penghasilan1_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_penghasilan1}  r-vertical-field" 
+	data-fieldname="penghasilan1" 
+	data-signal-error-for="penghasilan1{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field25" {$item_integrated_edit_field25} data-pageid="{$pageid}" data-field="penghasilan1" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_penghasilan1}">
+		{BEGIN penghasilan1_label}{$label calonppdb penghasilan1 }{END penghasilan1_label}
+	</label>
+	<div class="r-edit-field">
+		{$penghasilan1_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="penghasilan1">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END penghasilan1_fieldblock}
+											
+{BEGIN statusayah_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_statusayah}  r-vertical-field" 
+	data-fieldname="statusayah" 
+	data-signal-error-for="statusayah{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field26" {$item_integrated_edit_field26} data-pageid="{$pageid}" data-field="statusayah" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_statusayah}">
+		{BEGIN statusayah_label}{$label calonppdb statusayah }{END statusayah_label}
+	</label>
+	<div class="r-edit-field">
+		{$statusayah_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="statusayah">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END statusayah_fieldblock}
+											
+{BEGIN statusibu_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_statusibu}  r-vertical-field" 
+	data-fieldname="statusibu" 
+	data-signal-error-for="statusibu{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field27" {$item_integrated_edit_field27} data-pageid="{$pageid}" data-field="statusibu" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_statusibu}">
+		{BEGIN statusibu_label}{$label calonppdb statusibu }{END statusibu_label}
+	</label>
+	<div class="r-edit-field">
+		{$statusibu_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="statusibu">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END statusibu_fieldblock}
+											
+{BEGIN nikibu_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nikibu}  r-vertical-field" 
+	data-fieldname="nikibu" 
+	data-signal-error-for="nikibu{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field28" {$item_integrated_edit_field28} data-pageid="{$pageid}" data-field="nikibu" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_nikibu}">
+		{BEGIN nikibu_label}{$label calonppdb nikibu }{END nikibu_label}
+	</label>
+	<div class="r-edit-field">
+		{$nikibu_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="nikibu">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END nikibu_fieldblock}
+											
+{BEGIN tanggallahir3_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tanggallahir3}  r-vertical-field" 
+	data-fieldname="tanggallahir3" 
+	data-signal-error-for="tanggallahir3{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field29" {$item_integrated_edit_field29} data-pageid="{$pageid}" data-field="tanggallahir3" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_tanggallahir3}">
+		{BEGIN tanggallahir3_label}{$label calonppdb tanggallahir3 }{END tanggallahir3_label}
+	</label>
+	<div class="r-edit-field">
+		{$tanggallahir3_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="tanggallahir3">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END tanggallahir3_fieldblock}
+											
+{BEGIN pendidikan2_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_pendidikan2}  r-vertical-field" 
+	data-fieldname="pendidikan2" 
+	data-signal-error-for="pendidikan2{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field30" {$item_integrated_edit_field30} data-pageid="{$pageid}" data-field="pendidikan2" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_pendidikan2}">
+		{BEGIN pendidikan2_label}{$label calonppdb pendidikan2 }{END pendidikan2_label}
+	</label>
+	<div class="r-edit-field">
+		{$pendidikan2_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="pendidikan2">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END pendidikan2_fieldblock}
+											
+{BEGIN pekerjaan2_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_pekerjaan2}  r-vertical-field" 
+	data-fieldname="pekerjaan2" 
+	data-signal-error-for="pekerjaan2{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field31" {$item_integrated_edit_field31} data-pageid="{$pageid}" data-field="pekerjaan2" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_pekerjaan2}">
+		{BEGIN pekerjaan2_label}{$label calonppdb pekerjaan2 }{END pekerjaan2_label}
+	</label>
+	<div class="r-edit-field">
+		{$pekerjaan2_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="pekerjaan2">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END pekerjaan2_fieldblock}
+											
+{BEGIN penghasilan2_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_penghasilan2}  r-vertical-field" 
+	data-fieldname="penghasilan2" 
+	data-signal-error-for="penghasilan2{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field32" {$item_integrated_edit_field32} data-pageid="{$pageid}" data-field="penghasilan2" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_penghasilan2}">
+		{BEGIN penghasilan2_label}{$label calonppdb penghasilan2 }{END penghasilan2_label}
+	</label>
+	<div class="r-edit-field">
+		{$penghasilan2_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="penghasilan2">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END penghasilan2_fieldblock}
+											
+{BEGIN namawali_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_namawali}  r-vertical-field" 
+	data-fieldname="namawali" 
+	data-signal-error-for="namawali{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field33" {$item_integrated_edit_field33} data-pageid="{$pageid}" data-field="namawali" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_namawali}">
+		{BEGIN namawali_label}{$label calonppdb namawali }{END namawali_label}
+	</label>
+	<div class="r-edit-field">
+		{$namawali_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="namawali">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END namawali_fieldblock}
+											
+{BEGIN nikwali_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nikwali}  r-vertical-field" 
+	data-fieldname="nikwali" 
+	data-signal-error-for="nikwali{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field34" {$item_integrated_edit_field34} data-pageid="{$pageid}" data-field="nikwali" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_nikwali}">
+		{BEGIN nikwali_label}{$label calonppdb nikwali }{END nikwali_label}
+	</label>
+	<div class="r-edit-field">
+		{$nikwali_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="nikwali">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END nikwali_fieldblock}
+											
+{BEGIN tanggallahir4_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tanggallahir4}  r-vertical-field" 
+	data-fieldname="tanggallahir4" 
+	data-signal-error-for="tanggallahir4{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field35" {$item_integrated_edit_field35} data-pageid="{$pageid}" data-field="tanggallahir4" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_tanggallahir4}">
+		{BEGIN tanggallahir4_label}{$label calonppdb tanggallahir4 }{END tanggallahir4_label}
+	</label>
+	<div class="r-edit-field">
+		{$tanggallahir4_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="tanggallahir4">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END tanggallahir4_fieldblock}
+											
+{BEGIN pendidikan3_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_pendidikan3}  r-vertical-field" 
+	data-fieldname="pendidikan3" 
+	data-signal-error-for="pendidikan3{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field36" {$item_integrated_edit_field36} data-pageid="{$pageid}" data-field="pendidikan3" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_pendidikan3}">
+		{BEGIN pendidikan3_label}{$label calonppdb pendidikan3 }{END pendidikan3_label}
+	</label>
+	<div class="r-edit-field">
+		{$pendidikan3_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="pendidikan3">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END pendidikan3_fieldblock}
+											
+{BEGIN pekerjaan3_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_pekerjaan3}  r-vertical-field" 
+	data-fieldname="pekerjaan3" 
+	data-signal-error-for="pekerjaan3{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field37" {$item_integrated_edit_field37} data-pageid="{$pageid}" data-field="pekerjaan3" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_pekerjaan3}">
+		{BEGIN pekerjaan3_label}{$label calonppdb pekerjaan3 }{END pekerjaan3_label}
+	</label>
+	<div class="r-edit-field">
+		{$pekerjaan3_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="pekerjaan3">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END pekerjaan3_fieldblock}
+											
+{BEGIN penghasilan3_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_penghasilan3}  r-vertical-field" 
+	data-fieldname="penghasilan3" 
+	data-signal-error-for="penghasilan3{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field38" {$item_integrated_edit_field38} data-pageid="{$pageid}" data-field="penghasilan3" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_penghasilan3}">
+		{BEGIN penghasilan3_label}{$label calonppdb penghasilan3 }{END penghasilan3_label}
+	</label>
+	<div class="r-edit-field">
+		{$penghasilan3_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="penghasilan3">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END penghasilan3_fieldblock}
+											
+{BEGIN kontak_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kontak}  r-vertical-field" 
+	data-fieldname="kontak" 
+	data-signal-error-for="kontak{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field39" {$item_integrated_edit_field39} data-pageid="{$pageid}" data-field="kontak" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_kontak}">
+		{BEGIN kontak_label}{$label calonppdb kontak }{END kontak_label}
+	</label>
+	<div class="r-edit-field">
+		{$kontak_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="kontak">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END kontak_fieldblock}
+											
+{BEGIN nomorwa_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nomorwa}  r-vertical-field" 
+	data-fieldname="nomorwa" 
+	data-signal-error-for="nomorwa{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field40" {$item_integrated_edit_field40} data-pageid="{$pageid}" data-field="nomorwa" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_nomorwa}">
+		{BEGIN nomorwa_label}{$label calonppdb nomorwa }{END nomorwa_label}
+	</label>
+	<div class="r-edit-field">
+		{$nomorwa_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="nomorwa">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END nomorwa_fieldblock}
+											
+{BEGIN email_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_email}  r-vertical-field" 
+	data-fieldname="email" 
+	data-signal-error-for="email{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field41" {$item_integrated_edit_field41} data-pageid="{$pageid}" data-field="email" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_email}">
+		{BEGIN email_label}{$label calonppdb email }{END email_label}
+	</label>
+	<div class="r-edit-field">
+		{$email_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="email">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END email_fieldblock}
+											
+{BEGIN tinggibadan_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tinggibadan}  r-vertical-field" 
+	data-fieldname="tinggibadan" 
+	data-signal-error-for="tinggibadan{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field42" {$item_integrated_edit_field42} data-pageid="{$pageid}" data-field="tinggibadan" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_tinggibadan}">
+		{BEGIN tinggibadan_label}{$label calonppdb tinggibadan }{END tinggibadan_label}
+	</label>
+	<div class="r-edit-field">
+		{$tinggibadan_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="tinggibadan">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END tinggibadan_fieldblock}
+											
+{BEGIN beratbadan_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_beratbadan}  r-vertical-field" 
+	data-fieldname="beratbadan" 
+	data-signal-error-for="beratbadan{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field43" {$item_integrated_edit_field43} data-pageid="{$pageid}" data-field="beratbadan" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_beratbadan}">
+		{BEGIN beratbadan_label}{$label calonppdb beratbadan }{END beratbadan_label}
+	</label>
+	<div class="r-edit-field">
+		{$beratbadan_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="beratbadan">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END beratbadan_fieldblock}
+											
+{BEGIN jaraktempatkesekolah_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jaraktempatkesekolah}  r-vertical-field" 
+	data-fieldname="jaraktempatkesekolah" 
+	data-signal-error-for="jaraktempatkesekolah{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field44" {$item_integrated_edit_field44} data-pageid="{$pageid}" data-field="jaraktempatkesekolah" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_jaraktempatkesekolah}">
+		{BEGIN jaraktempatkesekolah_label}{$label calonppdb jaraktempatkesekolah }{END jaraktempatkesekolah_label}
+	</label>
+	<div class="r-edit-field">
+		{$jaraktempatkesekolah_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="jaraktempatkesekolah">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END jaraktempatkesekolah_fieldblock}
+											
+{BEGIN jumlahsaudarakandung_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jumlahsaudarakandung}  r-vertical-field" 
+	data-fieldname="jumlahsaudarakandung" 
+	data-signal-error-for="jumlahsaudarakandung{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field45" {$item_integrated_edit_field45} data-pageid="{$pageid}" data-field="jumlahsaudarakandung" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_jumlahsaudarakandung}">
+		{BEGIN jumlahsaudarakandung_label}{$label calonppdb jumlahsaudarakandung }{END jumlahsaudarakandung_label}
+	</label>
+	<div class="r-edit-field">
+		{$jumlahsaudarakandung_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="jumlahsaudarakandung">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END jumlahsaudarakandung_fieldblock}
+											
+{BEGIN asaltk_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_asaltk}  r-vertical-field" 
+	data-fieldname="asaltk" 
+	data-signal-error-for="asaltk{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field46" {$item_integrated_edit_field46} data-pageid="{$pageid}" data-field="asaltk" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_asaltk}">
+		{BEGIN asaltk_label}{$label calonppdb asaltk }{END asaltk_label}
+	</label>
+	<div class="r-edit-field">
+		{$asaltk_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="asaltk">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END asaltk_fieldblock}
+											
+{BEGIN nomorsurattk_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nomorsurattk}  r-vertical-field" 
+	data-fieldname="nomorsurattk" 
+	data-signal-error-for="nomorsurattk{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field47" {$item_integrated_edit_field47} data-pageid="{$pageid}" data-field="nomorsurattk" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_nomorsurattk}">
+		{BEGIN nomorsurattk_label}{$label calonppdb nomorsurattk }{END nomorsurattk_label}
+	</label>
+	<div class="r-edit-field">
+		{$nomorsurattk_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="nomorsurattk">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END nomorsurattk_fieldblock}
+											
+{BEGIN paktaintegritas_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_paktaintegritas}  r-vertical-field" 
+	data-fieldname="paktaintegritas" 
+	data-signal-error-for="paktaintegritas{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field48" {$item_integrated_edit_field48} data-pageid="{$pageid}" data-field="paktaintegritas" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_paktaintegritas}">
+		{BEGIN paktaintegritas_label}{$label calonppdb paktaintegritas }{END paktaintegritas_label}
+	</label>
+	<div class="r-edit-field">
+		{$paktaintegritas_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="paktaintegritas">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END paktaintegritas_fieldblock}
+											
+{BEGIN namaibu_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_namaibu}  r-vertical-field" 
+	data-fieldname="namaibu" 
+	data-signal-error-for="namaibu{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field49" {$item_integrated_edit_field49} data-pageid="{$pageid}" data-field="namaibu" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_namaibu}">
+		{BEGIN namaibu_label}{$label calonppdb namaibu }{END namaibu_label}
+	</label>
+	<div class="r-edit-field">
+		{$namaibu_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="namaibu">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END namaibu_fieldblock}
+											
+{BEGIN status_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_status}  r-vertical-field" 
+	data-fieldname="status" 
+	data-signal-error-for="status{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field50" {$item_integrated_edit_field50} data-pageid="{$pageid}" data-field="status" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_status}">
+		{BEGIN status_label}{$label calonppdb status }{END status_label}
+	</label>
+	<div class="r-edit-field">
+		{$status_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="status">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END status_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN save_edit}
+<span data-itemtype="edit_save" data-itemid="edit_save" {$item_edit_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Simpan			</a>
+</span>
+{END save_edit}
+	 
+		{BEGIN back_button}
+<span data-itemtype="edit_back_list" data-itemid="edit_back_list" {$item_edit_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Balik ke daftar			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="edit_close" data-itemid="edit_close" {$item_edit_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$closebutton_attrs} >
+							Batal			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right			col-md-6
+	">
+	 
+		<span data-itemtype="prev" data-itemid="prev" {$item_prev} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	{$prevbutton_class}" {$prevbutton_attrs} >
+					<span class="glyphicon glyphicon-menu-left"></span>
+										</a>
+</span>
+	 
+		<span data-itemtype="next" data-itemid="next" {$item_next} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	{$nextbutton_class}" {$nextbutton_attrs} >
+					<span class="glyphicon glyphicon-menu-right"></span>
+										</a>
+</span>
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-menu-hamburger"></span>
+									<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="edit_reset" data-itemid="edit_reset" {$item_edit_reset} data-pageid="{$pageid}" data-small >
+				<a  {$resetbutton_attrs}  title="" >
+				
+		Tata ulang		
+		</a>
+	</li>
+							{BEGIN view_page_button}
+	<li data-itemtype="edit_view" data-itemid="edit_view" {$item_edit_view} data-pageid="{$pageid}" data-small >
+				<a  {$view_page_button_attrs}  title="" >
+				
+		Lihat		
+		</a>
+	</li>
+{END view_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

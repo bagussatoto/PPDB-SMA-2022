@@ -1,0 +1,16 @@
+{BEGIN mainmenu_block}
+<ul class="nav menu-treelike rnr-b-vmenu" data-menulevel="1" originalMenuTag="$$originalMenuTag" menuID="$$menuID">
+##foreach MenuChildren(0) as @m0##
+	##set @menu=@m0##
+	{BEGIN item##@m0.id##_menulink}
+	##if @m0.type=="Separator"##
+	<li><a></a></li>
+	##else##
+	<li class="##if hasMenuChildren(@menu.id)## dropdown ##endif## {$item##@menu.id##_current}">
+		##include templates\bsmenuitem_preview.htm##
+	</li>
+	##endif##
+	{END item##@m0.id##_menulink}
+##endfor##
+</ul>
+{END mainmenu_block}

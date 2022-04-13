@@ -1,0 +1,170 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-export" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+			<div class="r-panel-page">
+								{BEGIN supertop_block}
+<div class="r-form" data-location="supertop" id="form_supertop_{$pageid}" data-makeup="panel" {$form_supertop} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="supertop_c1" data-pageid="{$pageid}"	{$cell_supertop_c1}
+	class="r-align-center r-ori-vert			col-md-12
+	
+">
+			</div>					</div>
+	</div>		
+{END supertop_block}
+					<div class="bs-pagepanel panel panel-primary">
+					<div class="panel-heading">
+									{BEGIN top_block}
+<div class="panel-title r-panel-top row" data-location="top" id="form_top_{$pageid}" data-makeup="panel" {$form_top} data-pageid="{$pageid}" >		
+	 
+		 
+			<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		<h3 class="panel-title" data-itemtype="export_header" data-itemid="export_header" {$item_export_header} data-pageid="{$pageid}" >{$pagetitlelabel calonppdb export}</h3>
+		</div>			</div>		
+{END top_block}
+						</div>
+					<div class="panel-body">
+																		{BEGIN grid_block}
+<div class="col-sm-12 col-md-12">
+{BEGIN range_block}
+	<div class="row">
+		<div class="col-md-4 col-sm-4">
+			<div class="radio bs-desktop-right">
+				Jangkauan data			</div>
+		</div>
+		<div class="col-md-8 col-sm-8">
+			<div class="radio">
+				<label>
+					<input type="radio" name="records" value="all" checked="checked" {$allpageradio_attrs}>
+					Semua catatan				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="records" value="page" {$pageradio_attrs}>
+					Hanya halaman terkini				</label>
+			</div>
+		</div>
+  </div>
+{END range_block}
+
+	<div class="row">
+		<div class="col-sm-4 col-md-4">
+			<div class="radio bs-desktop-right">
+				Data format			</div>
+		</div>
+		<div class="col-sm-8 col-md-8">
+			<div class="radio">
+			  <label>
+				<input type="radio" name="txtformatting" value="formatted" checked>
+				formatted values			  </label>
+			</div>
+			<div class="radio">
+			  <label>
+				<input type="radio" name="txtformatting" value="raw">
+				raw values			  </label>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-sm-4 col-md-4">
+			<div class="radio bs-desktop-right">
+				Format keluaran			</div>
+		</div>
+		<div class="col-md-8 col-sm-8">
+			
+			<div class="radio">
+					{BEGIN groupExcel}
+			  <label>
+				<input TYPE="radio" NAME="type" VALUE="excel2007" CHECKED {$excelradio_attrs}>
+				<span> <img src="images/excel.gif" align="absmiddle" alt=" ">&nbsp;Excel 2007</span>
+			  </label>
+			{END groupExcel}
+					</div>
+					<div class="radio">
+			  <label>
+				<input TYPE="radio" NAME="type" VALUE="word"  {$wordradio_attrs}>
+				<span> <img src="images/word.gif" align="absmiddle" alt=" ">&nbsp;Word</span>
+			  </label>
+			</div>
+					<div class="radio">
+			  <label>
+				<input TYPE="radio" NAME="type" VALUE="csv"  {$csvradio_attrs}>
+				<span> <img src="images/csv.gif" align="absmiddle" alt=" ">&nbsp;CSV (nilai terpisah koma)</span>
+			  </label>
+			</div>
+						
+		</div>
+	</div>
+
+</div>
+{END grid_block}
+											{BEGIN footer_block}
+<div class="r-form" data-location="footer" id="form_footer_{$pageid}" data-makeup="panel" {$form_footer} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="footer_c1" data-pageid="{$pageid}" data-page="calonppdb_export"	{$cell_footer_c1}
+	class=" r-ori-vert			col-md-6
+	
+">
+			</div>			 
+				<div 
+	data-cellId="footer_c2" data-pageid="{$pageid}" data-page="calonppdb_export"	{$cell_footer_c2}
+	class="			col-md-6
+	
+">
+		 
+		<span data-itemtype="export_export" data-itemid="export_export" {$item_export_export} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$exportlink_attrs} >
+							Ekspor			</a>
+</span>
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="export_cancel" data-itemid="export_cancel" {$item_export_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" href="#" >
+							Batal			</a>
+</span>
+{END cancel_button}
+		</div>					</div>
+	</div>		
+{END footer_block}
+						</div>
+				</div>
+										
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

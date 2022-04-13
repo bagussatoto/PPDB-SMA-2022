@@ -1,0 +1,267 @@
+
+thead:before, thead:after { display: none !important; }
+tbody:before, tbody:after { display: none !important; }
+
+.table { 
+    border-collapse: collapse;
+}
+
+tr.blackshade >td, tr.blackshade >th {
+    white-space: nowrap;
+}
+
+.table > * > tr > td, .table > * > tr > th, td, th {
+    font-size: 14px;
+    padding: 8px;
+    line-height: 1.42857143;
+    font-family: Helvetica,Arial,sans-serif;
+}
+
+.table-bordered > * > tr > td, .table-bordered > * > tr > th {
+    border: 1px solid #ddd;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #f9f9f9
+}
+
+.h2, h2 {
+    font-size: 30px;
+}
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+
+body {
+    font-size: 14px;
+    font-family: Helvetica,Arial,sans-serif;
+}
+
+/* start bootstrap */
+.rnr-orderlink {
+    text-decoration: none;
+}
+
+
+.panel-default {
+    border-color: #dddddd;
+}
+
+.panel {
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.panel-default > .panel-heading {
+    background-color: #f5f5f5;
+    border-color: #ddd;
+    color: #333;
+}
+
+.panel-heading {
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding: 10px 15px;
+}
+
+.panel-body {
+    padding: 4px;
+    display: block;
+    overflow: hidden;
+}
+
+.bs-viewform-group {
+    display: block;
+    overflow: auto;
+    width: 100%;
+}
+
+.col-md-4 { width: 30%; font-weight: bold;}
+.col-md-8 { 
+    width: 60%;
+    display: table;
+    float: right;
+    text-align: right;
+}
+
+.col-md-8 img {
+    width: 100% !important;
+}
+
+.bs-grid-vertical-row { display: block; clear: both;}
+.bs-grid-vertical-cell { float: left; margin:2px;  width: 100%;}
+
+.bs-grid-vertical-cell.bs-columns-1 {   width: 98%; }
+.bs-grid-vertical-cell.bs-columns-2 {   width: 48%; }
+.bs-grid-vertical-cell.bs-columns-3 {   width: 31%; }
+.bs-grid-vertical-cell.bs-columns-4 {   width: 24%; }
+.bs-grid-vertical-cell.bs-columns-5 {   width: 19%; }
+.bs-grid-vertical-cell.bs-columns-6 {   width: 15%; }
+.bs-grid-vertical-cell.bs-columns-7 {   width: 12%; }
+.bs-grid-vertical-cell.bs-columns-8 {   width: 11%; }
+/* end bootstrap */
+
+.btn-group {
+    display: none;
+}
+
+.navbar {
+    display: none;
+}
+
+[data-hidden][data-hidden][data-hidden][data-hidden] { 	display: none; }
+
+/* bootstrap pdf for viewpage */
+
+[data-brick=viewfields] .bs-viewcontrolgroup {
+    display: table-row;
+}
+
+[data-brick=viewfields] .bs-viewcontrolgroup label {
+    font-weight: bold;
+}
+
+[data-brick=viewfields] .bs-viewcontrolgroup label, [data-brick=viewfields] .bs-viewcontrolgroup div {
+    display: table-cell;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+[data-brick=viewfields] .container {
+    display: table;
+}
+
+[data-brick=viewfields] .bs-viewform-group {
+    display: table-row;
+}
+[data-brick=viewfields] .bs-view-label, [data-brick=viewfields] .bs-horizontal-value {
+    width: auto;
+    display: table-cell;
+} 
+[data-brick=viewfields] .bs-horizontal-value {
+    padding-left: 10px;
+}
+
+/* flexible details to horizontal view */
+
+[data-brick=viewfields] table.bs-flexgrid {
+    width: 100%;
+}
+[data-brick=viewfields] .bs-flexgrid .bs-gridcell:before, .bs-gridcell.bs-gridcell:before {
+    display: none;
+}
+
+[data-brick=viewfields] .bs-flexgrid .rnr-toprow {
+    display: table-row;
+}
+
+[data-brick=viewfields] [data-brick=reorder_records] {
+    display: none;
+}
+
+
+[data-brick=viewfields] .panel {
+    border-color: #dddddd;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+[data-brick=viewfields] .panel > .panel-heading {
+    background-color: #f5f5f5;
+    border-color: #ddd;
+    color: #333;
+}
+
+
+/* vertical grid in viewpage */
+[data-brick=viewfields] .bs-grid-vertical {
+    display: table;
+    width: 100%;
+}
+[data-brick=viewfields] .bs-grid-vertical-row {
+    display: table-row;
+}
+[data-brick=viewfields] .bs-grid-vertical-cell {
+    display: table-cell;
+    width: initial;
+    float: initial;
+}
+[data-brick=viewfields] .panel-body.form-horizontal {
+    display: table;
+}
+
+
+
+/* end bootstrap pdf for viewpage */ 
+
+/*bootstrap vertical detais*/
+.rnr-print-details {
+    clear: both;
+    padding-left:0px;
+}
+
+.rnr-print-details .bs-grid-vertical {
+    display: table;
+    width: 100%
+}
+
+.rnr-print-details .bs-grid-vertical-row {
+     display: table-row;
+}
+
+.rnr-print-details .bs-grid-vertical-cell {
+    float: none;
+    display: table-cell;
+}
+
+.details_row {
+    clear: both;
+}
+/*end bootstrap vertical detais*/
+
+
+/* bootstrap master+details tables */
+
+.table > thead > tr > th {
+    border-bottom: 2px solid #dddddd;
+    vertical-align: bottom;
+}
+
+.rnr-toprow {
+    display: none;
+}
+
+
+.rnr-b-mastergridfields > tbody > tr > td {
+    font-size: 12px;
+}
+
+/* end bootstrap master+details tables  */
+
+.fieldGrid2 td {
+  display: inline-block;
+  width: 50%;
+  padding: 0 !important;
+}
+
+.fieldGrid2 {
+ white-space: nowrap;
+}
+
+[data-hidden][data-hidden][data-hidden] {
+	display: none;
+}

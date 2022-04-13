@@ -1,0 +1,80 @@
+<ul class="rnr-b-vmenu simple {$menustyle}">
+##foreach MenuChildren(0) as @m0##
+##set @menu=@m0##
+	{BEGIN item##@m0.id##_menulink}
+	<li class="{$item##@menu.id##_current} menu##@menu.type##">
+		##include templates\newmenuitem.htm##
+	##foreach MenuChildren(@m0.id) as @m1##
+	##if @first##
+		<ul >
+	##endif##
+	##set @menu=@m1##
+			{BEGIN item##@m1.id##_menulink}
+			<li  parent="group##@menu.parent##" class="{$item##@menu.id##_current} menu##@menu.type##">
+			##include templates\newmenuitem.htm##
+			##foreach MenuChildren(@m1.id) as @m2##
+			##if @first##
+				<ul >
+			##endif##
+			##set @menu=@m2##
+					{BEGIN item##@m2.id##_menulink}
+					<li  parent="group##@menu.parent##" class="{$item##@menu.id##_current} menu##@menu.type##">
+					##include templates\newmenuitem.htm##
+					##foreach MenuChildren(@m2.id) as @m3##
+					##if @first##
+						<ul >
+					##endif##
+					##set @menu=@m3##
+							{BEGIN item##@m3.id##_menulink}
+							<li  parent="group##@menu.parent##" class="{$item##@menu.id##_current} menu##@menu.type##">
+							##include templates\newmenuitem.htm##
+							##foreach MenuChildren(@m3.id) as @m4##
+							##if @first##
+								<ul >
+							##endif##
+							##set @menu=@m4##
+									{BEGIN item##@m4.id##_menulink}
+									<li  parent="group##@menu.parent##" class="{$item##@menu.id##_current} menu##@menu.type##">
+									##include templates\newmenuitem.htm##
+									##foreach MenuChildren(@m4.id) as @m5##
+									##if @first##
+										<ul >
+									##endif##
+									##set @menu=@m5##
+											{BEGIN item##@m5.id##_menulink}
+											<li  parent="group##@menu.parent##" class="{$item##@menu.id##_current} menu##@menu.type##">
+											##include templates\newmenuitem.htm##
+											</li>
+											{END item##@m5.id##_menulink}
+									##if @last##
+										</ul>
+									##endif##
+									##endfor##
+									</li>
+									{END item##@m4.id##_menulink}
+							##if @last##
+								</ul>
+							##endif##
+							##endfor##
+							</li>
+							{END item##@m3.id##_menulink}
+					##if @last##
+						</ul>
+					##endif##
+					##endfor##
+					</li>
+					{END item##@m2.id##_menulink}
+			##if @last##
+				</ul>
+			##endif##
+			##endfor##
+			</li>
+			{END item##@m1.id##_menulink}
+	##if @last##
+		</ul>
+	##endif##
+	##endfor##
+	</li>
+	{END item##@m0.id##_menulink}
+##endfor##
+</ul>

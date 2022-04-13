@@ -1,0 +1,11 @@
+
+<a {$item##@menu.id##_menulink_attrs} title="{$item##@menu.id##_tooltip}" >
+	<span class="
+	##if @top##
+	r-menu-expanded
+	##endif##
+	"> {$item##@menu.id##_icon} {$item##@menu.id##_title}</span>
+	##if @top##
+	<span class="r-menu-collapsed">{$item##@menu.id##_collicon}{$item##@menu.id##_firstcap}</span>
+	##endif##
+</a>

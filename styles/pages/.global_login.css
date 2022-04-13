@@ -1,0 +1,17 @@
+[data-cellid="footer_c1"][data-page=".global_login"][data-cellid="footer_c1"][data-page=".global_login"][data-cellid="footer_c1"][data-page=".global_login"] {
+  width: 33.33333333%;
+}
+[data-cellid="footer_c2"][data-page=".global_login"][data-cellid="footer_c2"][data-page=".global_login"][data-cellid="footer_c2"][data-page=".global_login"] {
+  width: 66.66666667%;
+}
+[data-page=".global_login"][data-itemid="custom_button"] > .btn {
+  text-shadow: none;
+  color: #feff00;
+  font-weight: bold;
+  white-space: normal;
+}
+[data-page=".global_login"][data-itemid="custom_button"] {
+  padding-top: 10px;
+}
+
+

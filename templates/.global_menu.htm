@@ -1,0 +1,219 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+	<body class="{$stylename} function-menu" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<div class="r-topbar-page">
+			<div data-menu-width="full" 
+				 
+				class="r-topheader" 
+				data-resize-name="topbar"
+				data-body-align="left"
+			>
+								{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="topbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span data-cellId="supertop_c1" data-pageid="{$pageid}" class="r-align-left navbar-header" data-itemid="logo" {$item_logo}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo" {$item_logo} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</span>
+		 
+				<span data-cellId="supertop_c1" data-pageid="{$pageid}" class="r-align-left navbar-collapse" data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{$menu main horizontal}			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Login			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-user"></span>
+						{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Log out		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN adminarea_link}
+	<li data-itemtype="adminarea_link" data-itemid="adminarea_link" {$item_adminarea_link} data-pageid="{$pageid}" data-small >
+				<a  href="admin_rights_list.php"  title="" >
+				
+		Admin Area		
+		</a>
+	</li>
+{END adminarea_link}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+					{$locking}
+			</div>	
+			<div data-body-align="left"  data-body-width="standard" class="r-body" data-resize-top="topbar" >
+				<div class="r-top">
+										</div>
+				<div class="r-content">
+										<div class="r-data-block" data-body-width="standard" >
+						
+										{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="topbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		{BEGIN breadcrumb}
+<ol class="breadcrumb" data-itemtype="breadcrumb" data-itemid="breadcrumb" {$item_breadcrumb} data-pageid="{$pageid}">
+<li ><a href="{$crumb_home_link}"><span class="glyphicon glyphicon-home"></span></a>{$crumb_dropdown}</li>
+{BEGIN crumb}
+  <li class="{$crumb_item_class}">
+{BEGIN crumb_title_link}
+	<a {$crumb_attrs}>{$crumb_title}</a>
+{END crumb_title_link}
+{BEGIN crumb_title_span}
+	<span {$crumb_attrs}>{$crumb_title}</span>
+{END crumb_title_span}	
+	{$crumb_dropdown}
+  </li>
+{END crumb}
+</ol>
+{END breadcrumb}			{END firstAboveGridCell}	
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+							
+						<div class="r-grid">
+										{BEGIN grid_block}
+<table class="r-fluid r-form" data-location="grid" id="form_grid_{$pageid}" data-makeup="topbar" {$form_grid} data-pageid="{$pageid}" >
+						<tbody>
+			
+								<tr>
+									<td 
+	class="			"
+			 
+	data-cellId="grid_c1" data-pageid="{$pageid}">
+ 
+<div class="bs-welcome-item" data-itemtype="welcome_item" data-itemid="welcome_item" {$item_welcome_item} data-pageid="{$pageid}" data-page=".global_menu">
+	<div class="bs-welcome-header">
+		<a id="itemlink" href="user_list.php">
+							<span class="glyphicon glyphicon-barcode"></span>User					</a>
+	</div>
+
+				
+	<div class="bs-welcome-content" data-comment-len="16">
+		User description	</div>
+	</div>
+
+ 
+<div class="bs-welcome-item" data-itemtype="welcome_item" data-itemid="welcome_item1" {$item_welcome_item1} data-pageid="{$pageid}" data-page=".global_menu">
+	<div class="bs-welcome-header">
+		<a id="itemlink" href="calonppdb_list.php">
+							<span class="glyphicon glyphicon-shopping-cart"></span>Daftar Online PPDB					</a>
+	</div>
+
+				
+	<div class="bs-welcome-content" data-comment-len="21">
+		Calonppdb description	</div>
+	</div>
+
+ 
+<div class="bs-welcome-item" data-itemtype="welcome_item" data-itemid="welcome_item2" {$item_welcome_item2} data-pageid="{$pageid}" data-page=".global_menu">
+	<div class="bs-welcome-header">
+		<a id="itemlink" href="pendidikan_list.php">
+							<span class="glyphicon glyphicon-tree-conifer"></span>Pendidikan					</a>
+	</div>
+
+				
+	<div class="bs-welcome-content" data-comment-len="22">
+		Pendidikan description	</div>
+	</div>
+
+ 
+<div class="bs-welcome-item" data-itemtype="welcome_item" data-itemid="welcome_item3" {$item_welcome_item3} data-pageid="{$pageid}" data-page=".global_menu">
+	<div class="bs-welcome-header">
+		<a id="itemlink" href="pekerjaan_list.php">
+							<span class="glyphicon glyphicon-hand-right"></span>Pekerjaan					</a>
+	</div>
+
+				
+	<div class="bs-welcome-content" data-comment-len="21">
+		Pekerjaan description	</div>
+	</div>
+
+ 
+<div class="bs-welcome-item" data-itemtype="welcome_item" data-itemid="welcome_item4" {$item_welcome_item4} data-pageid="{$pageid}" data-page=".global_menu">
+	<div class="bs-welcome-header">
+		<a id="itemlink" href="penghasilan_list.php">
+							<span class="glyphicon glyphicon-briefcase"></span>Penghasilan					</a>
+	</div>
+
+				
+	<div class="bs-welcome-content" data-comment-len="23">
+		Penghasilan description	</div>
+	</div>
+
+</td>
+							</tr>
+					
+					</tbody>
+				</table>
+{END grid_block}
+							</div>
+						
+														
+					</div>
+				</div>
+			</div>
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>
